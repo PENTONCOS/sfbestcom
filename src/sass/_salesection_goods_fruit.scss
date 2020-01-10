@@ -2,9 +2,103 @@
   width: $page_width;
   height: 470px;
   margin: 0 auto;
+  margin-top: 30px;
   background: lightblue;
+  // overflow: hidden;
+  .goods_left {
+    float: left;
+    width: 250px;
+    overflow: hidden;
+  }
+  .goods_leftTop {
+    width: 240px;
+    height: 50px;
+    background: #76ac25;
+    float: right;
+    color: #fff;
+    @include border-corner-radius(top, left, 5px);
+    .goods_leftTop1 {
+      height: 50px;
+      line-height: 50px;
+      font-weight: normal;
+      font-size: 16px;
+      em {
+        background: url(../images/index_icon_new.png) no-repeat -97px -295px;
+        width: 15px;
+        height: 16px;
+        float: left;
+        margin: 16px 8px 0 75px;
+      }
+      a {
+        color: #fff;
+      }
+      &:hover {
+        background: #83b933;
+        color: #fff;
+      }
+    }
+  }
+}
+.goods_leftBot {
+  width: 250px;
+  height: 420px;
+  overflow: hidden;
 }
 
-.fruit{
-    
+.goods_right {
+  float: left;
+  width: 950px;
+  position: relative;
+  overflow: hidden;
+  @include border_top(1px, #adcd7c);
+  .goods_rightLeft {
+    padding: 7px 10px 9px 10px;
+    width: 710px;
+    @include border_bot(1px, #f4f4f4);
+    float: left;
+  }
+}
+.sg_ul {
+  .sg_list {
+    width: 160px;
+    padding: 8px;
+    float: left;
+    position: relative;
+  }
+
+  .sg_img {
+    margin-bottom: 10px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+    }
+  }
+  .sg_title {
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    a {
+      color: #666666;
+    }
+  }
+  .sg_price {
+    font-size: 14px;
+    margin-left: 0;
+    padding-top: 6px;
+    span {
+      color: $goods_price;
+      font-weight: bold;
+      i {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.fruit {
 }

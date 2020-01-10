@@ -1,12 +1,12 @@
 .salesection {
   width: $page_width;
-  height: 545px;
   margin: 0 auto;
   margin-top: 35px;
-  background: #0044bb;
+  overflow: hidden;
   .better_choose {
     width: 1190px;
     margin: 0 auto;
+    overflow: hidden;
   }
 }
 
@@ -33,10 +33,114 @@
   .bc_leftBot {
     width: 944px;
     float: left;
-    border-left: 1px solid #e8e8e8;
-    border-top: 1px solid #e8e8e8;
-    li {
-      
+    @include border_left;
+    @include border_top;
+    .buy_list {
+      position: relative;
+      width: 235px;
+      height: 258px;
+      float: left;
+      @include border_right;
+      @include border_bot;
+      overflow: hidden;
+    }
+  }
+}
+
+.bc_buy {
+  font-size: 14px;
+  color: #323232;
+  display: inline-block;
+  margin-left: 12px;
+  height: 14px;
+  overflow: hidden;
+  font-family: 微软雅黑;
+  padding-top: 10px;
+  line-height: 14px;
+}
+
+.bc_price {
+  font-size: 16px;
+  color: $goods_price;
+  height: 16px;
+  font-family: 微软雅黑;
+  padding-top: 10px;
+  margin-left: 12px;
+  line-height: 16px;
+  overflow: hidden;
+  font-weight: bold;
+  i {
+    font-size: 12px;
+    font-style: normal;
+  }
+}
+
+.bc_pic {
+  width: 204px;
+  height: 204px;
+  float: right;
+  margin-top: 4px;
+}
+
+.bc_right {
+  margin-top: 30px;
+  float: right;
+  @include border;
+  width: 222px;
+  height: 517px;
+  overflow: hidden;
+  font-family: $h2_fontfamily;
+  .bc_rightTop {
+    height: 300px;
+    width: $page_container;
+    text-align: center;
+    overflow: hidden;
+    img {
+      width: 220px;
+      height: 300px;
+    }
+  }
+  .bc_rightBot {
+    padding: 0 10px;
+    width: $page_container;
+    .bc_rightBotTop {
+      border-bottom: 1px dotted #dbdbdb;
+      padding: 15px 0 10px 0;
+      line-height: 14px;
+      overflow: hidden;
+      height: 14px;
+    }
+    h3 {
+      color: #323232;
+      font-size: 14px;
+      font-family: $h2_fontfamily;
+      float: left;
+      font-weight: normal;
+    }
+    a {
+      color: #969696;
+      float: right;
+      margin-right: 18px;
+    }
+    .bc_rightBotMid {
+      margin: 8px 0 0 0;
+      width: 200px;
+      height: 156px;
+      li {
+        line-height: 26px;
+        height: 26px;
+        overflow: hidden;
+        a {
+          height: 26px;
+          color: #fa6400;
+          float: left;
+          overflow: hidden;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+
+      }
     }
   }
 }

@@ -7,6 +7,12 @@
   padding: 0px;
   background: #f7f7f7;
   border-bottom: 1px solid #eeeeee;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $a_fontcolor;
+    }
+  }
   .nav_headerMain {
     width: 1200px;
     margin: auto;
