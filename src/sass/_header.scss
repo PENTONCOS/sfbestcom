@@ -1,7 +1,99 @@
-header{
-    padding: 0;
-    height: 104px;
-    width: $page_width;
-    margin: 0 auto;
-    background:#EEEE00;
+header {
+  width: $page_width;
+  height: 104px;
+  margin: 0 auto;
+}
+
+.header_main {
+  width: $page_width;
+  margin: 0 auto;
+  position: relative;
+  .logo {
+    float: left;
+    padding: 5px 0px 0px 0px;
+    a {
+      display: inline-block;
+      width: 240px;
+      height: 69px;
+      text-indent: -99999px;
+      background: url(../images/indexLogo2019.png) no-repeat center;
+    }
+  }
+  .search {
+    position: absolute;
+    top: 28px;
+    right: 248px;
+    width: 514px;
+    input {
+      outline: none;
+    }
+    .srk {
+      border: 1px solid $a_fontcolor;
+      width: 425px;
+      height: 34px;
+      padding: 0 0 0 4px;
+      float: left;
+      line-height: 34px;
+    }
+    .tj {
+      height: 36px;
+      width: 80px;
+      float: left;
+      //   vertical-align: middle;
+      border: 0;
+      background: url(../images/header.png) no-repeat -99px -179px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  .search_hot {
+    float: left;
+    // text-align: left;
+    padding: 4px 0px 0px 0px;
+    li {
+      float: left;
+      margin: 0px 8px 0px 0px;
+      color: #979797;
+      cursor: pointer;
+      &:hover {
+        color: $a_fontcolor;
+      }
+    }
+  }
+  .shop_cart {
+    width: 146px;
+    height: 33px;
+    padding-left: 48px;
+    position: absolute;
+    top: 0px;
+    right: -249px;
+    border: 1px solid #efefef;
+    line-height: 33px;
+    font-size: 12px;
+    .icon_cart {
+      width: 23px;
+      height: 21px;
+      left: 17px;
+      position: absolute;
+      top: 4px;
+      background: url(../images/header.png) no-repeat -102px -235px;
+      margin: 2px 0 0 0;
+    }
+    a {
+      color: $page_fontcolor;
+    }
+    .cart_num {
+      position: absolute;
+      top: -1px;
+      left: 154px;
+      width: 40px;
+      height: 34px;
+      text-align: center;
+      line-height: 34px;
+      background-color: #fa9600;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
 }

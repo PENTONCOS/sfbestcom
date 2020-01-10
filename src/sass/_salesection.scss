@@ -2,5 +2,41 @@
   width: $page_width;
   height: 545px;
   margin: 0 auto;
+  margin-top: 35px;
   background: #0044bb;
+  .better_choose {
+    width: 1190px;
+    margin: 0 auto;
+  }
+}
+
+.bc_left {
+  width: 945px;
+  float: left;
+  overflow: hidden;
+  .bc_leftTop {
+    h2 {
+      color: #333333;
+      font-size: 18px;
+      font-family: $h2_fontfamily;
+      padding: 0 0 12px 3px;
+      display: inline-block;
+    }
+    span {
+      margin: 0 0 0 15px;
+      background: url(../images/index_icon_new.png) no-repeat -29px -333px;
+      width: 118px;
+      height: 14px;
+      display: inline-block;
+    }
+  }
+  .bc_leftBot {
+    width: 944px;
+    float: left;
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    li {
+      
+    }
+  }
 }

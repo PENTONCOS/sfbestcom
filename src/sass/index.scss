@@ -2,21 +2,41 @@
 $page_width: 1200px;
 $page_container: 100%;
 $page_fontcolor: #666666;
+$a_fontcolor: #669900;
+$h2_fontfamily: Microsoft YaHei;
 
 @import "compass/reset";
+@import "compass/css3";
 //body默认颜色和字体
 body {
   color: $page_fontcolor;
   font: 12px/150% Arial, Verdana, "宋体";
 }
+//万能清除法
+.clear {
+  content: "";
+  height: 0px;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  clear: both;
+}
 a {
   text-decoration: none;
+  &:hover {
+    color: $a_fontcolor;
+  }
 }
 //鼠标入时的效果一
 @mixin nav_hover1($shadow: gray, $bg_color: #fff) {
   box-shadow: 0px 0px 4px -2px $shadow;
   background: $bg_color;
 }
+//模块边框
+@mixin salesection(){
+  
+}
+
 //动态隐藏广告
 @import "ad_top";
 //头部导航
@@ -27,6 +47,8 @@ a {
 @import "nav_main";
 //轮播图区域
 @import "banner_main";
+//两侧广告
+@import "ad_aside";
 //优选必买
 @import "salesection";
 //水果蔬菜
