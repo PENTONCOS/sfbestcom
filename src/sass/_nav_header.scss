@@ -1,0 +1,116 @@
+.nav_header {
+  width: $page_container;
+  height: 33px;
+  text-align: center;
+  position: relative;
+  z-index: 101;
+  padding: 0px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #eeeeee;
+  .nav_headerMain {
+    width: 1200px;
+    margin: auto;
+    // overflow: hidden;
+    .left {
+      float: left;
+    }
+    li:nth-child(1) {
+      color: #969696;
+      float: left;
+      position: relative;
+      line-height: 33px;
+    }
+    li:nth-child(2) {
+      color: #969696;
+      float: left;
+      position: relative;
+      line-height: 33px;
+      p {
+        width: 50px;
+        height: 20px;
+        line-height: 20px;
+        border: 1px solid #dcdcdc;
+        margin: 6px 0 0 0;
+        overflow: hidden;
+      }
+      p:hover {
+        @include nav_hover1;
+      }
+
+      .city {
+        margin: 0 0 0 5px;
+        width: 30px;
+        overflow: hidden;
+        display: block;
+        color: #333333;
+      }
+
+      b {
+        background: url(../images/header.png) no-repeat -86px -130px;
+        width: 8px;
+        height: 4px;
+        position: absolute;
+        top: 15px;
+        right: 5px;
+      }
+      p:hover b {
+        background: url(../images/header.png) no-repeat -169px -2px;
+      }
+      .citys {
+        display: none;
+        position: absolute;
+        width: 438px;
+        border: 1px solid #dcdcdc;
+        text-align: left;
+        margin: 0;
+        background: #fff;
+      }
+
+      p:hover + .citys {
+        display: block;
+      }
+      .citys_top {
+        margin: 5px 10px 5px 10px;
+        height: 30px;
+        border-bottom: 1px solid #dcdcdc;
+        line-height: 30px;
+      }
+      .citys_middle {
+        margin: 0px 10px 5px 10px;
+        overflow: hidden;
+      }
+      li {
+        width: 38px;
+        float: left;
+        position: relative;
+        line-height: 33px;
+      }
+      a {
+        color: #0099ff;
+      }
+      .citys_bottom {
+        margin: 5px 10px 15px 10px;
+        color: #969696;
+        overflow: hidden;
+        li {
+          width: 40px;
+          text-align: center;
+          height: 25px;
+          line-height: 25px;
+          cursor: pointer;
+          color: #333333;
+        }
+      }
+      .area {
+        float: left;
+        height: 25px;
+        line-height: 25px;
+        color: #969696;
+      }
+      .ct {
+        float: left;
+        width: 360px;
+      }
+    }
+  }
+}

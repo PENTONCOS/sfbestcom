@@ -1,0 +1,391 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/index.scss */
+body {
+  color: #666666;
+  font: 12px/150% Arial, Verdana, "宋体";
+}
+
+/* line 12, ../sass/index.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_ad_top.scss */
+.ad_top {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+/* line 6, ../sass/_ad_top.scss */
+.ad_top .banner {
+  width: 1200px;
+  height: 80px;
+  background: url(../images/ad_top1.png) center top no-repeat;
+  display: block;
+}
+/* line 11, ../sass/_ad_top.scss */
+.ad_top .banner a {
+  width: 1200px;
+  height: 80px;
+  display: block;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+/* line 18, ../sass/_ad_top.scss */
+.ad_top .banner span {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: 575px;
+  width: 25px;
+  height: 16px;
+  background: url(../images/topclose.png) no-repeat center center;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+/* line 1, ../sass/_nav_header.scss */
+.nav_header {
+  width: 100%;
+  height: 33px;
+  text-align: center;
+  position: relative;
+  z-index: 101;
+  padding: 0px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #eeeeee;
+}
+/* line 10, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain {
+  width: 1200px;
+  margin: auto;
+}
+/* line 14, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain .left {
+  float: left;
+}
+/* line 17, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(1) {
+  color: #969696;
+  float: left;
+  position: relative;
+  line-height: 33px;
+}
+/* line 23, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) {
+  color: #969696;
+  float: left;
+  position: relative;
+  line-height: 33px;
+}
+/* line 28, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) p {
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #dcdcdc;
+  margin: 6px 0 0 0;
+  overflow: hidden;
+}
+/* line 36, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) p:hover {
+  box-shadow: 0px 0px 4px -2px gray;
+  background: #fff;
+}
+/* line 40, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) .city {
+  margin: 0 0 0 5px;
+  width: 30px;
+  overflow: hidden;
+  display: block;
+  color: #333333;
+}
+/* line 48, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) b {
+  background: url(../images/header.png) no-repeat -86px -130px;
+  width: 8px;
+  height: 4px;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+/* line 56, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) p:hover b {
+  background: url(../images/header.png) no-repeat -169px -2px;
+}
+/* line 59, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) .citys {
+  display: none;
+  position: absolute;
+  width: 438px;
+  border: 1px solid #dcdcdc;
+  text-align: left;
+  margin: 0;
+  background: #fff;
+}
+/* line 69, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) p:hover + .citys {
+  display: block;
+}
+/* line 72, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) .citys_top {
+  margin: 5px 10px 5px 10px;
+  height: 30px;
+  border-bottom: 1px solid #dcdcdc;
+  line-height: 30px;
+}
+/* line 78, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) .citys_middle {
+  margin: 0px 10px 5px 10px;
+  overflow: hidden;
+}
+/* line 82, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) li {
+  width: 38px;
+  float: left;
+  position: relative;
+  line-height: 33px;
+}
+/* line 88, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) a {
+  color: #0099ff;
+}
+/* line 91, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) .citys_bottom {
+  margin: 5px 10px 15px 10px;
+  color: #969696;
+  overflow: hidden;
+}
+/* line 95, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) .citys_bottom li {
+  width: 40px;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  color: #333333;
+}
+/* line 104, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) .area {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  color: #969696;
+}
+/* line 110, ../sass/_nav_header.scss */
+.nav_header .nav_headerMain li:nth-child(2) .ct {
+  float: left;
+  width: 360px;
+}
+
+/* line 1, ../sass/_header.scss */
+header {
+  padding: 0;
+  height: 104px;
+  width: 1200px;
+  margin: 0 auto;
+  background: #EEEE00;
+}
+
+/* line 1, ../sass/_nav_main.scss */
+.nav_main {
+  width: 100%;
+  height: 32px;
+  border-bottom: 2px solid #679800;
+  background: #66DD00;
+}
+
+/* line 1, ../sass/_banner_main.scss */
+.banner_main {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  z-index: 29;
+  background: #00DDAA;
+}
+
+/* line 1, ../sass/_salesection.scss */
+.salesection {
+  width: 1200px;
+  height: 545px;
+  margin: 0 auto;
+  background: #0044bb;
+}
+
+/* line 1, ../sass/_salesection_goods_fruit.scss */
+.salesection_goods {
+  width: 1200px;
+  height: 470px;
+  margin: 0 auto;
+  background: lightblue;
+}
+
+/* line 1, ../sass/_oils.scss */
+.oils {
+  background: lightcoral;
+}
+
+/* line 1, ../sass/_candy.scss */
+.candy {
+  background: lightgreen;
+}
+
+/* line 1, ../sass/_recom.scss */
+.recom {
+  border: #f5f5f5 1px solid;
+  padding: 15px 14px;
+  width: 1170px;
+  height: 1264px;
+  margin-top: 46px;
+  position: relative;
+  margin: 0 auto;
+  font-family: 微软雅黑;
+  background: midnightblue;
+}
+
+/* line 1, ../sass/_promoto_end.scss */
+.promoto_end {
+  width: 220px;
+  margin: 0 auto;
+}
+/* line 4, ../sass/_promoto_end.scss */
+.promoto_end .t1 {
+  height: 1px;
+  overflow: hidden;
+  margin-top: 18px;
+  background: #f5f5f5;
+}
+/* line 10, ../sass/_promoto_end.scss */
+.promoto_end .t2 {
+  background: #fff;
+  text-align: center;
+  width: 97px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #969696;
+  margin-top: -8px;
+  font-family: 微软雅黑;
+}
+
+/* line 1, ../sass/_hotspot.scss */
+.hotspot {
+  width: 1200px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: peru;
+}
+
+/* line 1, ../sass/_ad_bot.scss */
+.ad_bot {
+  line-height: 18px;
+  color: #969696;
+  width: 100%;
+  overflow: hidden;
+  height: 120px;
+  background: #f5f5f5;
+  margin: 10px 0 0 0;
+}
+/* line 9, ../sass/_ad_bot.scss */
+.ad_bot ul {
+  width: 1200px;
+  margin: 0px auto;
+}
+/* line 13, ../sass/_ad_bot.scss */
+.ad_bot li {
+  width: 300px;
+  height: 120px;
+  float: left;
+}
+/* line 18, ../sass/_ad_bot.scss */
+.ad_bot li:nth-child(1) {
+  background: url(../images/f1.png) no-repeat center center;
+}
+/* line 21, ../sass/_ad_bot.scss */
+.ad_bot li:nth-child(2) {
+  background: url(../images/f2.png) no-repeat center center;
+}
+/* line 24, ../sass/_ad_bot.scss */
+.ad_bot li:nth-child(3) {
+  background: url(../images/f3.png) no-repeat center center;
+}
+/* line 27, ../sass/_ad_bot.scss */
+.ad_bot li:nth-child(4) {
+  background: url(../images/f4.png) no-repeat center center;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  line-height: 18px;
+  color: #969696;
+  width: 100%;
+  overflow: hidden;
+  height: 285px;
+  background: purple;
+}

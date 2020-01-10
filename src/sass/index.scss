@@ -1,0 +1,47 @@
+@charset "utf-8"; //设置中文编码
+$page_width: 1200px;
+$page_container: 100%;
+$page_fontcolor: #666666;
+
+@import "compass/reset";
+//body默认颜色和字体
+body {
+  color: $page_fontcolor;
+  font: 12px/150% Arial, Verdana, "宋体";
+}
+a {
+  text-decoration: none;
+}
+//鼠标入时的效果一
+@mixin nav_hover1($shadow: gray, $bg_color: #fff) {
+  box-shadow: 0px 0px 4px -2px $shadow;
+  background: $bg_color;
+}
+//动态隐藏广告
+@import "ad_top";
+//头部导航
+@import "nav_header";
+//头部搜索购物
+@import "header";
+//商品分类导航
+@import "nav_main";
+//轮播图区域
+@import "banner_main";
+//优选必买
+@import "salesection";
+//水果蔬菜
+@import "_salesection_goods_fruit";
+//粮油干货
+@import "oils";
+//休闲糖巧
+@import "candy";
+//为你推荐
+@import "recom";
+//已经没有了
+@import "promoto_end";
+//热门晒单
+@import "hotspot";
+//全球美食广告
+@import "ad_bot";
+//底部链接
+@import "footer";

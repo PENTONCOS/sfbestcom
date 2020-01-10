@@ -1,0 +1,30 @@
+.ad_bot {
+  line-height: 18px;
+  color: #969696;
+  width: $page_container;
+  overflow: hidden;
+  height: 120px;
+  background: #f5f5f5;
+  margin: 10px 0 0 0;
+  ul {
+    width: $page_width;
+    margin: 0px auto;
+  }
+  li {
+    width: 300px;
+    height: 120px;
+    float: left;
+  }
+  li:nth-child(1) {
+    background: url(../images/f1.png) no-repeat center center;
+  }
+  li:nth-child(2) {
+    background: url(../images/f2.png) no-repeat center center;
+  }
+  li:nth-child(3) {
+    background: url(../images/f3.png) no-repeat center center;
+  }
+  li:nth-child(4) {
+    background: url(../images/f4.png) no-repeat center center;
+  }
+}

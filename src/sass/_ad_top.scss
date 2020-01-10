@@ -1,0 +1,30 @@
+.ad_top {
+  width: $page_width;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  .banner {
+    width: $page_width;
+    height: 80px;
+    background: url(../images/ad_top1.png) center top no-repeat;
+    display: block;
+    a {
+      width: $page_width;
+      height: 80px;
+      display: block;
+      text-indent: -9999px;
+      margin: 0 auto;
+    }
+    span {
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      margin-left: 575px;
+      width: 25px;
+      height: 16px;
+      background: url(../images/topclose.png) no-repeat center center;
+      cursor: pointer;
+      text-indent: -9999px;
+    }
+  }
+}
