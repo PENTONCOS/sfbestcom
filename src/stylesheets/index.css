@@ -711,7 +711,312 @@ header {
   width: 100%;
   height: 32px;
   border-bottom: 2px solid #679800;
-  background: #66DD00;
+}
+/* line 5, ../sass/_nav_main.scss */
+.nav_main .nav_mainTab {
+  margin: 0px auto;
+  color: #303437;
+  padding: 0;
+  width: 1200px;
+}
+
+/* line 13, ../sass/_nav_main.scss */
+.nav_mainTabLeft {
+  float: left;
+  width: 200px;
+  background: #76ac25;
+  height: 34px;
+  text-align: left;
+  position: relative;
+}
+/* line 20, ../sass/_nav_main.scss */
+.nav_mainTabLeft .n_m {
+  height: 34px;
+  overflow: hidden;
+  line-height: 34px;
+  background: url(../images/cate_bg.png);
+}
+/* line 25, ../sass/_nav_main.scss */
+.nav_mainTabLeft .n_m a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+}
+
+/* line 37, ../sass/_nav_main.scss */
+#nav_allSorts {
+  width: 200px;
+  height: 480px;
+  position: absolute;
+  background: #76ac25;
+  z-index: 100;
+}
+/* line 43, ../sass/_nav_main.scss */
+#nav_allSorts .food_allkinds {
+  padding-top: 8px;
+  padding-left: 5px;
+}
+/* line 47, ../sass/_nav_main.scss */
+#nav_allSorts .item {
+  height: 58px;
+}
+/* line 49, ../sass/_nav_main.scss */
+#nav_allSorts .item:hover .i_single {
+  display: block;
+}
+/* line 52, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum {
+  display: block;
+  height: 54px;
+  padding-left: 25px;
+  font-family: Microsoft YaHei;
+}
+/* line 57, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum:hover {
+  background: #fff;
+}
+/* line 60, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum:hover a {
+  color: #679800;
+}
+/* line 63, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum:hover p {
+  background: url(../images/left_lm_m.png) no-repeat 0px 5px;
+}
+/* line 66, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum:hover .item_p2 {
+  background: url(../images/left_lm_m.png) no-repeat 0 -159px;
+}
+/* line 69, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum:hover .item_p3 {
+  background: url(../images/left_lm_m.png) no-repeat 0 -324px;
+}
+/* line 72, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum:hover .item_p4 {
+  background: url(../images/left_lm_m.png) no-repeat 0 -47px;
+}
+/* line 75, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum:hover .item_p5 {
+  background: url(../images/left_lm_m.png) no-repeat 0 -106px;
+}
+/* line 78, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum:hover .item_p6 {
+  background: url(../images/left_lm_m.png) no-repeat 0 -270px;
+}
+/* line 81, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum:hover .item_p7 {
+  background: url(../images/left_lm_m.png) no-repeat 0 -213px;
+}
+/* line 84, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum:hover .item_p8 {
+  background: url(../images/left_lm_m.png) no-repeat 0 -378px;
+}
+/* line 87, ../sass/_nav_main.scss */
+#nav_allSorts .item .i_sum .dev {
+  font-weight: normal;
+  font-size: 14px;
+  padding-top: 5px;
+  line-height: 22px;
+}
+
+/* line 97, ../sass/_nav_main.scss */
+.dev p {
+  background: url(../images/left_lm_m_a.png) no-repeat 0 5px;
+  width: 16px;
+  height: 22px;
+  margin-left: -20px;
+  float: left;
+}
+/* line 104, ../sass/_nav_main.scss */
+.dev a {
+  color: white;
+  margin-left: 2px;
+}
+/* line 107, ../sass/_nav_main.scss */
+.dev a:hover {
+  text-decoration: underline;
+}
+
+/* line 113, ../sass/_nav_main.scss */
+.dev_ul {
+  font-size: 12px;
+  overflow: hidden;
+  line-height: 20px;
+  height: 20px;
+}
+/* line 118, ../sass/_nav_main.scss */
+.dev_ul li {
+  float: left;
+  margin-right: 8px;
+}
+/* line 121, ../sass/_nav_main.scss */
+.dev_ul li a {
+  color: #ddeac8;
+  margin-left: 2px;
+}
+/* line 124, ../sass/_nav_main.scss */
+.dev_ul li a:hover {
+  text-decoration: underline;
+}
+
+/* line 130, ../sass/_nav_main.scss */
+.i_single {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 560px;
+  height: 480px;
+  background: #fff;
+  opacity: 0.98;
+  display: none;
+}
+
+/* line 140, ../sass/_nav_main.scss */
+.i_scont {
+  float: left;
+  width: 542px;
+}
+
+/* line 144, ../sass/_nav_main.scss */
+.i_scontSort {
+  width: 542px;
+  height: 248px;
+  padding: 8px 0 24px 10px;
+}
+/* line 148, ../sass/_nav_main.scss */
+.i_scontSort ul {
+  overflow: hidden;
+  font-family: Microsoft YaHei;
+  padding: 1px 0 0 0;
+}
+/* line 152, ../sass/_nav_main.scss */
+.i_scontSort ul .fisrt_li {
+  width: 80px;
+  padding-right: 10px;
+  float: left;
+  text-align: right;
+  height: 18px;
+  line-height: 18px;
+  margin: 4px 0px;
+  color: #76ac25;
+}
+/* line 161, ../sass/_nav_main.scss */
+.i_scontSort ul .fisrt_li a {
+  color: #76ac25;
+  font-weight: bold;
+}
+/* line 164, ../sass/_nav_main.scss */
+.i_scontSort ul .fisrt_li a:hover {
+  text-decoration: underline;
+}
+/* line 170, ../sass/_nav_main.scss */
+.i_scontSort ul .other_li a {
+  float: left;
+  white-space: nowrap;
+  display: block;
+  font-size: 12px;
+  height: 18px;
+  line-height: 18px;
+  margin: 4px 0px;
+  text-align: left;
+  padding: 0px 6px;
+  border-left: 1px solid #ccc;
+  color: #666;
+}
+/* line 182, ../sass/_nav_main.scss */
+.i_scontSort ul .other_li a:hover {
+  color: #76ac25;
+}
+
+/* line 191, ../sass/_nav_main.scss */
+.i_scontImg img {
+  width: 560px;
+  height: 200px;
+}
+
+/* line 198, ../sass/_nav_main.scss */
+.dev .item_p2 {
+  background: url(../images/left_lm_m_a.png) no-repeat 0 -159px;
+}
+/* line 201, ../sass/_nav_main.scss */
+.dev .item_p3 {
+  background: url(../images/left_lm_m_a.png) no-repeat 0 -324px;
+}
+/* line 204, ../sass/_nav_main.scss */
+.dev .item_p4 {
+  background: url(../images/left_lm_m_a.png) no-repeat 0 -47px;
+}
+/* line 207, ../sass/_nav_main.scss */
+.dev .item_p5 {
+  background: url(../images/left_lm_m_a.png) no-repeat 0 -106px;
+}
+/* line 210, ../sass/_nav_main.scss */
+.dev .item_p6 {
+  background: url(../images/left_lm_m_a.png) no-repeat 0 -270px;
+}
+/* line 213, ../sass/_nav_main.scss */
+.dev .item_p7 {
+  background: url(../images/left_lm_m_a.png) no-repeat 0 -213px;
+}
+/* line 216, ../sass/_nav_main.scss */
+.dev .item_p8 {
+  background: url(../images/left_lm_m_a.png) no-repeat 0 -378px;
+}
+
+/* line 220, ../sass/_nav_main.scss */
+.nav_meu {
+  width: 1000px;
+  float: right;
+  position: relative;
+}
+/* line 224, ../sass/_nav_main.scss */
+.nav_meu ul {
+  width: 1000px;
+  overflow: hidden;
+  height: 32px;
+  line-height: 32px;
+}
+/* line 229, ../sass/_nav_main.scss */
+.nav_meu ul li {
+  float: left;
+  text-align: center;
+  color: #303437;
+}
+/* line 233, ../sass/_nav_main.scss */
+.nav_meu ul li:hover a {
+  color: #669900;
+}
+/* line 236, ../sass/_nav_main.scss */
+.nav_meu ul li a {
+  padding: 0 24px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  height: 32px;
+  font-family: Microsoft YaHei;
+  color: #333;
+  font-weight: 700;
+}
+/* line 247, ../sass/_nav_main.scss */
+.nav_meu ul li .btndown_first {
+  color: #669900;
+}
+/* line 251, ../sass/_nav_main.scss */
+.nav_meu ul .ad {
+  float: right;
+  width: 196px;
+  height: 32px;
+  overflow: hidden;
+}
+/* line 256, ../sass/_nav_main.scss */
+.nav_meu ul .ad img {
+  width: 196px;
+  height: 32px;
 }
 
 /* line 1, ../sass/_banner_main.scss */
@@ -1235,17 +1540,16 @@ header {
 /* line 1, ../sass/_hotspot.scss */
 .hotspot {
   width: 1200px;
-  height: 250px;
   margin: 0 auto;
   margin-top: 30px;
 }
-/* line 6, ../sass/_hotspot.scss */
+/* line 5, ../sass/_hotspot.scss */
 .hotspot .acti {
   background: #669900;
   width: 15px;
 }
 
-/* line 13, ../sass/_hotspot.scss */
+/* line 12, ../sass/_hotspot.scss */
 .hotspot_left {
   width: 400px;
   height: 200px;
@@ -1254,7 +1558,7 @@ header {
   margin: 0 20px 0 0;
 }
 
-/* line 20, ../sass/_hotspot.scss */
+/* line 19, ../sass/_hotspot.scss */
 .hotspot_leftTop {
   font-size: 16px;
   font-family: Microsoft YaHei;
@@ -1265,14 +1569,14 @@ header {
   border-bottom: 1px solid #e8e8e8;
   color: #323232;
 }
-/* line 29, ../sass/_hotspot.scss */
+/* line 28, ../sass/_hotspot.scss */
 .hotspot_leftTop p {
   background: url(../images/zhiwei_bg.png) no-repeat center left;
   padding: 0 0 0 15px;
   width: 385px;
 }
 
-/* line 36, ../sass/_hotspot.scss */
+/* line 35, ../sass/_hotspot.scss */
 .hotspot_leftSlide {
   width: 170px;
   height: 120px;
@@ -1281,25 +1585,25 @@ header {
   margin-top: 20px;
   overflow: hidden;
 }
-/* line 43, ../sass/_hotspot.scss */
+/* line 42, ../sass/_hotspot.scss */
 .hotspot_leftSlide ul {
   width: 510px;
   height: 110px;
   position: absolute;
 }
-/* line 47, ../sass/_hotspot.scss */
+/* line 46, ../sass/_hotspot.scss */
 .hotspot_leftSlide ul li {
   height: 110px;
   width: 170px;
   float: left;
 }
-/* line 51, ../sass/_hotspot.scss */
+/* line 50, ../sass/_hotspot.scss */
 .hotspot_leftSlide ul li img {
   height: 100px;
   width: 170px;
 }
 
-/* line 59, ../sass/_hotspot.scss */
+/* line 58, ../sass/_hotspot.scss */
 .silde_control {
   width: 60px;
   position: absolute;
@@ -1307,7 +1611,7 @@ header {
   right: 1px;
   z-index: 99;
 }
-/* line 65, ../sass/_hotspot.scss */
+/* line 64, ../sass/_hotspot.scss */
 .silde_control span {
   height: 4px;
   width: 15px;
@@ -1315,7 +1619,7 @@ header {
   cursor: pointer;
   background: #dcdcdc;
 }
-/* line 72, ../sass/_hotspot.scss */
+/* line 71, ../sass/_hotspot.scss */
 .silde_control a {
   background: url(../images/indeximgnew.png) no-repeat -16px 10px;
   width: 38px;
@@ -1325,7 +1629,7 @@ header {
   top: 32px;
   right: 6px;
 }
-/* line 81, ../sass/_hotspot.scss */
+/* line 80, ../sass/_hotspot.scss */
 .silde_control .btn_left {
   background: url(../images/indeximgnew.png) no-repeat 8px 10px;
   width: 38px;
@@ -1336,13 +1640,13 @@ header {
   left: -108px;
 }
 
-/* line 92, ../sass/_hotspot.scss */
+/* line 91, ../sass/_hotspot.scss */
 .hotspot_leftInfo {
   float: left;
   margin: 20px 0 0 10px;
   line-height: 20px;
 }
-/* line 96, ../sass/_hotspot.scss */
+/* line 95, ../sass/_hotspot.scss */
 .hotspot_leftInfo p {
   background: url(../images/dian.png) no-repeat left center;
   height: 20px;
@@ -1351,16 +1655,16 @@ header {
   padding-left: 10px;
   line-height: 20px;
 }
-/* line 103, ../sass/_hotspot.scss */
+/* line 102, ../sass/_hotspot.scss */
 .hotspot_leftInfo p a {
   color: #646464;
 }
-/* line 105, ../sass/_hotspot.scss */
+/* line 104, ../sass/_hotspot.scss */
 .hotspot_leftInfo p a:hover {
   color: #669900;
 }
 
-/* line 112, ../sass/_hotspot.scss */
+/* line 111, ../sass/_hotspot.scss */
 .hotspot_middle {
   width: 420px;
   height: 200px;
@@ -1369,7 +1673,7 @@ header {
   margin-right: 20px;
   overflow: hidden;
 }
-/* line 119, ../sass/_hotspot.scss */
+/* line 118, ../sass/_hotspot.scss */
 .hotspot_middle .upslide {
   margin-top: 20px;
   position: relative;
@@ -1377,13 +1681,13 @@ header {
   overflow: hidden;
 }
 
-/* line 127, ../sass/_hotspot.scss */
+/* line 126, ../sass/_hotspot.scss */
 .upslide_ul {
   position: absolute;
   left: 0px;
   top: 0px;
 }
-/* line 131, ../sass/_hotspot.scss */
+/* line 130, ../sass/_hotspot.scss */
 .upslide_ul li {
   height: 58px;
   overflow: hidden;
@@ -1391,67 +1695,67 @@ header {
   margin-bottom: 6px;
   vertical-align: middle;
 }
-/* line 138, ../sass/_hotspot.scss */
+/* line 137, ../sass/_hotspot.scss */
 .upslide_ul .list {
   height: 50px;
   overflow: hidden;
 }
-/* line 141, ../sass/_hotspot.scss */
+/* line 140, ../sass/_hotspot.scss */
 .upslide_ul .list .l {
   float: left;
 }
-/* line 144, ../sass/_hotspot.scss */
+/* line 143, ../sass/_hotspot.scss */
 .upslide_ul .list img {
   width: 50px;
   height: 50px;
 }
-/* line 148, ../sass/_hotspot.scss */
+/* line 147, ../sass/_hotspot.scss */
 .upslide_ul .list .r {
   float: right;
   width: 370px;
   overflow: hidden;
 }
 
-/* line 156, ../sass/_hotspot.scss */
+/* line 155, ../sass/_hotspot.scss */
 .r_a {
   padding-left: 20px;
   overflow: hidden;
   height: 22px;
   line-height: 22px;
 }
-/* line 161, ../sass/_hotspot.scss */
+/* line 160, ../sass/_hotspot.scss */
 .r_a a {
   color: #fa9600;
 }
-/* line 163, ../sass/_hotspot.scss */
+/* line 162, ../sass/_hotspot.scss */
 .r_a a:hover {
   text-decoration: underline;
 }
 
-/* line 169, ../sass/_hotspot.scss */
+/* line 168, ../sass/_hotspot.scss */
 .r_a2 {
   padding-left: 20px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 174, ../sass/_hotspot.scss */
+/* line 173, ../sass/_hotspot.scss */
 .r_a2 a {
   color: #646464;
 }
-/* line 176, ../sass/_hotspot.scss */
+/* line 175, ../sass/_hotspot.scss */
 .r_a2 a:hover {
   text-decoration: underline;
 }
 
-/* line 182, ../sass/_hotspot.scss */
+/* line 181, ../sass/_hotspot.scss */
 .hotspot_right {
   border: 1px solid #e8e8e8;
   float: right;
   height: 199px;
   width: 337px;
 }
-/* line 187, ../sass/_hotspot.scss */
+/* line 186, ../sass/_hotspot.scss */
 .hotspot_right .hotspot_rightTop {
   font-size: 16px;
   font-family: Microsoft YaHei;
@@ -1463,45 +1767,45 @@ header {
   padding: 14px 0 10px 0;
   border-bottom: 1px solid #e8e8e8;
 }
-/* line 197, ../sass/_hotspot.scss */
+/* line 196, ../sass/_hotspot.scss */
 .hotspot_right .hotspot_rightTop p {
   background: url(../images/youpin.png) no-repeat center left;
   padding: 0 0 0 24px;
   float: left;
   color: #323232;
 }
-/* line 203, ../sass/_hotspot.scss */
+/* line 202, ../sass/_hotspot.scss */
 .hotspot_right .hotspot_rightTop h2 {
   float: right;
 }
-/* line 205, ../sass/_hotspot.scss */
+/* line 204, ../sass/_hotspot.scss */
 .hotspot_right .hotspot_rightTop h2 a {
   width: 60px;
   height: 29px;
   display: block;
   background: url(../images/foot_bottom.png) no-repeat -3px -97px;
 }
-/* line 210, ../sass/_hotspot.scss */
+/* line 209, ../sass/_hotspot.scss */
 .hotspot_right .hotspot_rightTop h2 a:hover {
   background: url(../images/foot_bottom.png) no-repeat -3px -123px;
 }
 
-/* line 218, ../sass/_hotspot.scss */
+/* line 217, ../sass/_hotspot.scss */
 .hotspot_rightBot {
   width: 302px;
   margin: 0px auto;
   margin-top: 20px;
   padding: 15px 0 0 0;
 }
-/* line 223, ../sass/_hotspot.scss */
+/* line 222, ../sass/_hotspot.scss */
 .hotspot_rightBot span {
   float: left;
 }
-/* line 226, ../sass/_hotspot.scss */
+/* line 225, ../sass/_hotspot.scss */
 .hotspot_rightBot input {
   outline: none;
 }
-/* line 229, ../sass/_hotspot.scss */
+/* line 228, ../sass/_hotspot.scss */
 .hotspot_rightBot .yxdy {
   width: 130px;
   height: 22px;
@@ -1512,22 +1816,22 @@ header {
   display: inline-block;
   color: #969696;
 }
-/* line 239, ../sass/_hotspot.scss */
+/* line 238, ../sass/_hotspot.scss */
 .hotspot_rightBot .area {
   width: 60px;
 }
-/* line 241, ../sass/_hotspot.scss */
+/* line 240, ../sass/_hotspot.scss */
 .hotspot_rightBot .area:hover .selec2 {
   display: block;
 }
-/* line 245, ../sass/_hotspot.scss */
+/* line 244, ../sass/_hotspot.scss */
 .hotspot_rightBot .selec {
   height: 24px;
   margin-right: 3px;
   float: left;
   position: relative;
 }
-/* line 250, ../sass/_hotspot.scss */
+/* line 249, ../sass/_hotspot.scss */
 .hotspot_rightBot .selec .text {
   line-height: 22px;
   height: 22px;
@@ -1541,7 +1845,7 @@ header {
   font-size: 12px;
   font-weight: normal;
 }
-/* line 263, ../sass/_hotspot.scss */
+/* line 262, ../sass/_hotspot.scss */
 .hotspot_rightBot .selec .text b {
   background: url(../images/indexImg20130307.png?v=1.4) no-repeat -386px -2px;
   display: block;
@@ -1552,7 +1856,7 @@ header {
   right: 0;
   top: 0;
 }
-/* line 275, ../sass/_hotspot.scss */
+/* line 274, ../sass/_hotspot.scss */
 .hotspot_rightBot .selec2 {
   width: 300px;
   left: -205px;
@@ -1564,7 +1868,7 @@ header {
   box-shadow: 0 0 5px #dddddd;
   display: none;
 }
-/* line 286, ../sass/_hotspot.scss */
+/* line 285, ../sass/_hotspot.scss */
 .hotspot_rightBot .dy {
   background: url(../images/foot_bottom.png) no-repeat -118px -106px;
   height: 24px;
@@ -1572,29 +1876,29 @@ header {
   border: 0;
   display: block;
 }
-/* line 293, ../sass/_hotspot.scss */
+/* line 292, ../sass/_hotspot.scss */
 .hotspot_rightBot .dygd {
   color: #656565;
   line-height: 25px;
 }
-/* line 296, ../sass/_hotspot.scss */
+/* line 295, ../sass/_hotspot.scss */
 .hotspot_rightBot .dygd:hover {
   color: #669900;
 }
 
-/* line 302, ../sass/_hotspot.scss */
+/* line 301, ../sass/_hotspot.scss */
 .selec2_cont {
   overflow: hidden;
   position: relative;
   font-size: 12px;
 }
-/* line 306, ../sass/_hotspot.scss */
+/* line 305, ../sass/_hotspot.scss */
 .selec2_cont .tabs {
   cursor: default;
   overflow: hidden;
   font-size: 12px;
 }
-/* line 310, ../sass/_hotspot.scss */
+/* line 309, ../sass/_hotspot.scss */
 .selec2_cont .tabs .tabs_ul {
   padding: 0;
   border-bottom: 1px solid #176246;
@@ -1603,7 +1907,7 @@ header {
   overflow: visible;
   width: 100%;
 }
-/* line 317, ../sass/_hotspot.scss */
+/* line 316, ../sass/_hotspot.scss */
 .selec2_cont .tabs .tabs_ul a {
   background: #ffffff;
   border-top: 1px solid #176246;
@@ -1616,18 +1920,18 @@ header {
   text-decoration: none;
   position: relative;
 }
-/* line 328, ../sass/_hotspot.scss */
+/* line 327, ../sass/_hotspot.scss */
 .selec2_cont .tabs .tabs_ul a:hover i {
   background: url(../images/sf-stock.png) no-repeat 0 -28px;
 }
-/* line 332, ../sass/_hotspot.scss */
+/* line 331, ../sass/_hotspot.scss */
 .selec2_cont .tabs .tabs_ul li {
   clear: none;
   float: left;
   padding: 0;
   height: 30px;
 }
-/* line 338, ../sass/_hotspot.scss */
+/* line 337, ../sass/_hotspot.scss */
 .selec2_cont .tabs .tabs_ul i {
   display: block;
   height: 5px;
@@ -1639,15 +1943,15 @@ header {
   background: url(../images/sf-stock.png) no-repeat 0 -35px;
 }
 
-/* line 352, ../sass/_hotspot.scss */
+/* line 351, ../sass/_hotspot.scss */
 .contents {
   overflow: hidden;
 }
-/* line 354, ../sass/_hotspot.scss */
+/* line 353, ../sass/_hotspot.scss */
 .contents .provs_list, .contents .citys_list {
   padding: 5px 0 0 0;
 }
-/* line 356, ../sass/_hotspot.scss */
+/* line 355, ../sass/_hotspot.scss */
 .contents .provs_list li, .contents .citys_list li {
   line-height: 20px;
   height: 20px;
@@ -1655,7 +1959,7 @@ header {
   width: 60px;
   overflow: hidden;
 }
-/* line 362, ../sass/_hotspot.scss */
+/* line 361, ../sass/_hotspot.scss */
 .contents .provs_list li a, .contents .citys_list li a {
   float: left;
   padding: 2px 4px;
@@ -1665,7 +1969,7 @@ header {
   color: #565656;
   line-height: 16px;
 }
-/* line 370, ../sass/_hotspot.scss */
+/* line 369, ../sass/_hotspot.scss */
 .contents .provs_list li a:hover, .contents .citys_list li a:hover {
   background-color: #176246;
   color: #ffffff;

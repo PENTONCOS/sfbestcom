@@ -1,6 +1,262 @@
 .nav_main {
-    width: $page_container;
+  width: $page_container;
+  height: 32px;
+  @include border_bot(2px, #679800);
+  .nav_mainTab {
+    margin: 0px auto;
+    color: #303437;
+    padding: 0;
+    width: 1200px;
+  }
+}
+
+.nav_mainTabLeft {
+  float: left;
+  width: 200px;
+  background: #76ac25;
+  height: 34px;
+  text-align: left;
+  position: relative;
+  .n_m {
+    height: 34px;
+    overflow: hidden;
+    line-height: 34px;
+    background: url(../images/cate_bg.png);
+    a {
+      display: block;
+      color: #fff;
+      font-size: 14px;
+      font-family: $h2_fontfamily;
+      font-weight: bold;
+      width: 200px;
+      text-align: center;
+    }
+  }
+}
+
+#nav_allSorts {
+  width: 200px;
+  height: 480px;
+  position: absolute;
+  background: #76ac25;
+  z-index: 100;
+  .food_allkinds {
+    padding-top: 8px;
+    padding-left: 5px;
+  }
+  .item {
+    height: 58px;
+    &:hover .i_single {
+      display: block;
+    }
+    .i_sum {
+      display: block;
+      height: 54px;
+      padding-left: 25px;
+      font-family: $h2_fontfamily;
+      &:hover {
+        background: #fff;
+      }
+      &:hover a {
+        color: #679800;
+      }
+      &:hover p {
+        background: url(../images/left_lm_m.png) no-repeat 0px 5px;
+      }
+      &:hover .item_p2 {
+        background: url(../images/left_lm_m.png) no-repeat 0 -159px;
+      }
+      &:hover .item_p3 {
+        background: url(../images/left_lm_m.png) no-repeat 0 -324px;
+      }
+      &:hover .item_p4 {
+        background: url(../images/left_lm_m.png) no-repeat 0 -47px;
+      }
+      &:hover .item_p5 {
+        background: url(../images/left_lm_m.png) no-repeat 0 -106px;
+      }
+      &:hover .item_p6 {
+        background: url(../images/left_lm_m.png) no-repeat 0 -270px;
+      }
+      &:hover .item_p7 {
+        background: url(../images/left_lm_m.png) no-repeat 0 -213px;
+      }
+      &:hover .item_p8 {
+        background: url(../images/left_lm_m.png) no-repeat 0 -378px;
+      }
+      .dev {
+        font-weight: normal;
+        font-size: 14px;
+        padding-top: 5px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+.dev {
+  p {
+    background: url(../images/left_lm_m_a.png) no-repeat 0 5px;
+    width: 16px;
+    height: 22px;
+    margin-left: -20px;
+    float: left;
+  }
+  a {
+    color: white;
+    margin-left: 2px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.dev_ul {
+  font-size: 12px;
+  overflow: hidden;
+  line-height: 20px;
+  height: 20px;
+  li {
+    float: left;
+    margin-right: 8px;
+    a {
+      color: #ddeac8;
+      margin-left: 2px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.i_single {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 560px;
+  height: 480px;
+  background: #fff;
+  opacity: 0.98;
+  display: none;
+}
+.i_scont {
+  float: left;
+  width: 542px;
+}
+.i_scontSort {
+  width: 542px;
+  height: 248px;
+  padding: 8px 0 24px 10px;
+  ul {
+    overflow: hidden;
+    font-family: $h2_fontfamily;
+    padding: 1px 0 0 0;
+    .fisrt_li {
+      width: 80px;
+      padding-right: 10px;
+      float: left;
+      text-align: right;
+      height: 18px;
+      line-height: 18px;
+      margin: 4px 0px;
+      color: #76ac25;
+      a {
+        color: #76ac25;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .other_li {
+      a {
+        float: left;
+        white-space: nowrap;
+        display: block;
+        font-size: 12px;
+        height: 18px;
+        line-height: 18px;
+        margin: 4px 0px;
+        text-align: left;
+        padding: 0px 6px;
+        @include border_left(1px, #ccc);
+        color: #666;
+        &:hover {
+          color: #76ac25;
+        }
+      }
+    }
+  }
+}
+
+.i_scontImg {
+  img {
+    width: 560px;
+    height: 200px;
+  }
+}
+
+.dev {
+  .item_p2 {
+    background: url(../images/left_lm_m_a.png) no-repeat 0 -159px;
+  }
+  .item_p3 {
+    background: url(../images/left_lm_m_a.png) no-repeat 0 -324px;
+  }
+  .item_p4 {
+    background: url(../images/left_lm_m_a.png) no-repeat 0 -47px;
+  }
+  .item_p5 {
+    background: url(../images/left_lm_m_a.png) no-repeat 0 -106px;
+  }
+  .item_p6 {
+    background: url(../images/left_lm_m_a.png) no-repeat 0 -270px;
+  }
+  .item_p7 {
+    background: url(../images/left_lm_m_a.png) no-repeat 0 -213px;
+  }
+  .item_p8 {
+    background: url(../images/left_lm_m_a.png) no-repeat 0 -378px;
+  }
+}
+.nav_meu {
+  width: 1000px;
+  float: right;
+  position: relative;
+  ul {
+    width: 1000px;
+    overflow: hidden;
     height: 32px;
-    border-bottom: 2px solid #679800;
-    background: #66DD00;
+    line-height: 32px;
+    li {
+      float: left;
+      text-align: center;
+      color: #303437;
+      &:hover a {
+        color: #669900;
+      }
+      a {
+        padding: 0 24px;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        height: 32px;
+        font-family: $h2_fontfamily;
+        color: #333;
+        font-weight: 700;
+      }
+      .btndown_first {
+        color: #669900;
+      }
+    }
+    .ad {
+      float: right;
+      width: 196px;
+      height: 32px;
+      overflow: hidden;
+      img {
+        width: 196px;
+        height: 32px;
+      }
+    }
+  }
 }
