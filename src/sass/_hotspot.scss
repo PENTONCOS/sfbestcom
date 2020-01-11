@@ -3,5 +3,383 @@
   height: 250px;
   margin: 0 auto;
   margin-top: 30px;
-  background: peru;
+  .acti {
+    //鼠标悬停时会变色
+    background: $a_fontcolor;
+    width: 15px;
+  }
+}
+
+.hotspot_left {
+  width: 400px;
+  height: 200px;
+  float: left;
+  @include border_bot(1px, #f0f0f0);
+  margin: 0 20px 0 0;
+}
+.hotspot_leftTop {
+  font-size: 16px;
+  font-family: $h2_fontfamily;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  padding: 15px 0 10px 0;
+  @include border_bot(1px, #e8e8e8);
+  color: #323232;
+  p {
+    background: url(../images/zhiwei_bg.png) no-repeat center left;
+    padding: 0 0 0 15px;
+    width: 385px;
+  }
+}
+
+.hotspot_leftSlide {
+  width: 170px;
+  height: 120px;
+  position: relative;
+  float: left;
+  margin-top: 20px;
+  overflow: hidden; //隐藏多余li
+  ul {
+    width: 510px;
+    height: 110px;
+    position: absolute;
+    li {
+      height: 110px;
+      width: 170px;
+      float: left;
+      img {
+        height: 100px;
+        width: 170px;
+      }
+    }
+  }
+}
+
+.silde_control {
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  z-index: 99;
+  span {
+    height: 4px;
+    width: 15px;
+    float: left;
+    cursor: pointer;
+    background: #dcdcdc;
+  }
+  a {
+    background: url(../images/indeximgnew.png) no-repeat -16px 10px;
+    width: 38px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 6px;
+  }
+  .btn_left {
+    background: url(../images/indeximgnew.png) no-repeat 8px 10px;
+    width: 38px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    left: -108px;
+  }
+}
+
+.hotspot_leftInfo {
+  float: left;
+  margin: 20px 0 0 10px;
+  line-height: 20px;
+  p {
+    background: url(../images/dian.png) no-repeat left center;
+    height: 20px;
+    width: 205px;
+    overflow: hidden;
+    padding-left: 10px;
+    line-height: 20px;
+    a {
+      color: #646464;
+      &:hover {
+        color: $a_fontcolor;
+      }
+    }
+  }
+}
+
+.hotspot_middle {
+  width: 420px;
+  height: 200px;
+  float: left;
+  @include border_bot(1px, #f0f0f0);
+  margin-right: 20px;
+  overflow: hidden;
+  .upslide {
+    margin-top: 20px;
+    position: relative;
+    height: 122px;
+    overflow: hidden;
+  }
+}
+
+.upslide_ul {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  li {
+    height: 58px;
+    overflow: hidden;
+    border-bottom: 1px dotted #e8e8e8;
+    margin-bottom: 6px;
+    vertical-align: middle;
+  }
+  .list {
+    height: 50px;
+    overflow: hidden;
+    .l {
+      float: left;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    .r {
+      float: right;
+      width: 370px;
+      overflow: hidden;
+    }
+  }
+}
+
+.r_a {
+  padding-left: 20px;
+  overflow: hidden;
+  height: 22px;
+  line-height: 22px;
+  a {
+    color: #fa9600;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.r_a2 {
+  padding-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  a {
+    color: #646464;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.hotspot_right {
+  @include border(1px, #e8e8e8);
+  float: right;
+  height: 199px;
+  width: 337px;
+  .hotspot_rightTop {
+    font-size: 16px;
+    font-family: $h2_fontfamily;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 300px;
+    height: 25px;
+    line-height: 25px;
+    padding: 14px 0 10px 0;
+    @include border_bot(1px, #e8e8e8);
+    p {
+      background: url(../images/youpin.png) no-repeat center left;
+      padding: 0 0 0 24px;
+      float: left;
+      color: #323232;
+    }
+    h2 {
+      float: right;
+      a {
+        width: 60px;
+        height: 29px;
+        display: block;
+        background: url(../images/foot_bottom.png) no-repeat -3px -97px;
+        &:hover {
+          background: url(../images/foot_bottom.png) no-repeat -3px -123px;
+        }
+      }
+    }
+  }
+}
+
+.hotspot_rightBot {
+  width: 302px;
+  margin: 0px auto;
+  margin-top: 20px;
+  padding: 15px 0 0 0;
+  span {
+    float: left;
+  }
+  input {
+    outline: none;
+  }
+  .yxdy {
+    width: 130px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 2px;
+    @include border(1px, #cccccc);
+    margin-right: 2px;
+    display: inline-block;
+    color: #969696;
+  }
+  .area {
+    width: 60px;
+    &:hover .selec2 {
+      display: block;
+    }
+  }
+  .selec {
+    height: 24px;
+    margin-right: 3px;
+    float: left;
+    position: relative;
+    .text {
+      line-height: 22px;
+      height: 22px;
+      overflow: hidden;
+      background: #ffffff;
+      @include border(1px, #cecbce);
+      float: left;
+      padding: 0 20px 0 4px;
+      position: relative;
+      top: 0;
+      font-size: 12px;
+      font-weight: normal;
+
+      b {
+        background: url(../images/indexImg20130307.png?v=1.4) no-repeat -386px -2px;
+        display: block;
+        height: 24px;
+        width: 17px;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+  .selec2 {
+    width: 300px;
+    left: -205px;
+    padding: 15px;
+    position: absolute;
+    top: 25px;
+    background: none repeat scroll 0 0 #ffffff;
+    @include border(1px, #cecbce);
+    box-shadow: 0 0 5px #dddddd;
+    display: none;
+  }
+  .dy {
+    background: url(../images/foot_bottom.png) no-repeat -118px -106px;
+    height: 24px;
+    width: 44px;
+    border: 0;
+    display: block;
+  }
+  .dygd {
+    color: #656565;
+    line-height: 25px;
+    &:hover {
+      color: #669900;
+    }
+  }
+}
+
+.selec2_cont {
+  overflow: hidden;
+  position: relative;
+  font-size: 12px;
+  .tabs {
+    cursor: default;
+    overflow: hidden;
+    font-size: 12px;
+    .tabs_ul {
+      padding: 0;
+      @include border_bot(1px, #176246);
+      float: left;
+      height: 25px;
+      overflow: visible;
+      width: $page_container;
+      a {
+        background: #ffffff;
+        @include border_top(1px, #176246);
+        @include border_left(1px, #176246);
+        @include border_right(1px, #176246);
+        color: #176246;
+        height: 25px;
+        line-height: 22px;
+        padding: 3px 20px 8px 10px;
+        text-decoration: none;
+        position: relative;
+        &:hover i {
+          background: url(../images/sf-stock.png) no-repeat 0 -28px;
+        }
+      }
+      li {
+        clear: none;
+        float: left;
+        padding: 0;
+        height: 30px;
+      }
+      i {
+        display: block;
+        height: 5px;
+        overflow: hidden;
+        position: absolute;
+        right: 4px;
+        top: 10px;
+        width: 7px;
+        background: url(../images/sf-stock.png) no-repeat 0 -35px;
+      }
+    }
+  }
+}
+
+.contents {
+  overflow: hidden;
+  .provs_list {
+    padding: 5px 0 0 0;
+    li {
+      line-height: 20px;
+      height: 20px;
+      padding: 2px 0;
+      width: 60px;
+      overflow: hidden;
+      a {
+        float: left;
+        padding: 2px 4px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: normal;
+        color: #565656;
+        line-height: 16px;
+        &:hover {
+          background-color: #176246;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.c2 {
+  // display: none;
+}
+
+.citys_list {
+  @extend .provs_list;
 }

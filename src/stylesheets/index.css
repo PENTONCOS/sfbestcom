@@ -1238,7 +1238,437 @@ header {
   height: 250px;
   margin: 0 auto;
   margin-top: 30px;
-  background: peru;
+}
+/* line 6, ../sass/_hotspot.scss */
+.hotspot .acti {
+  background: #669900;
+  width: 15px;
+}
+
+/* line 13, ../sass/_hotspot.scss */
+.hotspot_left {
+  width: 400px;
+  height: 200px;
+  float: left;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0 20px 0 0;
+}
+
+/* line 20, ../sass/_hotspot.scss */
+.hotspot_leftTop {
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  padding: 15px 0 10px 0;
+  border-bottom: 1px solid #e8e8e8;
+  color: #323232;
+}
+/* line 29, ../sass/_hotspot.scss */
+.hotspot_leftTop p {
+  background: url(../images/zhiwei_bg.png) no-repeat center left;
+  padding: 0 0 0 15px;
+  width: 385px;
+}
+
+/* line 36, ../sass/_hotspot.scss */
+.hotspot_leftSlide {
+  width: 170px;
+  height: 120px;
+  position: relative;
+  float: left;
+  margin-top: 20px;
+  overflow: hidden;
+}
+/* line 43, ../sass/_hotspot.scss */
+.hotspot_leftSlide ul {
+  width: 510px;
+  height: 110px;
+  position: absolute;
+}
+/* line 47, ../sass/_hotspot.scss */
+.hotspot_leftSlide ul li {
+  height: 110px;
+  width: 170px;
+  float: left;
+}
+/* line 51, ../sass/_hotspot.scss */
+.hotspot_leftSlide ul li img {
+  height: 100px;
+  width: 170px;
+}
+
+/* line 59, ../sass/_hotspot.scss */
+.silde_control {
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  z-index: 99;
+}
+/* line 65, ../sass/_hotspot.scss */
+.silde_control span {
+  height: 4px;
+  width: 15px;
+  float: left;
+  cursor: pointer;
+  background: #dcdcdc;
+}
+/* line 72, ../sass/_hotspot.scss */
+.silde_control a {
+  background: url(../images/indeximgnew.png) no-repeat -16px 10px;
+  width: 38px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 6px;
+}
+/* line 81, ../sass/_hotspot.scss */
+.silde_control .btn_left {
+  background: url(../images/indeximgnew.png) no-repeat 8px 10px;
+  width: 38px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  left: -108px;
+}
+
+/* line 92, ../sass/_hotspot.scss */
+.hotspot_leftInfo {
+  float: left;
+  margin: 20px 0 0 10px;
+  line-height: 20px;
+}
+/* line 96, ../sass/_hotspot.scss */
+.hotspot_leftInfo p {
+  background: url(../images/dian.png) no-repeat left center;
+  height: 20px;
+  width: 205px;
+  overflow: hidden;
+  padding-left: 10px;
+  line-height: 20px;
+}
+/* line 103, ../sass/_hotspot.scss */
+.hotspot_leftInfo p a {
+  color: #646464;
+}
+/* line 105, ../sass/_hotspot.scss */
+.hotspot_leftInfo p a:hover {
+  color: #669900;
+}
+
+/* line 112, ../sass/_hotspot.scss */
+.hotspot_middle {
+  width: 420px;
+  height: 200px;
+  float: left;
+  border-bottom: 1px solid #f0f0f0;
+  margin-right: 20px;
+  overflow: hidden;
+}
+/* line 119, ../sass/_hotspot.scss */
+.hotspot_middle .upslide {
+  margin-top: 20px;
+  position: relative;
+  height: 122px;
+  overflow: hidden;
+}
+
+/* line 127, ../sass/_hotspot.scss */
+.upslide_ul {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+/* line 131, ../sass/_hotspot.scss */
+.upslide_ul li {
+  height: 58px;
+  overflow: hidden;
+  border-bottom: 1px dotted #e8e8e8;
+  margin-bottom: 6px;
+  vertical-align: middle;
+}
+/* line 138, ../sass/_hotspot.scss */
+.upslide_ul .list {
+  height: 50px;
+  overflow: hidden;
+}
+/* line 141, ../sass/_hotspot.scss */
+.upslide_ul .list .l {
+  float: left;
+}
+/* line 144, ../sass/_hotspot.scss */
+.upslide_ul .list img {
+  width: 50px;
+  height: 50px;
+}
+/* line 148, ../sass/_hotspot.scss */
+.upslide_ul .list .r {
+  float: right;
+  width: 370px;
+  overflow: hidden;
+}
+
+/* line 156, ../sass/_hotspot.scss */
+.r_a {
+  padding-left: 20px;
+  overflow: hidden;
+  height: 22px;
+  line-height: 22px;
+}
+/* line 161, ../sass/_hotspot.scss */
+.r_a a {
+  color: #fa9600;
+}
+/* line 163, ../sass/_hotspot.scss */
+.r_a a:hover {
+  text-decoration: underline;
+}
+
+/* line 169, ../sass/_hotspot.scss */
+.r_a2 {
+  padding-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 174, ../sass/_hotspot.scss */
+.r_a2 a {
+  color: #646464;
+}
+/* line 176, ../sass/_hotspot.scss */
+.r_a2 a:hover {
+  text-decoration: underline;
+}
+
+/* line 182, ../sass/_hotspot.scss */
+.hotspot_right {
+  border: 1px solid #e8e8e8;
+  float: right;
+  height: 199px;
+  width: 337px;
+}
+/* line 187, ../sass/_hotspot.scss */
+.hotspot_right .hotspot_rightTop {
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 300px;
+  height: 25px;
+  line-height: 25px;
+  padding: 14px 0 10px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+/* line 197, ../sass/_hotspot.scss */
+.hotspot_right .hotspot_rightTop p {
+  background: url(../images/youpin.png) no-repeat center left;
+  padding: 0 0 0 24px;
+  float: left;
+  color: #323232;
+}
+/* line 203, ../sass/_hotspot.scss */
+.hotspot_right .hotspot_rightTop h2 {
+  float: right;
+}
+/* line 205, ../sass/_hotspot.scss */
+.hotspot_right .hotspot_rightTop h2 a {
+  width: 60px;
+  height: 29px;
+  display: block;
+  background: url(../images/foot_bottom.png) no-repeat -3px -97px;
+}
+/* line 210, ../sass/_hotspot.scss */
+.hotspot_right .hotspot_rightTop h2 a:hover {
+  background: url(../images/foot_bottom.png) no-repeat -3px -123px;
+}
+
+/* line 218, ../sass/_hotspot.scss */
+.hotspot_rightBot {
+  width: 302px;
+  margin: 0px auto;
+  margin-top: 20px;
+  padding: 15px 0 0 0;
+}
+/* line 223, ../sass/_hotspot.scss */
+.hotspot_rightBot span {
+  float: left;
+}
+/* line 226, ../sass/_hotspot.scss */
+.hotspot_rightBot input {
+  outline: none;
+}
+/* line 229, ../sass/_hotspot.scss */
+.hotspot_rightBot .yxdy {
+  width: 130px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 2px;
+  border: 1px solid #cccccc;
+  margin-right: 2px;
+  display: inline-block;
+  color: #969696;
+}
+/* line 239, ../sass/_hotspot.scss */
+.hotspot_rightBot .area {
+  width: 60px;
+}
+/* line 241, ../sass/_hotspot.scss */
+.hotspot_rightBot .area:hover .selec2 {
+  display: block;
+}
+/* line 245, ../sass/_hotspot.scss */
+.hotspot_rightBot .selec {
+  height: 24px;
+  margin-right: 3px;
+  float: left;
+  position: relative;
+}
+/* line 250, ../sass/_hotspot.scss */
+.hotspot_rightBot .selec .text {
+  line-height: 22px;
+  height: 22px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #cecbce;
+  float: left;
+  padding: 0 20px 0 4px;
+  position: relative;
+  top: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+/* line 263, ../sass/_hotspot.scss */
+.hotspot_rightBot .selec .text b {
+  background: url(../images/indexImg20130307.png?v=1.4) no-repeat -386px -2px;
+  display: block;
+  height: 24px;
+  width: 17px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 275, ../sass/_hotspot.scss */
+.hotspot_rightBot .selec2 {
+  width: 300px;
+  left: -205px;
+  padding: 15px;
+  position: absolute;
+  top: 25px;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #cecbce;
+  box-shadow: 0 0 5px #dddddd;
+  display: none;
+}
+/* line 286, ../sass/_hotspot.scss */
+.hotspot_rightBot .dy {
+  background: url(../images/foot_bottom.png) no-repeat -118px -106px;
+  height: 24px;
+  width: 44px;
+  border: 0;
+  display: block;
+}
+/* line 293, ../sass/_hotspot.scss */
+.hotspot_rightBot .dygd {
+  color: #656565;
+  line-height: 25px;
+}
+/* line 296, ../sass/_hotspot.scss */
+.hotspot_rightBot .dygd:hover {
+  color: #669900;
+}
+
+/* line 302, ../sass/_hotspot.scss */
+.selec2_cont {
+  overflow: hidden;
+  position: relative;
+  font-size: 12px;
+}
+/* line 306, ../sass/_hotspot.scss */
+.selec2_cont .tabs {
+  cursor: default;
+  overflow: hidden;
+  font-size: 12px;
+}
+/* line 310, ../sass/_hotspot.scss */
+.selec2_cont .tabs .tabs_ul {
+  padding: 0;
+  border-bottom: 1px solid #176246;
+  float: left;
+  height: 25px;
+  overflow: visible;
+  width: 100%;
+}
+/* line 317, ../sass/_hotspot.scss */
+.selec2_cont .tabs .tabs_ul a {
+  background: #ffffff;
+  border-top: 1px solid #176246;
+  border-left: 1px solid #176246;
+  border-right: 1px solid #176246;
+  color: #176246;
+  height: 25px;
+  line-height: 22px;
+  padding: 3px 20px 8px 10px;
+  text-decoration: none;
+  position: relative;
+}
+/* line 328, ../sass/_hotspot.scss */
+.selec2_cont .tabs .tabs_ul a:hover i {
+  background: url(../images/sf-stock.png) no-repeat 0 -28px;
+}
+/* line 332, ../sass/_hotspot.scss */
+.selec2_cont .tabs .tabs_ul li {
+  clear: none;
+  float: left;
+  padding: 0;
+  height: 30px;
+}
+/* line 338, ../sass/_hotspot.scss */
+.selec2_cont .tabs .tabs_ul i {
+  display: block;
+  height: 5px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 10px;
+  width: 7px;
+  background: url(../images/sf-stock.png) no-repeat 0 -35px;
+}
+
+/* line 352, ../sass/_hotspot.scss */
+.contents {
+  overflow: hidden;
+}
+/* line 354, ../sass/_hotspot.scss */
+.contents .provs_list, .contents .citys_list {
+  padding: 5px 0 0 0;
+}
+/* line 356, ../sass/_hotspot.scss */
+.contents .provs_list li, .contents .citys_list li {
+  line-height: 20px;
+  height: 20px;
+  padding: 2px 0;
+  width: 60px;
+  overflow: hidden;
+}
+/* line 362, ../sass/_hotspot.scss */
+.contents .provs_list li a, .contents .citys_list li a {
+  float: left;
+  padding: 2px 4px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: normal;
+  color: #565656;
+  line-height: 16px;
+}
+/* line 370, ../sass/_hotspot.scss */
+.contents .provs_list li a:hover, .contents .citys_list li a:hover {
+  background-color: #176246;
+  color: #ffffff;
 }
 
 /* line 1, ../sass/_ad_bot.scss */
@@ -1286,5 +1716,142 @@ footer {
   width: 100%;
   overflow: hidden;
   height: 285px;
-  background: purple;
+}
+
+/* line 8, ../sass/_footer.scss */
+.footer_main {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 12, ../sass/_footer.scss */
+.footer_main .footer_mainLeft {
+  float: left;
+  width: 290px;
+  height: 145px;
+  margin: 20px 0px 0px 10px;
+  background: url(../images/logo.png) no-repeat left top;
+}
+/* line 19, ../sass/_footer.scss */
+.footer_main .kefu {
+  margin-top: 85px;
+  font-size: 20px;
+  color: #646464;
+  font-weight: bold;
+}
+/* line 25, ../sass/_footer.scss */
+.footer_main .shijian {
+  margin-top: 6px;
+}
+/* line 28, ../sass/_footer.scss */
+.footer_main .footer_mainMiddle {
+  float: left;
+  margin: 35px 0 0 0;
+  width: 645px;
+}
+/* line 32, ../sass/_footer.scss */
+.footer_main .footer_mainMiddle ul {
+  float: left;
+  margin: 0px 8px 0px 0px;
+  width: 120px;
+}
+/* line 37, ../sass/_footer.scss */
+.footer_main .footer_mainMiddle li {
+  text-align: left;
+  font-family: Microsoft YaHei;
+  height: 24px;
+  line-height: 24px;
+  color: #646464;
+}
+/* line 44, ../sass/_footer.scss */
+.footer_main .footer_mainMiddle .title {
+  color: #707070;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* line 49, ../sass/_footer.scss */
+.footer_main .footer_mainMiddle a {
+  color: #646464;
+}
+/* line 51, ../sass/_footer.scss */
+.footer_main .footer_mainMiddle a:hover {
+  color: #669900;
+}
+/* line 56, ../sass/_footer.scss */
+.footer_main .footer_mainRight {
+  float: left;
+  margin: 35px 0 0 0;
+  width: 235px;
+  height: 145px;
+}
+
+/* line 63, ../sass/_footer.scss */
+.phone_client {
+  float: left;
+}
+/* line 65, ../sass/_footer.scss */
+.phone_client span:nth-child(1) {
+  display: block;
+  text-align: center;
+  margin: 0 50px 8px 0;
+  line-height: 24px;
+  font-size: 14px;
+  color: #666666;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+}
+/* line 75, ../sass/_footer.scss */
+.phone_client span:nth-child(2) {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url(../images/foot_bottom.png) no-repeat left top;
+  color: #666666;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+}
+/* line 84, ../sass/_footer.scss */
+.phone_client .wx {
+  background: url(../images/foot_bottom.png) no-repeat -83px 0px;
+}
+
+/* line 88, ../sass/_footer.scss */
+.footer_mainBot {
+  width: 1180px;
+  height: 50px;
+  margin: 0 auto;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+  position: relative;
+  float: left;
+}
+/* line 96, ../sass/_footer.scss */
+.footer_mainBot .footer_mainBot1 {
+  float: left;
+  margin-left: 5px;
+}
+/* line 99, ../sass/_footer.scss */
+.footer_mainBot .footer_mainBot1 img {
+  width: 94px;
+  height: 33px;
+}
+
+/* line 106, ../sass/_footer.scss */
+.footer_mainBot2 {
+  float: left;
+  position: absolute;
+  top: 13px;
+  left: 294px;
+}
+/* line 111, ../sass/_footer.scss */
+.footer_mainBot2 span {
+  padding-left: 13px;
+}
+/* line 113, ../sass/_footer.scss */
+.footer_mainBot2 span a {
+  color: #646464;
+}
+/* line 115, ../sass/_footer.scss */
+.footer_mainBot2 span a:hover {
+  color: #669900;
 }

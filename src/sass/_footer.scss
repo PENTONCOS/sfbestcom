@@ -1,8 +1,120 @@
-footer{
-    line-height: 18px;
-    color: #969696;
-    width: $page_container;
-    overflow: hidden;
-    height: 285px;
-    background: purple;
+footer {
+  line-height: 18px;
+  color: #969696;
+  width: $page_container;
+  overflow: hidden;
+  height: 285px;
+}
+.footer_main {
+  width: $page_width;
+  margin: 0 auto;
+  overflow: hidden;
+  .footer_mainLeft {
+    float: left;
+    width: 290px;
+    height: 145px;
+    margin: 20px 0px 0px 10px;
+    background: url(../images/logo.png) no-repeat left top;
+  }
+  .kefu {
+    margin-top: 85px;
+    font-size: 20px;
+    color: #646464;
+    font-weight: bold;
+  }
+  .shijian {
+    margin-top: 6px;
+  }
+  .footer_mainMiddle {
+    float: left;
+    margin: 35px 0 0 0;
+    width: 645px;
+    ul {
+      float: left;
+      margin: 0px 8px 0px 0px;
+      width: 120px;
+    }
+    li {
+      text-align: left;
+      font-family: $h2_fontfamily;
+      height: 24px;
+      line-height: 24px;
+      color: #646464;
+    }
+    .title {
+      color: #707070;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    a {
+      color: #646464;
+      &:hover {
+        color: $a_fontcolor;
+      }
+    }
+  }
+  .footer_mainRight {
+    float: left;
+    margin: 35px 0 0 0;
+    width: 235px;
+    height: 145px;
+  }
+}
+.phone_client {
+  float: left;
+  span:nth-child(1) {
+    display: block;
+    text-align: center;
+    margin: 0 50px 8px 0;
+    line-height: 24px;
+    font-size: 14px;
+    color: $page_fontcolor;
+    font-family: $h2_fontfamily;
+    font-weight: bold;
+  }
+  span:nth-child(2) {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url(../images/foot_bottom.png) no-repeat left top;
+    color: $page_fontcolor;
+    font-family: $h2_fontfamily;
+    font-weight: bold;
+  }
+  .wx {
+    background: url(../images/foot_bottom.png) no-repeat -83px 0px;
+  }
+}
+.footer_mainBot {
+  width: 1180px;
+  height: 50px;
+  margin: 0 auto;
+  @include border_top(1px, #e0e0e0);
+  padding-top: 15px;
+  position: relative;
+  float: left;
+  .footer_mainBot1 {
+    float: left;
+    margin-left: 5px;
+    img {
+      width: 94px;
+      height: 33px;
+    }
+  }
+}
+
+.footer_mainBot2 {
+  float: left;
+  position: absolute;
+  top: 13px;
+  left: 294px;
+  span {
+    padding-left: 13px;
+    a {
+      color: #646464;
+      &:hover {
+        color: $a_fontcolor;
+      }
+    }
+  }
 }

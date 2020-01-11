@@ -25,6 +25,8 @@ body {
 a {
   text-decoration: none;
 }
+
+
 //鼠标入时的效果一
 @mixin nav_hover1($shadow: gray, $bg_color: #fff) {
   box-shadow: 0px 0px 4px -2px $shadow;
