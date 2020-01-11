@@ -2,10 +2,62 @@
   border: #f5f5f5 1px solid;
   padding: 15px 14px;
   width: 1170px;
-  height: 1264px;
+  margin: 0 auto;
   margin-top: 46px;
   position: relative;
-  margin: 0 auto;
   font-family: 微软雅黑;
-  background: midnightblue;
+  .recom_top {
+    width: 116px;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    margin-left: -58px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    i {
+      width: 97px;
+      height: 23px;
+      display: inline-block;
+      background: url(../images/sf_new_bg.png) left top no-repeat;
+    }
+  }
+  .recom_bot {
+    .sg_list {
+      width: 210px;
+      padding: 15px 12px;
+      float: left;
+      position: relative;
+      .sg_img {
+        width: 210px;
+        height: 210px;
+        margin-bottom: 10px;
+        img {
+          width: 210px;
+          height: 210px;
+        }
+      }
+      .sg_title {
+        height: 36px;
+        overflow: hidden;
+        a {
+          color: #666666;
+        }
+      }
+      .sg_price {
+        font-size: 14px;
+        margin-left: 0;
+        padding-top: 6px;
+        color: $goods_price;
+        height: 16px;
+        font-family: $h2_fontfamily;
+        line-height: 16px;
+        overflow: hidden;
+        font-weight: bold;
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

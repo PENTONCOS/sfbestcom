@@ -1,3 +1,17 @@
+$oils_color: #ff6c00;
 .oils{
-    background: lightcoral;
+    .goods_leftTop {
+        background: $oils_color;
+        .goods_leftTop1 {
+          &:hover {
+            background: #FF872D;
+          }
+          em {
+            background: url(../images/index_icon_new.png) no-repeat -70px -296px;
+          }
+        }
+      }
+      .goods_right{
+        @include border_top(1px, $oils_color);
+      }
 }

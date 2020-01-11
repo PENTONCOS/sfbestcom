@@ -3,7 +3,6 @@
   height: 470px;
   margin: 0 auto;
   margin-top: 30px;
-  background: lightblue;
   // overflow: hidden;
   .goods_left {
     float: left;
@@ -35,6 +34,7 @@
       &:hover {
         background: #83b933;
         color: #fff;
+        @include border-corner-radius(top, left, 5px);
       }
     }
   }
@@ -52,7 +52,7 @@
   overflow: hidden;
   @include border_top(1px, #adcd7c);
   .goods_rightLeft {
-    padding: 7px 10px 9px 10px;
+    padding: 7px 10px 5px 10px;
     width: 710px;
     @include border_bot(1px, #f4f4f4);
     float: left;
@@ -99,6 +99,58 @@
     }
   }
 }
-
+.goods_rightRight {
+  width: 220px;
+  height: 469px;
+  float: left;
+  background: #f4f4f4;
+  overflow: hidden;
+  .gr_top {
+    margin: 25px 0 0 15px;
+    height: 189px;
+    float: left;
+    overflow: hidden;
+    li {
+      color: #333333;
+      margin: 4px;
+      width: 55px;
+      height: 55px;
+      text-align: center;
+      line-height: 55px;
+      float: left;
+      font-size: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      background: #fff;
+      @include border-radius(50%);
+      &:hover {
+        color: #fff;
+        background: $a_fontcolor;
+      }
+    }
+  }
+  .gr_bot {
+    margin-top: 25px;
+    float: left;
+    position: relative;
+    &:hover a {
+      background: url(../images/index_icon_new.png) no-repeat -204px -33px;
+    }
+    img {
+      width: 220px;
+      height: 230px;
+      cursor: pointer;
+    }
+    a {
+      margin: -166px 0 0 15px;
+      background: url(../images/index_icon_new.png) no-repeat -204px 0px;
+      width: 25px;
+      height: 25px;
+      top: 225px;
+      left: 0px;
+      position: absolute;
+    }
+  }
+}
 .fruit {
 }

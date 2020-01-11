@@ -71,7 +71,7 @@ body {
 }
 
 /* line 17, ../sass/index.scss */
-.clear {
+.clear:after {
   content: "";
   height: 0px;
   display: block;
@@ -905,15 +905,14 @@ header {
   height: 470px;
   margin: 0 auto;
   margin-top: 30px;
-  background: lightblue;
 }
-/* line 8, ../sass/_salesection_goods_fruit.scss */
+/* line 7, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_left {
   float: left;
   width: 250px;
   overflow: hidden;
 }
-/* line 13, ../sass/_salesection_goods_fruit.scss */
+/* line 12, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_leftTop {
   width: 240px;
   height: 50px;
@@ -924,14 +923,14 @@ header {
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
 }
-/* line 20, ../sass/_salesection_goods_fruit.scss */
+/* line 19, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_leftTop .goods_leftTop1 {
   height: 50px;
   line-height: 50px;
   font-weight: normal;
   font-size: 16px;
 }
-/* line 25, ../sass/_salesection_goods_fruit.scss */
+/* line 24, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_leftTop .goods_leftTop1 em {
   background: url(../images/index_icon_new.png) no-repeat -97px -295px;
   width: 15px;
@@ -939,14 +938,17 @@ header {
   float: left;
   margin: 16px 8px 0 75px;
 }
-/* line 32, ../sass/_salesection_goods_fruit.scss */
+/* line 31, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_leftTop .goods_leftTop1 a {
   color: #fff;
 }
-/* line 35, ../sass/_salesection_goods_fruit.scss */
+/* line 34, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_leftTop .goods_leftTop1:hover {
   background: #83b933;
   color: #fff;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 /* line 42, ../sass/_salesection_goods_fruit.scss */
@@ -966,7 +968,7 @@ header {
 }
 /* line 54, ../sass/_salesection_goods_fruit.scss */
 .goods_right .goods_rightLeft {
-  padding: 7px 10px 9px 10px;
+  padding: 7px 10px 5px 10px;
   width: 710px;
   border-bottom: 1px solid #f4f4f4;
   float: left;
@@ -1019,14 +1021,119 @@ header {
   font-size: 12px;
 }
 
-/* line 1, ../sass/_oils.scss */
-.oils {
-  background: lightcoral;
+/* line 102, ../sass/_salesection_goods_fruit.scss */
+.goods_rightRight {
+  width: 220px;
+  height: 469px;
+  float: left;
+  background: #f4f4f4;
+  overflow: hidden;
+}
+/* line 108, ../sass/_salesection_goods_fruit.scss */
+.goods_rightRight .gr_top {
+  margin: 25px 0 0 15px;
+  height: 189px;
+  float: left;
+  overflow: hidden;
+}
+/* line 113, ../sass/_salesection_goods_fruit.scss */
+.goods_rightRight .gr_top li {
+  color: #333333;
+  margin: 4px;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  float: left;
+  font-size: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 126, ../sass/_salesection_goods_fruit.scss */
+.goods_rightRight .gr_top li:hover {
+  color: #fff;
+  background: #669900;
+}
+/* line 132, ../sass/_salesection_goods_fruit.scss */
+.goods_rightRight .gr_bot {
+  margin-top: 25px;
+  float: left;
+  position: relative;
+}
+/* line 136, ../sass/_salesection_goods_fruit.scss */
+.goods_rightRight .gr_bot:hover a {
+  background: url(../images/index_icon_new.png) no-repeat -204px -33px;
+}
+/* line 139, ../sass/_salesection_goods_fruit.scss */
+.goods_rightRight .gr_bot img {
+  width: 220px;
+  height: 230px;
+  cursor: pointer;
+}
+/* line 144, ../sass/_salesection_goods_fruit.scss */
+.goods_rightRight .gr_bot a {
+  margin: -166px 0 0 15px;
+  background: url(../images/index_icon_new.png) no-repeat -204px 0px;
+  width: 25px;
+  height: 25px;
+  top: 225px;
+  left: 0px;
+  position: absolute;
 }
 
-/* line 1, ../sass/_candy.scss */
-.candy {
-  background: lightgreen;
+/* line 3, ../sass/_seafood.scss */
+.seafood .goods_leftTop {
+  background: #fa648c;
+}
+/* line 6, ../sass/_seafood.scss */
+.seafood .goods_leftTop .goods_leftTop1:hover {
+  background: #fb7b9d;
+}
+/* line 9, ../sass/_seafood.scss */
+.seafood .goods_leftTop .goods_leftTop1 em {
+  background: url(../images/index_icon_new.png) no-repeat -178px -317px;
+}
+/* line 14, ../sass/_seafood.scss */
+.seafood .goods_right {
+  border-top: 1px solid #fa648c;
+}
+
+/* line 3, ../sass/_oils.scss */
+.oils .goods_leftTop {
+  background: #ff6c00;
+}
+/* line 6, ../sass/_oils.scss */
+.oils .goods_leftTop .goods_leftTop1:hover {
+  background: #FF872D;
+}
+/* line 9, ../sass/_oils.scss */
+.oils .goods_leftTop .goods_leftTop1 em {
+  background: url(../images/index_icon_new.png) no-repeat -70px -296px;
+}
+/* line 14, ../sass/_oils.scss */
+.oils .goods_right {
+  border-top: 1px solid #ff6c00;
+}
+
+/* line 3, ../sass/_candy.scss */
+.candy .goods_leftTop {
+  background: #fa648c;
+}
+/* line 6, ../sass/_candy.scss */
+.candy .goods_leftTop .goods_leftTop1:hover {
+  background: #FB7B9D;
+}
+/* line 9, ../sass/_candy.scss */
+.candy .goods_leftTop .goods_leftTop1 em {
+  background: url(../images/index_icon_new.png) no-repeat -70px -296px;
+}
+/* line 14, ../sass/_candy.scss */
+.candy .goods_right {
+  border-top: 1px solid #fa648c;
 }
 
 /* line 1, ../sass/_recom.scss */
@@ -1034,12 +1141,71 @@ header {
   border: #f5f5f5 1px solid;
   padding: 15px 14px;
   width: 1170px;
-  height: 1264px;
+  margin: 0 auto;
   margin-top: 46px;
   position: relative;
-  margin: 0 auto;
   font-family: 微软雅黑;
-  background: midnightblue;
+}
+/* line 9, ../sass/_recom.scss */
+.recom .recom_top {
+  width: 116px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -58px;
+  background: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 18, ../sass/_recom.scss */
+.recom .recom_top i {
+  width: 97px;
+  height: 23px;
+  display: inline-block;
+  background: url(../images/sf_new_bg.png) left top no-repeat;
+}
+/* line 26, ../sass/_recom.scss */
+.recom .recom_bot .sg_list {
+  width: 210px;
+  padding: 15px 12px;
+  float: left;
+  position: relative;
+}
+/* line 31, ../sass/_recom.scss */
+.recom .recom_bot .sg_list .sg_img {
+  width: 210px;
+  height: 210px;
+  margin-bottom: 10px;
+}
+/* line 35, ../sass/_recom.scss */
+.recom .recom_bot .sg_list .sg_img img {
+  width: 210px;
+  height: 210px;
+}
+/* line 40, ../sass/_recom.scss */
+.recom .recom_bot .sg_list .sg_title {
+  height: 36px;
+  overflow: hidden;
+}
+/* line 43, ../sass/_recom.scss */
+.recom .recom_bot .sg_list .sg_title a {
+  color: #666666;
+}
+/* line 47, ../sass/_recom.scss */
+.recom .recom_bot .sg_list .sg_price {
+  font-size: 14px;
+  margin-left: 0;
+  padding-top: 6px;
+  color: #f33f00;
+  height: 16px;
+  font-family: Microsoft YaHei;
+  line-height: 16px;
+  overflow: hidden;
+  font-weight: bold;
+}
+/* line 57, ../sass/_recom.scss */
+.recom .recom_bot .sg_list .sg_price i {
+  font-size: 12px;
 }
 
 /* line 1, ../sass/_promoto_end.scss */

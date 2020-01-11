@@ -1,0 +1,19 @@
+$seafood_color: #fa648c;
+.seafood {
+  .goods_leftTop {
+    background: $seafood_color;
+    .goods_leftTop1 {
+      &:hover {
+        background: #fb7b9d;
+      }
+      em {
+        background: url(../images/index_icon_new.png) no-repeat -178px -317px;
+      }
+    }
+  }
+  .goods_right{
+    @include border_top(1px, $seafood_color);
+  }
+}
+
+

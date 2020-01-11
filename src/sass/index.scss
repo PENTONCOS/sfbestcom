@@ -14,7 +14,7 @@ body {
   font: 12px/150% Arial, Verdana, "宋体";
 }
 //万能清除法
-.clear {
+.clear:after {
   content: "";
   height: 0px;
   display: block;
@@ -67,6 +67,8 @@ a {
 @import "salesection";
 //水果蔬菜
 @import "salesection_goods_fruit";
+//肉类海鲜
+@import "seafood";
 //粮油干货
 @import "oils";
 //休闲糖巧

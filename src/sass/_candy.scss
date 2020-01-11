@@ -1,3 +1,18 @@
+$candy_color: #fa648c;
 .candy{
-    background: lightgreen;
+    .goods_leftTop {
+        background: $candy_color;
+        .goods_leftTop1 {
+          &:hover {
+            background: #FB7B9D;
+          }
+          em {
+            background: url(../images/index_icon_new.png) no-repeat -70px -296px;
+          }
+        }
+      }
+      .goods_right{
+        @include border_top(1px, $candy_color);
+      }
 }
+
