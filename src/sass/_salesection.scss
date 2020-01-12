@@ -6,7 +6,36 @@
   .better_choose {
     width: 1190px;
     margin: 0 auto;
+    margin-left: 10px;
     overflow: hidden;
+  }
+}
+
+.common_buybtn {
+  top: 260px;
+  position: absolute;
+  width: 160px;
+  height: 24px;
+  @include border-radius(2px);
+  background: $a_fontcolor;
+  @include opacity(0.95);
+  margin-left: 38px;
+  left: 0;
+  cursor: pointer;
+  z-index: 4;
+  transition: top 0.3s;
+  a {
+    margin: 0 auto;
+    width: 60px;
+    height: 24px;
+    display: block;
+    background: url(../images/indexsprite.png) no-repeat -66px -177px;
+    line-height: 24px;
+    font-family: $h2_fontfamily;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 20px;
   }
 }
 
@@ -43,6 +72,9 @@
       @include border_right;
       @include border_bot;
       overflow: hidden;
+      &:hover .common_buybtn {
+        top: 225px;
+      }
     }
   }
 }
@@ -135,11 +167,10 @@
           color: #fa6400;
           float: left;
           overflow: hidden;
-          &:hover{
+          &:hover {
             text-decoration: underline;
           }
         }
-
       }
     }
   }

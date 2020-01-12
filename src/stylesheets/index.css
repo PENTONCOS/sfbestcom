@@ -1024,8 +1024,122 @@ header {
   width: 100%;
   height: 480px;
   position: relative;
-  z-index: 29;
-  background: #00DDAA;
+  background: #00ddaa;
+  z-index: 20;
+}
+/* line 7, ../sass/_banner_main.scss */
+.banner_main .acti {
+  background-color: #fa9600;
+}
+/* line 11, ../sass/_banner_main.scss */
+.banner_main .fixed_right {
+  width: 260px;
+  position: absolute;
+  top: 0;
+  margin-left: 1100px;
+  z-index: 100;
+}
+
+/* line 20, ../sass/_banner_main.scss */
+.slide_main {
+  height: 480px;
+  width: 1000px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 360px;
+  z-index: 21;
+}
+/* line 27, ../sass/_banner_main.scss */
+.slide_main .slide_main_ul {
+  width: 8100px;
+  height: 480px;
+  position: absolute;
+  top: 0;
+  background: limegreen;
+}
+/* line 33, ../sass/_banner_main.scss */
+.slide_main .slide_main_ul li {
+  float: left;
+  width: 1000px;
+  height: 480px;
+}
+/* line 38, ../sass/_banner_main.scss */
+.slide_main .slide_main_ul .li_1 {
+  background: url(../images/93fd9953bd5f746b7d4bdf0777df1be8.png) no-repeat center;
+}
+/* line 41, ../sass/_banner_main.scss */
+.slide_main .slide_main_ul .li_2 {
+  background: url(../images/32d24e33ffc2ffc10e1856ddea5a9751.png) no-repeat center;
+}
+/* line 44, ../sass/_banner_main.scss */
+.slide_main .slide_main_ul .li_3 {
+  background: url(../images/091eef5ef5faa4d028e83ac0ddde25b6.png) no-repeat center;
+}
+/* line 47, ../sass/_banner_main.scss */
+.slide_main .slide_main_ul .li_4 {
+  background: url(../images/a6ed608460ccda19f921bb28ab642ed9.png) no-repeat center;
+}
+/* line 50, ../sass/_banner_main.scss */
+.slide_main .slide_main_ul .li_5 {
+  background: url(../images/cc849c30da20981b1965e081e521b5f3.png) no-repeat center;
+}
+/* line 53, ../sass/_banner_main.scss */
+.slide_main .slide_main_ul .li_6 {
+  background: url(../images/58f11aeaff0cd315abd3634b04044b43.png) no-repeat center;
+}
+
+/* line 58, ../sass/_banner_main.scss */
+.slide_bot_btn {
+  position: absolute;
+  left: 50%;
+  margin-left: -130.5px;
+  bottom: 10px;
+  z-index: 25;
+}
+/* line 64, ../sass/_banner_main.scss */
+.slide_bot_btn li {
+  height: 25px;
+  width: 25px;
+  float: left;
+  cursor: pointer;
+  margin-right: 10px;
+  background: #666666;
+  text-align: center;
+  line-height: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 14px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+
+/* line 80, ../sass/_banner_main.scss */
+.fixed_right a {
+  float: left;
+}
+/* line 82, ../sass/_banner_main.scss */
+.fixed_right a img {
+  width: 260px;
+  height: 185px;
+}
+/* line 87, ../sass/_banner_main.scss */
+.fixed_right .a_1 {
+  width: 260px;
+  height: 185px;
+  margin-top: 15px;
+}
+/* line 92, ../sass/_banner_main.scss */
+.fixed_right .a_2, .fixed_right .a_3 {
+  width: 260px;
+  height: 130px;
+  margin-top: 1px;
+}
+/* line 96, ../sass/_banner_main.scss */
+.fixed_right .a_2 img, .fixed_right .a_3 img {
+  width: 260px;
+  height: 130px;
 }
 
 /* line 1, ../sass/_ad_aside.scss */
@@ -1049,16 +1163,50 @@ header {
 .salesection .better_choose {
   width: 1190px;
   margin: 0 auto;
+  margin-left: 10px;
   overflow: hidden;
 }
 
-/* line 13, ../sass/_salesection.scss */
+/* line 14, ../sass/_salesection.scss */
+.common_buybtn {
+  top: 260px;
+  position: absolute;
+  width: 160px;
+  height: 24px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #669900;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+  opacity: 0.95;
+  margin-left: 38px;
+  left: 0;
+  cursor: pointer;
+  z-index: 4;
+  transition: top 0.3s;
+}
+/* line 27, ../sass/_salesection.scss */
+.common_buybtn a {
+  margin: 0 auto;
+  width: 60px;
+  height: 24px;
+  display: block;
+  background: url(../images/indexsprite.png) no-repeat -66px -177px;
+  line-height: 24px;
+  font-family: Microsoft YaHei;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+/* line 42, ../sass/_salesection.scss */
 .bc_left {
   width: 945px;
   float: left;
   overflow: hidden;
 }
-/* line 18, ../sass/_salesection.scss */
+/* line 47, ../sass/_salesection.scss */
 .bc_left .bc_leftTop h2 {
   color: #333333;
   font-size: 18px;
@@ -1066,7 +1214,7 @@ header {
   padding: 0 0 12px 3px;
   display: inline-block;
 }
-/* line 25, ../sass/_salesection.scss */
+/* line 54, ../sass/_salesection.scss */
 .bc_left .bc_leftTop span {
   margin: 0 0 0 15px;
   background: url(../images/index_icon_new.png) no-repeat -29px -333px;
@@ -1074,14 +1222,14 @@ header {
   height: 14px;
   display: inline-block;
 }
-/* line 33, ../sass/_salesection.scss */
+/* line 62, ../sass/_salesection.scss */
 .bc_left .bc_leftBot {
   width: 944px;
   float: left;
   border-left: 1px solid #e8e8e8;
   border-top: 1px solid #e8e8e8;
 }
-/* line 38, ../sass/_salesection.scss */
+/* line 67, ../sass/_salesection.scss */
 .bc_left .bc_leftBot .buy_list {
   position: relative;
   width: 235px;
@@ -1091,8 +1239,12 @@ header {
   border-bottom: 1px solid #e8e8e8;
   overflow: hidden;
 }
+/* line 75, ../sass/_salesection.scss */
+.bc_left .bc_leftBot .buy_list:hover .common_buybtn {
+  top: 225px;
+}
 
-/* line 50, ../sass/_salesection.scss */
+/* line 82, ../sass/_salesection.scss */
 .bc_buy {
   font-size: 14px;
   color: #323232;
@@ -1105,7 +1257,7 @@ header {
   line-height: 14px;
 }
 
-/* line 62, ../sass/_salesection.scss */
+/* line 94, ../sass/_salesection.scss */
 .bc_price {
   font-size: 16px;
   color: #f33f00;
@@ -1117,13 +1269,13 @@ header {
   overflow: hidden;
   font-weight: bold;
 }
-/* line 72, ../sass/_salesection.scss */
+/* line 104, ../sass/_salesection.scss */
 .bc_price i {
   font-size: 12px;
   font-style: normal;
 }
 
-/* line 78, ../sass/_salesection.scss */
+/* line 110, ../sass/_salesection.scss */
 .bc_pic {
   width: 204px;
   height: 204px;
@@ -1131,7 +1283,7 @@ header {
   margin-top: 4px;
 }
 
-/* line 85, ../sass/_salesection.scss */
+/* line 117, ../sass/_salesection.scss */
 .bc_right {
   margin-top: 30px;
   float: right;
@@ -1141,24 +1293,24 @@ header {
   overflow: hidden;
   font-family: Microsoft YaHei;
 }
-/* line 93, ../sass/_salesection.scss */
+/* line 125, ../sass/_salesection.scss */
 .bc_right .bc_rightTop {
   height: 300px;
   width: 100%;
   text-align: center;
   overflow: hidden;
 }
-/* line 98, ../sass/_salesection.scss */
+/* line 130, ../sass/_salesection.scss */
 .bc_right .bc_rightTop img {
   width: 220px;
   height: 300px;
 }
-/* line 103, ../sass/_salesection.scss */
+/* line 135, ../sass/_salesection.scss */
 .bc_right .bc_rightBot {
   padding: 0 10px;
   width: 100%;
 }
-/* line 106, ../sass/_salesection.scss */
+/* line 138, ../sass/_salesection.scss */
 .bc_right .bc_rightBot .bc_rightBotTop {
   border-bottom: 1px dotted #dbdbdb;
   padding: 15px 0 10px 0;
@@ -1166,7 +1318,7 @@ header {
   overflow: hidden;
   height: 14px;
 }
-/* line 113, ../sass/_salesection.scss */
+/* line 145, ../sass/_salesection.scss */
 .bc_right .bc_rightBot h3 {
   color: #323232;
   font-size: 14px;
@@ -1174,34 +1326,47 @@ header {
   float: left;
   font-weight: normal;
 }
-/* line 120, ../sass/_salesection.scss */
+/* line 152, ../sass/_salesection.scss */
 .bc_right .bc_rightBot a {
   color: #969696;
   float: right;
   margin-right: 18px;
 }
-/* line 125, ../sass/_salesection.scss */
+/* line 157, ../sass/_salesection.scss */
 .bc_right .bc_rightBot .bc_rightBotMid {
   margin: 8px 0 0 0;
   width: 200px;
   height: 156px;
 }
-/* line 129, ../sass/_salesection.scss */
+/* line 161, ../sass/_salesection.scss */
 .bc_right .bc_rightBot .bc_rightBotMid li {
   line-height: 26px;
   height: 26px;
   overflow: hidden;
 }
-/* line 133, ../sass/_salesection.scss */
+/* line 165, ../sass/_salesection.scss */
 .bc_right .bc_rightBot .bc_rightBotMid li a {
   height: 26px;
   color: #fa6400;
   float: left;
   overflow: hidden;
 }
-/* line 138, ../sass/_salesection.scss */
+/* line 170, ../sass/_salesection.scss */
 .bc_right .bc_rightBot .bc_rightBotMid li a:hover {
   text-decoration: underline;
+}
+
+/* line 1, ../sass/_ad1.scss */
+.ad1 {
+  width: 1190px;
+  padding-left: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/* line 6, ../sass/_ad1.scss */
+.ad1 img {
+  width: 1190px;
+  height: 100px;
 }
 
 /* line 1, ../sass/_salesection_goods_fruit.scss */
@@ -1212,12 +1377,17 @@ header {
   margin-top: 30px;
 }
 /* line 7, ../sass/_salesection_goods_fruit.scss */
+.salesection_goods .common_buybtn {
+  top: 161px;
+  margin: 0px;
+}
+/* line 11, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_left {
   float: left;
   width: 250px;
   overflow: hidden;
 }
-/* line 12, ../sass/_salesection_goods_fruit.scss */
+/* line 16, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_leftTop {
   width: 240px;
   height: 50px;
@@ -1228,14 +1398,14 @@ header {
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
 }
-/* line 19, ../sass/_salesection_goods_fruit.scss */
+/* line 23, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_leftTop .goods_leftTop1 {
   height: 50px;
   line-height: 50px;
   font-weight: normal;
   font-size: 16px;
 }
-/* line 24, ../sass/_salesection_goods_fruit.scss */
+/* line 28, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_leftTop .goods_leftTop1 em {
   background: url(../images/index_icon_new.png) no-repeat -97px -295px;
   width: 15px;
@@ -1243,11 +1413,11 @@ header {
   float: left;
   margin: 16px 8px 0 75px;
 }
-/* line 31, ../sass/_salesection_goods_fruit.scss */
+/* line 35, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_leftTop .goods_leftTop1 a {
   color: #fff;
 }
-/* line 34, ../sass/_salesection_goods_fruit.scss */
+/* line 38, ../sass/_salesection_goods_fruit.scss */
 .salesection_goods .goods_leftTop .goods_leftTop1:hover {
   background: #83b933;
   color: #fff;
@@ -1256,14 +1426,14 @@ header {
   border-top-left-radius: 5px;
 }
 
-/* line 42, ../sass/_salesection_goods_fruit.scss */
+/* line 46, ../sass/_salesection_goods_fruit.scss */
 .goods_leftBot {
   width: 250px;
   height: 420px;
   overflow: hidden;
 }
 
-/* line 48, ../sass/_salesection_goods_fruit.scss */
+/* line 52, ../sass/_salesection_goods_fruit.scss */
 .goods_right {
   float: left;
   width: 950px;
@@ -1271,7 +1441,7 @@ header {
   overflow: hidden;
   border-top: 1px solid #adcd7c;
 }
-/* line 54, ../sass/_salesection_goods_fruit.scss */
+/* line 58, ../sass/_salesection_goods_fruit.scss */
 .goods_right .goods_rightLeft {
   padding: 7px 10px 5px 10px;
   width: 710px;
@@ -1279,14 +1449,14 @@ header {
   float: left;
 }
 
-/* line 62, ../sass/_salesection_goods_fruit.scss */
+/* line 66, ../sass/_salesection_goods_fruit.scss */
 .sg_ul .sg_list {
   width: 160px;
   padding: 8px;
   float: left;
   position: relative;
 }
-/* line 69, ../sass/_salesection_goods_fruit.scss */
+/* line 73, ../sass/_salesection_goods_fruit.scss */
 .sg_ul .sg_img {
   margin-bottom: 10px;
   width: 160px;
@@ -1294,39 +1464,43 @@ header {
   overflow: hidden;
   position: relative;
 }
-/* line 75, ../sass/_salesection_goods_fruit.scss */
+/* line 79, ../sass/_salesection_goods_fruit.scss */
+.sg_ul .sg_img:hover .common_buybtn {
+  top: 136px;
+}
+/* line 82, ../sass/_salesection_goods_fruit.scss */
 .sg_ul .sg_img img {
   width: 160px;
   height: 160px;
   position: absolute;
 }
-/* line 81, ../sass/_salesection_goods_fruit.scss */
+/* line 88, ../sass/_salesection_goods_fruit.scss */
 .sg_ul .sg_title {
   height: 18px;
   line-height: 18px;
   overflow: hidden;
 }
-/* line 85, ../sass/_salesection_goods_fruit.scss */
+/* line 92, ../sass/_salesection_goods_fruit.scss */
 .sg_ul .sg_title a {
   color: #666666;
 }
-/* line 89, ../sass/_salesection_goods_fruit.scss */
+/* line 96, ../sass/_salesection_goods_fruit.scss */
 .sg_ul .sg_price {
   font-size: 14px;
   margin-left: 0;
   padding-top: 6px;
 }
-/* line 93, ../sass/_salesection_goods_fruit.scss */
+/* line 100, ../sass/_salesection_goods_fruit.scss */
 .sg_ul .sg_price span {
   color: #f33f00;
   font-weight: bold;
 }
-/* line 96, ../sass/_salesection_goods_fruit.scss */
+/* line 103, ../sass/_salesection_goods_fruit.scss */
 .sg_ul .sg_price span i {
   font-size: 12px;
 }
 
-/* line 102, ../sass/_salesection_goods_fruit.scss */
+/* line 109, ../sass/_salesection_goods_fruit.scss */
 .goods_rightRight {
   width: 220px;
   height: 469px;
@@ -1334,14 +1508,14 @@ header {
   background: #f4f4f4;
   overflow: hidden;
 }
-/* line 108, ../sass/_salesection_goods_fruit.scss */
+/* line 115, ../sass/_salesection_goods_fruit.scss */
 .goods_rightRight .gr_top {
   margin: 25px 0 0 15px;
   height: 189px;
   float: left;
   overflow: hidden;
 }
-/* line 113, ../sass/_salesection_goods_fruit.scss */
+/* line 120, ../sass/_salesection_goods_fruit.scss */
 .goods_rightRight .gr_top li {
   color: #333333;
   margin: 4px;
@@ -1358,28 +1532,28 @@ header {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 126, ../sass/_salesection_goods_fruit.scss */
+/* line 133, ../sass/_salesection_goods_fruit.scss */
 .goods_rightRight .gr_top li:hover {
   color: #fff;
   background: #669900;
 }
-/* line 132, ../sass/_salesection_goods_fruit.scss */
+/* line 139, ../sass/_salesection_goods_fruit.scss */
 .goods_rightRight .gr_bot {
   margin-top: 25px;
   float: left;
   position: relative;
 }
-/* line 136, ../sass/_salesection_goods_fruit.scss */
+/* line 143, ../sass/_salesection_goods_fruit.scss */
 .goods_rightRight .gr_bot:hover a {
   background: url(../images/index_icon_new.png) no-repeat -204px -33px;
 }
-/* line 139, ../sass/_salesection_goods_fruit.scss */
+/* line 146, ../sass/_salesection_goods_fruit.scss */
 .goods_rightRight .gr_bot img {
   width: 220px;
   height: 230px;
   cursor: pointer;
 }
-/* line 144, ../sass/_salesection_goods_fruit.scss */
+/* line 151, ../sass/_salesection_goods_fruit.scss */
 .goods_rightRight .gr_bot a {
   margin: -166px 0 0 15px;
   background: url(../images/index_icon_new.png) no-repeat -204px 0px;
@@ -2158,4 +2332,33 @@ footer {
 /* line 115, ../sass/_footer.scss */
 .footer_mainBot2 span a:hover {
   color: #669900;
+}
+
+/* line 1, ../sass/_louti.scss */
+#louti {
+  width: 46px;
+  position: fixed;
+  right: 105px;
+  bottom: 20px;
+  z-index: 10000;
+}
+/* line 7, ../sass/_louti.scss */
+#louti li {
+  float: left;
+  margin-top: 6px;
+  border: 1px solid gray;
+  -moz-border-radius: 13px;
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  text-align: center;
+  background: #fff;
+}
+/* line 14, ../sass/_louti.scss */
+#louti li a {
+  font-size: 16px;
+  width: 44px;
+  height: 44px;
+  line-height: 22px;
+  padding: 2px 0;
+  color: #666666;
 }

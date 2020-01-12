@@ -1,7 +1,104 @@
-.banner_main{
-    width: $page_container;
+.banner_main {
+  width: $page_container;
+  height: 480px;
+  position: relative;
+  background: #00ddaa;
+  z-index: 20;
+  .acti {
+    background-color: #fa9600;
+  }
+
+  .fixed_right {
+    width: 260px;
+    position: absolute;
+    top: 0;
+    margin-left: 1100px;
+    z-index: 100;
+  }
+}
+
+.slide_main {
+  height: 480px;
+  width: 1000px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 360px;
+  z-index: 21;
+  .slide_main_ul {
+    width: 8100px;
     height: 480px;
-    position: relative;
-    z-index: 29;
-    background: #00DDAA;
+    position: absolute;
+    top: 0;
+    background: limegreen;
+    li {
+      float: left;
+      width: 1000px;
+      height: 480px;
+    }
+    .li_1 {
+      background: url(../images/93fd9953bd5f746b7d4bdf0777df1be8.png) no-repeat center;
+    }
+    .li_2 {
+      background: url(../images/32d24e33ffc2ffc10e1856ddea5a9751.png) no-repeat center;
+    }
+    .li_3 {
+      background: url(../images/091eef5ef5faa4d028e83ac0ddde25b6.png) no-repeat center;
+    }
+    .li_4 {
+      background: url(../images/a6ed608460ccda19f921bb28ab642ed9.png) no-repeat center;
+    }
+    .li_5 {
+      background: url(../images/cc849c30da20981b1965e081e521b5f3.png) no-repeat center;
+    }
+    .li_6 {
+      background: url(../images/58f11aeaff0cd315abd3634b04044b43.png) no-repeat center;
+    }
+  }
+}
+.slide_bot_btn {
+  position: absolute;
+  left: 50%;
+  margin-left: -130.5px;
+  bottom: 10px;
+  z-index: 25;
+  li {
+    height: 25px;
+    width: 25px;
+    float: left;
+    cursor: pointer;
+    margin-right: 10px;
+    background: $page_fontcolor;
+    text-align: center;
+    line-height: 25px;
+    @include border-radius(25px);
+    color: #fff;
+    font-size: 14px;
+    @include opacity(0.8);
+  }
+}
+.fixed_right {
+  a {
+    float: left;
+    img {
+      width: 260px;
+      height: 185px;
+    }
+  }
+  .a_1 {
+    width: 260px;
+    height: 185px;
+    margin-top: 15px;
+  }
+  .a_2 {
+    width: 260px;
+    height: 130px;
+    margin-top: 1px;
+    img {
+      width: 260px;
+      height: 130px;
+    }
+  }
+  .a_3 {
+    @extend .a_2;
+  }
 }
