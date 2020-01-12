@@ -5,9 +5,8 @@
   text-align: center;
   .banner {
     width: $page_width;
-    height: 80px;
+    height: 0px;
     background: url(../images/ad_top1.png) center top no-repeat;
-    display: block;
     a {
       width: $page_width;
       height: 80px;
@@ -27,4 +26,11 @@
       text-indent: -9999px;
     }
   }
+}
+
+.banner_big {
+  width: $page_width;
+  height: 450px;
+  background: url(../images/b60dae316cbe8651e80ca4a03f396036.png) center top no-repeat;
+  z-index: 50px;
 }

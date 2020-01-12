@@ -4,6 +4,7 @@
   right: 105px;
   bottom: 20px;
   z-index: 10000;
+
   li {
     float: left;
     margin-top: 6px;
@@ -11,6 +12,7 @@
     @include border-radius(13px);
     text-align: center;
     background: #fff;
+
     a {
       font-size: 16px;
       width: 44px;
@@ -18,6 +20,24 @@
       line-height: 22px;
       padding: 2px 0;
       color: $page_fontcolor;
+    }
+  }
+  li.active {
+    background: $a_fontcolor;
+    a {
+      color: #fff;
+    }
+  }
+  li.last {
+    background: #fa9600;
+    a {
+      color: #fff;
+    }
+  }
+  li:hover {
+    background: $a_fontcolor;
+    a {
+      color: #fff;
     }
   }
 }

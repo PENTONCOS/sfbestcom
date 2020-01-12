@@ -6,6 +6,11 @@
   margin-top: 46px;
   position: relative;
   font-family: 微软雅黑;
+  .common_buybtn{
+    top:221px;
+    width: 182px;
+    left:-26px;
+  }
   .recom_top {
     width: 116px;
     position: absolute;
@@ -28,10 +33,15 @@
       padding: 15px 12px;
       float: left;
       position: relative;
+      &:hover .common_buybtn{
+        top:186px;
+      }
       .sg_img {
         width: 210px;
         height: 210px;
         margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
         img {
           width: 210px;
           height: 210px;

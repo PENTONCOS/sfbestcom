@@ -4,7 +4,11 @@
   position: relative;
   background: #00ddaa;
   z-index: 20;
-  .acti {
+  .banner_main_center {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .active {
     background-color: #fa9600;
   }
 
@@ -12,7 +16,7 @@
     width: 260px;
     position: absolute;
     top: 0;
-    margin-left: 1100px;
+    margin-left: 940px;
     z-index: 100;
   }
 }
@@ -22,7 +26,7 @@
   width: 1000px;
   position: relative;
   overflow: hidden;
-  margin-left: 360px;
+  margin-left: 200px;
   z-index: 21;
   .slide_main_ul {
     width: 8100px;
@@ -79,9 +83,22 @@
 .fixed_right {
   a {
     float: left;
+    position: relative;
     img {
       width: 260px;
       height: 185px;
+    }
+    .mask {
+      height: 185px;
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #f0f0f0;
+      width: $page_container;
+      @include opacity(0.2);
+      background: $page_fontcolor;
+      display: none;
     }
   }
   .a_1 {
@@ -93,6 +110,9 @@
     width: 260px;
     height: 130px;
     margin-top: 1px;
+    .mask {
+      height: 130px;
+    }
     img {
       width: 260px;
       height: 130px;
