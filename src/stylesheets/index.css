@@ -1031,19 +1031,18 @@ header {
   width: 100%;
   height: 480px;
   position: relative;
-  background: #00ddaa;
   z-index: 20;
 }
-/* line 7, ../sass/_banner_main.scss */
+/* line 6, ../sass/_banner_main.scss */
 .banner_main .banner_main_center {
   width: 1200px;
   margin: 0 auto;
 }
-/* line 11, ../sass/_banner_main.scss */
+/* line 10, ../sass/_banner_main.scss */
 .banner_main .active {
   background-color: #fa9600;
 }
-/* line 15, ../sass/_banner_main.scss */
+/* line 14, ../sass/_banner_main.scss */
 .banner_main .fixed_right {
   width: 260px;
   position: absolute;
@@ -1052,7 +1051,7 @@ header {
   z-index: 100;
 }
 
-/* line 24, ../sass/_banner_main.scss */
+/* line 23, ../sass/_banner_main.scss */
 .slide_main {
   height: 480px;
   width: 1000px;
@@ -1061,7 +1060,7 @@ header {
   margin-left: 200px;
   z-index: 21;
 }
-/* line 31, ../sass/_banner_main.scss */
+/* line 30, ../sass/_banner_main.scss */
 .slide_main .slide_main_ul {
   width: 8100px;
   height: 480px;
@@ -1069,38 +1068,38 @@ header {
   top: 0;
   background: limegreen;
 }
-/* line 37, ../sass/_banner_main.scss */
+/* line 36, ../sass/_banner_main.scss */
 .slide_main .slide_main_ul li {
   float: left;
   width: 1000px;
   height: 480px;
 }
-/* line 42, ../sass/_banner_main.scss */
+/* line 41, ../sass/_banner_main.scss */
 .slide_main .slide_main_ul .li_1 {
   background: url(../images/93fd9953bd5f746b7d4bdf0777df1be8.png) no-repeat center;
 }
-/* line 45, ../sass/_banner_main.scss */
+/* line 44, ../sass/_banner_main.scss */
 .slide_main .slide_main_ul .li_2 {
   background: url(../images/32d24e33ffc2ffc10e1856ddea5a9751.png) no-repeat center;
 }
-/* line 48, ../sass/_banner_main.scss */
+/* line 47, ../sass/_banner_main.scss */
 .slide_main .slide_main_ul .li_3 {
   background: url(../images/091eef5ef5faa4d028e83ac0ddde25b6.png) no-repeat center;
 }
-/* line 51, ../sass/_banner_main.scss */
+/* line 50, ../sass/_banner_main.scss */
 .slide_main .slide_main_ul .li_4 {
   background: url(../images/a6ed608460ccda19f921bb28ab642ed9.png) no-repeat center;
 }
-/* line 54, ../sass/_banner_main.scss */
+/* line 53, ../sass/_banner_main.scss */
 .slide_main .slide_main_ul .li_5 {
   background: url(../images/cc849c30da20981b1965e081e521b5f3.png) no-repeat center;
 }
-/* line 57, ../sass/_banner_main.scss */
+/* line 56, ../sass/_banner_main.scss */
 .slide_main .slide_main_ul .li_6 {
   background: url(../images/58f11aeaff0cd315abd3634b04044b43.png) no-repeat center;
 }
 
-/* line 62, ../sass/_banner_main.scss */
+/* line 61, ../sass/_banner_main.scss */
 .slide_bot_btn {
   position: absolute;
   left: 50%;
@@ -1108,7 +1107,7 @@ header {
   bottom: 10px;
   z-index: 25;
 }
-/* line 68, ../sass/_banner_main.scss */
+/* line 67, ../sass/_banner_main.scss */
 .slide_bot_btn li {
   height: 25px;
   width: 25px;
@@ -1127,17 +1126,17 @@ header {
   opacity: 0.8;
 }
 
-/* line 84, ../sass/_banner_main.scss */
+/* line 83, ../sass/_banner_main.scss */
 .fixed_right a {
   float: left;
   position: relative;
 }
-/* line 87, ../sass/_banner_main.scss */
+/* line 86, ../sass/_banner_main.scss */
 .fixed_right a img {
   width: 260px;
   height: 185px;
 }
-/* line 91, ../sass/_banner_main.scss */
+/* line 90, ../sass/_banner_main.scss */
 .fixed_right a .mask {
   height: 185px;
   cursor: pointer;
@@ -1151,26 +1150,77 @@ header {
   background: #666666;
   display: none;
 }
-/* line 104, ../sass/_banner_main.scss */
+/* line 103, ../sass/_banner_main.scss */
 .fixed_right .a_1 {
   width: 260px;
   height: 185px;
   margin-top: 15px;
 }
-/* line 109, ../sass/_banner_main.scss */
+/* line 108, ../sass/_banner_main.scss */
 .fixed_right .a_2, .fixed_right .a_3 {
   width: 260px;
   height: 130px;
   margin-top: 1px;
 }
-/* line 113, ../sass/_banner_main.scss */
+/* line 112, ../sass/_banner_main.scss */
 .fixed_right .a_2 .mask, .fixed_right .a_3 .mask {
   height: 130px;
 }
-/* line 116, ../sass/_banner_main.scss */
+/* line 115, ../sass/_banner_main.scss */
 .fixed_right .a_2 img, .fixed_right .a_3 img {
   width: 260px;
   height: 130px;
+}
+
+/* line 125, ../sass/_banner_main.scss */
+.banner_main_bgcolor {
+  width: 100%;
+  height: 480px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+/* line 131, ../sass/_banner_main.scss */
+.banner_main_bgcolor .banner_bgcolor_ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 480px;
+  overflow: hidden;
+}
+/* line 137, ../sass/_banner_main.scss */
+.banner_main_bgcolor .banner_bgcolor_ul li {
+  width: 1894px;
+  height: 480px;
+  float: left;
+}
+/* line 142, ../sass/_banner_main.scss */
+.banner_main_bgcolor .banner_bgcolor_ul li:nth-child(1) {
+  background: #f79c59;
+}
+/* line 145, ../sass/_banner_main.scss */
+.banner_main_bgcolor .banner_bgcolor_ul li:nth-child(2) {
+  background: #bd2525;
+}
+/* line 148, ../sass/_banner_main.scss */
+.banner_main_bgcolor .banner_bgcolor_ul li:nth-child(3) {
+  background: #de7323;
+}
+/* line 151, ../sass/_banner_main.scss */
+.banner_main_bgcolor .banner_bgcolor_ul li:nth-child(4) {
+  background: #bd2925;
+}
+/* line 154, ../sass/_banner_main.scss */
+.banner_main_bgcolor .banner_bgcolor_ul li:nth-child(5) {
+  background: #c64211;
+}
+/* line 157, ../sass/_banner_main.scss */
+.banner_main_bgcolor .banner_bgcolor_ul li:nth-child(6) {
+  background: #950c13;
+}
+/* line 160, ../sass/_banner_main.scss */
+.banner_main_bgcolor .banner_bgcolor_ul li:last-child {
+  background: #f79c59;
 }
 
 /* line 1, ../sass/_ad_aside.scss */

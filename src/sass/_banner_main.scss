@@ -2,7 +2,6 @@
   width: $page_container;
   height: 480px;
   position: relative;
-  background: #00ddaa;
   z-index: 20;
   .banner_main_center {
     width: 1200px;
@@ -120,5 +119,46 @@
   }
   .a_3 {
     @extend .a_2;
+  }
+}
+
+.banner_main_bgcolor {
+  width: $page_container;
+  height: 480px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  .banner_bgcolor_ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 480px;
+    overflow: hidden;
+    li {
+      width: 1894px;
+      height: 480px;
+      float: left;
+    }
+    li:nth-child(1) {
+      background: rgb(247, 156, 89);
+    }
+    li:nth-child(2) {
+      background: rgb(189, 37, 37);
+    }
+    li:nth-child(3) {
+      background: rgb(222, 115, 35);
+    }
+    li:nth-child(4) {
+      background: rgb(189, 41, 37);
+    }
+    li:nth-child(5) {
+      background: rgb(198, 66, 17);
+    }
+    li:nth-child(6) {
+      background: rgb(149, 12, 19);
+    }
+    li:last-child {
+      background: rgb(247, 156, 89);
+    }
   }
 }
