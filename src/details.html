@@ -236,7 +236,7 @@
         </div>
     </header>
     <!--------------------------------------------------------------- 物品详情 ------------------------------------------------------------>
-    
+
     <div class="g_wrap">
         <div class="g_detail">
             <!-- 左边放大镜栏+价格详情 -->
@@ -278,8 +278,149 @@
                     </div>
                     <!-- 分享 -->
                     <div class="goods_share">
-
+                        <div class="bdShare">
+                            <!-- Baidu Button BEGIN -->
+                            <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                                <span class="bds_more">分享到：</span>
+                                <a class="bds_qzone" title="分享到QQ空间" href="#"></a>
+                                <a class="bds_tsina" title="分享到新浪微博" href="#"></a>
+                                <!--a class="bds_tqq"></a-->
+                                <!--a class="bds_renren"></a-->
+                                <!--a class="bds_t163"></a-->
+                                <!--a class="shareCount"></a-->
+                            </div>
+                            <span class="clear"></span>
+                        </div>
+                        <div class="pCollect"><a href="javascript:void(0);" id="goodsAddFav"
+                                onclick="Goods.addFav(this);">收藏商品</a></div>
                     </div>
+
+                </div>
+                <!-- 右边物品价格详情 -->
+                <div class="pItemsMain">
+                    <div class="pItemsName">
+                        <div class="cm">
+                            <h1 id="base_name-sf" title="澳洲Aptamil爱他美 澳洲爱他美金装3段 婴幼儿奶粉900g*3罐 【香港直邮】2020年10月 900*3罐">
+                                澳洲Aptamil爱他美 澳洲爱他美金装3段 婴幼儿奶粉900g*3罐 【香港直邮】2020年10月 900*3罐</h1>
+                        </div>
+                    </div>
+                    <div class="pItemsPrice" id="price-sf">
+                        <div class="priceBox"><span class="dt">优选价：</span><span class="rmb">￥</span><strong
+                                class="price">399</strong></div>
+                        <div class="daoJiShi" id="qianggou-sf"></div><a class="p_btn" href="/paidMember">开通优选会员</a>
+                        <div class="boxWb"></div>
+                    </div>
+                    <div class="pItemsChoose">
+                        <div class="chooseType">
+                            <ul id="fatherson-sf"></ul>
+                            <span class="clear"></span>
+                        </div>
+                        <div class="chooseBtns" id="buy-btn-sf" style="z-index: 1;">
+                            <div class="pAmount">
+                                <span><input type="text" id="number_300583" class="text" value=""></span>
+                                <span>
+                                    <a href="javascript:;" id="add-sell-num" class="p-add">+</a>
+                                    <a href="javascript:;" id="reduce-sell-num" class="p-reduce disable">-</a>
+                                </span>
+                            </div>
+                            <div class="pBtn" id="cart-add-btn-sf"><a
+                                    onclick="cartAdd(300583, 0, 1, 0, 1, this);"><b></b>加入购物车</a></div>
+                            <div class="pBtn quickBuy" id="quickBuy" title="快速下单，直达填写订单页面"><a
+                                    onclick="oneKeyBuy(300583, 0, 1, 0, 1, this);">一键购买</a></div>
+                            <div class="yj_time" id="sendTime">预计发货时间：<br>2014-02-28 08:59</div>
+                            <div class="phone_client phone_border" style="cursor: pointer;">
+                                <div id="phone_time">扫描下载客户端<br><em></em></div>
+                                <!--手机二维码显示层-->
+                                <div class="phone_clientCode" style="display:none;">
+                                    <a href="javascript:void(0)" class="ac_phoneClose" title="关闭"></a>
+                                    <div class="p-logo"></div>
+                                </div>
+                                <!--结束手机二维码显示层-->
+                            </div>
+                            <span class="clear"></span>
+                        </div>
+                        <div class="chooseBtns" id="buy-nogood-sf" style="display: none; z-index: 1;">
+                            <div class="pBtn"><span class="noShip">已售完</span></div>
+                            <div class="pBtn preBtn" id="arrival_notice"><a href="javascript:void(0);"
+                                    onclick="Goods.arrivalNotice(this);">到货通知</a></div>
+                            <div class="pBtn quickBuy disable"><a href="javascript:void(0);">一键购买</a></div>
+                            <div class="phone_client phone_border" style="cursor: pointer;">
+                                <div id="phone_time">扫描下载客户端<br><em></em></div>
+                                <!--手机二维码显示层-->
+                                <div class="phone_clientCode" style="display:none;">
+                                    <a href="javascript:void(0)" class="ac_phoneClose" title="关闭"></a>
+
+
+                                    <div class="p-logo"></div>
+                                    <!--<img src="images/p_scan1.jpg" width="124" height="124" border="0" />-->
+                                </div>
+                                <!--结束手机二维码显示层-->
+                            </div>
+                            <span class="clear"></span>
+                        </div>
+                        <div class="chooseBtns" id="buy-canntsend-sf" style="display: none; z-index: 1;">
+                            <div class="pBtn"><span class="noShip">无法送达</span></div>
+                            <div class="phone_client phone_border" style="cursor: pointer;">
+                                <div id="phone_time">扫描下载客户端<br><em></em></div>
+                                <!--手机二维码显示层-->
+                                <div class="phone_clientCode" style="display:none;">
+                                    <a href="javascript:void(0)" class="ac_phoneClose" title="关闭"></a>
+
+
+                                    <div class="p-logo"></div>
+                                    <!--<img src="images/p_scan1.jpg" width="124" height="124" border="0" />-->
+                                </div>
+                                <!--结束手机二维码显示层-->
+                            </div>
+                            <span class="clear"></span>
+                        </div>
+                        <div class="finalBuy" id="finalbuy-sf" style="display:none"></div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 右边详情栏 -->
+            <div class="pItemsSide">
+                <div class="sideWrap">
+                    <div class="points">
+                        <ul id="points-sf"><li class="has_poptip attr3"><img src="http://i.sfimg.cn/html/images/productattr3.png"></li><li><img src="http://i.sfimg.cn/html/images/productattr2.png"></li><li><img src="http://i.sfimg.cn/html/images/productattr4.png"></li></ul>
+                    </div>
+                                        <div class="hcBox">
+                        <img width="37" height="32" border="0" src="http://i.sfimg.cn/html/images/hcIcon.jpg" class="hcImg">
+                        <span class="hcTitle" style="white-space: nowrap; text-overflow: ellipsis;" title="SAINT COS INTERNATIONAL(HK)CO.,LIMITED">SAINT COS INTERNATIONAL(HK)CO.,LIMITED</span>
+                        <span class="hcCon" style="word-break:break-all;">服务：由SAINT COS INTERNATIONAL(HK)CO.,LIMITED发货，由<b style="color:red;font-weight:normal;">顺丰商业</b>提供售后服务</span>
+                    </div>
+                                                </div>
+                <div class="pdetail">
+                    <ul>
+                                                <li>品牌：<span><a href="http://www.sfbest.com/pinpai/8711-10351.html?isOversea=1&amp;modHt=1" title="澳洲Aptamil爱他美" target="_blank">澳洲Aptamil爱他美</a></span></li>
+                                                <li style="height: 30px;">产地：<span><a href="/mall/8711-0-191-0-0-2-0-0-0-0-0.html" title="新西兰新西兰" target="_blank"><img src="http://i.sfimg.cn/html/images/country/NZ.jpg" title="新西兰" alt="新西兰" style="margin-right: 3px;vertical-align: middle">新西兰
+                                                       </a></span>
+                        </li>
+                                                <li>规格：900*3罐</li>
+                                                                        <li>重量：3.4kg （含包装）</li>
+                                                <li>商品编号：6300300583</li>
+                                                                                                                        <li style="margin:0;height:20px;line-height:20px;"><span style="display:inline-block;">服务/证照：此商品不提供发票</span>
+                          <a target="_blank" alt="执照信息" title="执照信息" href="/Business/index?pid=300583" style="vertical-align: bottom;display: inline-block;">
+                            <img src="http://p.sfimg.cn/gold/images/20161124/20161124182301410.png">
+                          </a>
+                        </li>
+                                            </ul>
+                                        <div class="pDeclare">
+                         
+                        <div class="nosupport"><b></b>本品不支持无理由退换货</div>
+                                            </div>
+                                    </div>       
+                <div class="pcommdetail">
+                    <dl class="prate">
+                        <dt>好评度：</dt>
+                        <dd>
+                            <div class="dd"><span id="positive-sf" style="99%"></span></div>
+                            <strong><span id="positive-num-sf">99</span><span>%</span></strong>
+                            <div style="display:none" id="score"></div>
+                        </dd>
+                    </dl>
+                    <dl class="pcomment" id="bestComment-sf"><dt><a href="javascript:ToCommentPosition();">236 条评论</a></dt><dd><b></b><div><span>小*****雪：<a href="javascript:ToCommentPosition();">回购多次，信得过产品</a></span></div></dd></dl>
                 </div>
             </div>
         </div>
@@ -330,14 +471,14 @@
                 </ul>
             </div>
             <div class="footer_mainRight">
-                <div class="phone_client">
+                <!-- <div class="phone_client">
                     <span>手机客户端</span>
                     <span></span>
-                </div>
-                <div class="phone_client">
+                </div> -->
+                <!-- <div class="phone_client">
                     <span>官方微信</span>
                     <span clas="wx"></span>
-                </div>
+                </div> -->
             </div>
             <div class="footer_mainBot">
                 <div class="footer_mainBot1">
