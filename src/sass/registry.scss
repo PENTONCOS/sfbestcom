@@ -1,0 +1,66 @@
+@charset "utf-8"; //设置中文编码
+$page_width: 1200px;
+$page_container: 100%;
+$page_fontcolor: #666666;
+$a_fontcolor: #669900;
+$h2_fontfamily: Microsoft YaHei;
+$goods_price: #f33f00;
+
+@import "compass/reset";
+@import "compass/css3";
+//html样式
+html {
+  background: #f5f5f5 none repeat scroll 0 0;
+  color: #515151;
+  overflow-y: scroll;
+}
+//body默认颜色和字体
+body,
+div,
+td {
+  font-size: 12px;
+  font-family: "宋体", Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+  display: block;
+}
+//万能清除法
+.clear:after {
+  content: "";
+  height: 0px;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  clear: both;
+}
+a {
+  text-decoration: none;
+}
+//模块边框(四个边)
+@mixin border($width: 1px, $bg_color: #e8e8e8) {
+  border: $width solid $bg_color;
+}
+//模块边框(左边)
+@mixin border_left($width: 1px, $bg_color: #e8e8e8) {
+  border-left: $width solid $bg_color;
+}
+//模块边框(右边)
+@mixin border_right($width: 1px, $bg_color: #e8e8e8) {
+  border-right: $width solid $bg_color;
+}
+//模块边框(上边)
+@mixin border_top($width: 1px, $bg_color: #e8e8e8) {
+  border-top: $width solid $bg_color;
+}
+//模块边框(下边)
+@mixin border_bot($width: 1px, $bg_color: #e8e8e8) {
+  border-bottom: $width solid $bg_color;
+}
+
+//头部
+@import "registry_header";
+//个人用户
+@import "registry_geren";
+//注册表单
+@import "registry_load";
+//底部
+@import "footer";

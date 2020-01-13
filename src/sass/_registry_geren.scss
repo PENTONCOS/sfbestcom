@@ -1,0 +1,44 @@
+.tabBox {
+  width: 666px;
+  margin: 0 auto;
+  padding-left: 333px;
+  .reg_show {
+    background: url(../images/tabbg.jpg) left top no-repeat;
+    font-size: 16px;
+  }
+//   .reg_hide {
+//     background: url(../images/tabbg1.jpg) left top no-repeat;
+//     font-size: 14px;
+//   }
+}
+
+.tabBox .reg_show,
+.tabBox .reg_hide {
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  width: 163px;
+  height: 38px;
+  line-height: 38px;
+  font-family: "微软雅黑";
+}
+
+.tabBox span {
+    display: block;
+    float: left;
+    text-align: center;
+}
+.regMr5 {
+    margin-right: 5px;
+}
+
+.tabBox .login {
+    width: 130px;
+    float: right;
+    padding-top: 14px;
+    font-size: 12px;
+    color: #565656;
+}
+.tabBox .login a {
+    color: #6e9b0c;
+}

@@ -64,26 +64,32 @@
         autoplay() {
             this.timer = setInterval(() => {
                 this.index++;
-                // console.log(this.index)
-                // console.log(this.pics.length - 1)
+                this.picli.eq(this.index).addClass('active').siblings('li').removeClass('active');
                 if (this.index === this.pics.length - 1) {
                     this.picli.eq(0).addClass('active').siblings('li').removeClass('active');
                 }
-                if (this.index > this.pics.length - 1) {
-                    this.index = 0;
-                    this.piclist.css({
-                        left: 0
-                    })
-                    // console.log(this.index)
-                } else {
-                    this.piclist.stop(true, true).animate({
-                        left: -this.liwidth * this.index
-                    })
-                    this.bgcolor_ul.stop(true, true).animate({
-                        left: -this.bgwidth * this.index
-                    })
-                    this.picli.eq(this.index).addClass('active').siblings('li').removeClass('active');
-                }
+                
+                this.piclist.stop(true, true).animate({
+                    left: -this.liwidth * this.index
+                }, () => {
+                    if (this.index >= this.pics.length - 1) {
+                        this.index = 0;
+                        this.piclist.css({
+                            left: 0
+                        })
+                    }
+                })
+                this.bgcolor_ul.stop(true, true).animate({//背景
+                    left: -this.bgwidth * this.index
+                }, () => {
+                    if (this.index > this.bgcolor_li.length - 1) {
+                        this.index = 0;
+                        this.bgcolor_ul.css({
+                            left: 0
+                        })
+                    }
+                })
+
             }, 4000);
         }
 

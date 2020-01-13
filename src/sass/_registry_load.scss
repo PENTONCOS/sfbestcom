@@ -1,0 +1,301 @@
+.reg_border {
+  border-top: 1px solid #d6d5d5;
+}
+.reg_main {
+  padding: 45px 0 0 40px;
+  width: 960px;
+  height: auto !important;
+  min-height: 490px;
+  _height: 100%;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.reg_main ul.individualUserBg {
+  background: url(../images/pic10.jpg) 460px 0px no-repeat;
+}
+.reg_main ul {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.reg_main ul.individualUserBg li,
+.reg_main ul.individualUserBg1 li,
+.reg_main ul.enterpriseUsers li {
+  height: 38px;
+}
+.regMb30 {
+  margin-bottom: 30px;
+}
+ul li {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+.reg_main li label {
+  width: 118px;
+  font-size: 14px;
+  color: #515151;
+  height: 38px;
+  line-height: 38px;
+  text-align: right;
+}
+
+.reg_main li label,
+.reg_main li .regM,
+.reg_main li .reg_error,
+.reg_main li .reg_error1,
+.reg_main li .reg_error3,
+.reg_main li .reg_error4 {
+  display: block;
+  float: left;
+}
+label {
+  cursor: default;
+}
+.reg_main li .regM {
+  width: 268px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.reg_main .defaultBorder,
+.loginreg_main .defaultBorder,
+.reg_findPassword .defaultBorder {
+  border: 1px solid #cdcdcd;
+}
+
+.reg_main li .regInput {
+  width: 228px;
+  height: 36px;
+  line-height: 36px;
+  border: none;
+  outline: none;
+  color: #515151;
+  padding: 0 5px;
+}
+
+.reg_main .safetyLayer,
+.reg_findPassword .safetyLayer {
+  height: 28px;
+  color: #666;
+  padding-top: 5px;
+}
+
+.regPl191 {
+  padding-left: 191px;
+}
+.reg_main .safetyLayer font,
+.reg_main .safetyLayer em,
+.reg_main .safetyLayer a,
+.reg_findPassword .safetyLayer font,
+.reg_findPassword .safetyLayer em,
+.reg_findPassword .safetyLayer a {
+  display: block;
+  float: left;
+}
+.reg_main .safetyLayer,
+.reg_findPassword .safetyLayer {
+  height: 28px;
+  color: #666;
+  padding-top: 5px;
+}
+.reg_main .safetyLayer em,
+.reg_findPassword .safetyLayer em {
+  text-align: center;
+  width: 34px;
+  margin-right: 2px;
+  color: #fff;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+.regMb30 {
+  margin-bottom: 30px;
+}
+
+.reg_main li .regM {
+  width: 268px;
+  height: 36px;
+  line-height: 36px;
+}
+.reg_main li .regInput {
+  width: 228px;
+  height: 36px;
+  line-height: 36px;
+  border: none;
+  outline: none;
+  color: #515151;
+  padding: 0 5px;
+}
+input,
+textarea,
+select,
+button {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  font-weight: inherit;
+  vertical-align: middle;
+}
+
+.reg_main li .regInput {
+  width: 228px;
+  height: 36px;
+  line-height: 36px;
+  border: none;
+  outline: none;
+  color: #515151;
+  padding: 0 5px;
+}
+
+.reg_main li label {
+  width: 118px;
+  font-size: 14px;
+  color: #515151;
+  height: 38px;
+  line-height: 38px;
+  text-align: right;
+}
+
+.reg_main li .regCodeInput {
+  float: left;
+  padding: 0 5px;
+  width: 58px;
+  height: 36px;
+}
+.reg_main li .regCodeInput {
+  float: left;
+  padding: 0 5px;
+  width: 58px;
+  height: 36px;
+  line-height: 36px\9;
+}
+.floatleft {
+  float: left;
+}
+
+.reg_main li label font {
+  color: #ff4800;
+}
+
+.reg_main li .codeTitle {
+  width: 86px;
+  line-height: 36px;
+}
+
+.reg_main li .codeTitle,
+.reg_main li .checkTitle {
+  color: #565656;
+}
+
+.regMl6 {
+  margin-left: 6px;
+}
+
+.floatleft {
+  float: left;
+}
+
+.reg_main li .codeTitle a,
+.reg_main li .checkTitle font,
+.loginreg_main li .checkTitle font,
+.reg_main li .reg_error a {
+  color: #6e9b0c;
+}
+
+.regPl88 {
+  padding-left: 88px;
+}
+
+.reg_main li .regM {
+  width: 268px;
+  height: 36px;
+  line-height: 36px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+input {
+  outline: none;
+}
+
+.reg_main li .codeTitle,
+.reg_main li .checkTitle {
+  color: #565656;
+}
+
+.reg_main li .codeTitle a,
+.reg_main li .checkTitle font,
+.loginreg_main li .checkTitle font,
+.reg_main li .reg_error a {
+  color: #6e9b0c;
+}
+
+.regMt10 {
+  margin-top: 10px;
+}
+
+.regPl88 {
+  padding-left: 88px;
+}
+
+.reg_main .registerNow {
+  display: block;
+  float: left;
+  width: 271px;
+  height: 38px;
+  background: url(../images/reg_btn.jpg) left top no-repeat;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+.ui-reg-tip {
+  padding: 15px 10px 10px 45px;
+  border-top: 1px dotted #dcdcdc;
+  position: relative;
+  left: -30px;
+  width: 930px;
+  background: url(../images/reg_tip.png) no-repeat 25px 16px;
+}
+.ui-reg-tip a:link,
+.ui-reg-tip a:visited,
+.ui-reg-tip a:hover {
+  color: #669900;
+}
+
+.reg_main li .regInput {
+  width: 253px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.reg_main .safetyLayer em.default,
+.reg_findPassword .safetyLayer em.default {
+  background: #c4c4c4;
+}
+#reg_per_data {
+  border: 0;
+  &:hover {
+    background-position: 0 -38px;
+    cursor: pointer;
+  }
+}
+
+.reg_main {
+  min-height: 407px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/registry.scss */
+html {
+  background: #f5f5f5 none repeat scroll 0 0;
+  color: #515151;
+  overflow-y: scroll;
+}
+
+/* line 18, ../sass/registry.scss */
+body,
+div,
+td {
+  font-size: 12px;
+  font-family: "宋体", Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+  display: block;
+}
+
+/* line 27, ../sass/registry.scss */
+.clear:after {
+  content: "";
+  height: 0px;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  clear: both;
+}
+
+/* line 35, ../sass/registry.scss */
+a {
+  text-decoration: none;
+}
+/*********************************** 头部 **********************************/
+/* line 1, ../sass/_registry_header.scss */
+header {
+  width: 1000px;
+  margin: 0 auto;
+}
+/* line 4, ../sass/_registry_header.scss */
+header span {
+  line-height: 70px;
+  font-size: 24px;
+  padding-left: 3px;
+  font-family: "微软雅黑";
+  margin: 10px 0;
+  float: left;
+}
+/* line 12, ../sass/_registry_header.scss */
+header img {
+  margin: 10px 0;
+  float: left;
+}
+/* line 16, ../sass/_registry_header.scss */
+header a {
+  text-decoration: none;
+  color: #515151;
+}
+
+/* line 21, ../sass/_registry_header.scss */
+img {
+  border: none;
+}
+
+/*************************************** 底部 ***************************************/
+footer {
+    line-height: 18px;
+    color: #969696;
+    width: 100%;
+    overflow: hidden;
+    height: 285px;
+  }
+  
+  /* line 8, ../sass/_footer.scss */
+  .footer_main {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  /* line 12, ../sass/_footer.scss */
+  .footer_main .footer_mainLeft {
+    float: left;
+    width: 290px;
+    height: 145px;
+    margin: 20px 0px 0px 10px;
+    background: url(../images/logo.png) no-repeat left top;
+  }
+  /* line 19, ../sass/_footer.scss */
+  .footer_main .kefu {
+    margin-top: 85px;
+    font-size: 20px;
+    color: #646464;
+    font-weight: bold;
+  }
+  /* line 25, ../sass/_footer.scss */
+  .footer_main .shijian {
+    margin-top: 6px;
+  }
+  /* line 28, ../sass/_footer.scss */
+  .footer_main .footer_mainMiddle {
+    float: left;
+    margin: 35px 0 0 0;
+    width: 645px;
+  }
+  /* line 32, ../sass/_footer.scss */
+  .footer_main .footer_mainMiddle ul {
+    float: left;
+    margin: 0px 8px 0px 0px;
+    width: 120px;
+  }
+  /* line 37, ../sass/_footer.scss */
+  .footer_main .footer_mainMiddle li {
+    text-align: left;
+    font-family: Microsoft YaHei;
+    height: 24px;
+    line-height: 24px;
+    color: #646464;
+  }
+  /* line 44, ../sass/_footer.scss */
+  .footer_main .footer_mainMiddle .title {
+    color: #707070;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  /* line 49, ../sass/_footer.scss */
+  .footer_main .footer_mainMiddle a {
+    color: #646464;
+  }
+  /* line 51, ../sass/_footer.scss */
+  .footer_main .footer_mainMiddle a:hover {
+    color: #669900;
+  }
+  /* line 56, ../sass/_footer.scss */
+  .footer_main .footer_mainRight {
+    float: left;
+    margin: 35px 0 0 0;
+    width: 235px;
+    height: 145px;
+  }
+  
+  /* line 63, ../sass/_footer.scss */
+  .phone_client {
+    float: left;
+  }
+  /* line 65, ../sass/_footer.scss */
+  .phone_client span:nth-child(1) {
+    display: block;
+    text-align: center;
+    margin: 0 50px 8px 0;
+    line-height: 24px;
+    font-size: 14px;
+    color: #666666;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+  }
+  /* line 75, ../sass/_footer.scss */
+  .phone_client span:nth-child(2) {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url(../images/foot_bottom.png) no-repeat left top;
+    color: #666666;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+  }
+  /* line 84, ../sass/_footer.scss */
+  .phone_client .wx {
+    background: url(../images/foot_bottom.png) no-repeat -83px 0px;
+  }
+  
+  /* line 88, ../sass/_footer.scss */
+  .footer_mainBot {
+    width: 1180px;
+    height: 50px;
+    margin: 0 auto;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+    position: relative;
+    float: left;
+  }
+  /* line 96, ../sass/_footer.scss */
+  .footer_mainBot .footer_mainBot1 {
+    float: left;
+    margin-left: 5px;
+  }
+  /* line 99, ../sass/_footer.scss */
+  .footer_mainBot .footer_mainBot1 img {
+    width: 94px;
+    height: 33px;
+  }
+  
+  /* line 106, ../sass/_footer.scss */
+  .footer_mainBot2 {
+    float: left;
+    position: absolute;
+    top: 13px;
+    left: 294px;
+  }
+  /* line 111, ../sass/_footer.scss */
+  .footer_mainBot2 span {
+    padding-left: 13px;
+  }
+  /* line 113, ../sass/_footer.scss */
+  .footer_mainBot2 span a {
+    color: #646464;
+  }
+  /* line 115, ../sass/_footer.scss */
+  .footer_mainBot2 span a:hover {
+    color: #669900;
+  }

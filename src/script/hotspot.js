@@ -20,7 +20,6 @@
             this.liheight = this.upslide_li.eq(0).outerHeight(true);//1个li的高度。
             this.upslide_ul.height(this.upslide_li.length * this.liheight);//设置高度
 
-
             this.upslide_height = this.upslide_li.outerHeight(true);
             //自动播放
             this.autoplay();
@@ -29,17 +28,16 @@
         autoplay() {
             this.timer = setInterval(() => {
                 this.index++;
-                console.log(this.index);
-                if (this.index >= this.upslide_li.length/2) {
-                    this.index = 0;
-                    this.upslide_ul.css({
-                        top: 0
-                    })
-                } else {
-                    this.upslide_ul.animate({
-                        top: -this.upslide_height * this.index * 2
-                    }, 'slow')
-                }
+                this.upslide_ul.animate({
+                    top: -this.upslide_height * this.index * 2
+                }, 'slow', () => {
+                    if (this.index >= (this.upslide_li.length-2 )/ 2) {
+                        this.index = 0;
+                        this.upslide_ul.css({
+                            top: 0
+                        })
+                    }
+                })
 
             }, 3000);
         };

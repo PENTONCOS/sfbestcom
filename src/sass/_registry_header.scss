@@ -1,0 +1,23 @@
+header {
+  width: 1000px;
+  margin: 0 auto;
+  span {
+    line-height: 70px;
+    font-size: 24px;
+    padding-left: 3px;
+    font-family: "微软雅黑";
+    margin: 10px 0;
+    float: left;
+  }
+  img {
+    margin: 10px 0;
+    float: left;
+  }
+  a {
+    text-decoration: none;
+    color: #515151;
+  }
+}
+img {
+  border: none;
+}

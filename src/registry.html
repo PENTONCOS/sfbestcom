@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="顺丰优选顺丰旗下全球美食优选网购商城，精选来自60多个国家和地区的进口食品，正品行货，支持货到付款。销售包括进口奶粉、母婴用品、营养保健品、生鲜食品、粮油、酒水、休闲食品等近万种商品。">
+    <meta name="keyword" content="进口食品,网上超市,网上购物,进口奶粉,顺丰优选,sfbest,母婴用品,营养保健品,生鲜食品,粮油,酒水,休闲食品" />
+    <title>顺丰优选SF-best</title>
+    <link rel="stylesheet" href="./stylesheets/registry.css">
+</head>
+
+<body>
+    <!--------------------------------- 头部 ------------------------------------->
+    <header class="clear">
+        <a href="http://www.sfbest.com">
+            <img src="./images/logo.png" border="0" class="header_mr20">
+            <span>欢迎注册</span>
+        </a>
+    </header>
+    <!------------------------------ 个人用户 ------------------------------->
+    <div class="tabBox clear">
+        <span class="reg_hide reg_show regMr5" id="regper">个人用户</span>
+        <div class="login">已有账号，立即 <a href="http://10.31.152.15/JS1912/sfbestcom/src/login.html">登录</a></div>
+    </div>
+    <!------------------------------ 注册表单 ---------------------->
+    <div class="reg_main reg_border regTab">
+        <ul class="individualUserBg">
+            <form id="regForm_mod" name="regForm_mod" method="post">
+
+                <li class="regMb30">
+                    <label>
+                        <font>*</font> 账户名：
+                    </label>
+                    <span class="regM defaultBorder">
+                        <input id="userMam" name="userMam" class="regInput" type="text" onkeyup="mail_div(event);"
+                            onfocus="showtip('userMam','userMamErr',1);" onblur="ckmem();" autocomplete="off"
+                            maxlength="80">
+                        <em></em>
+                    </span>
+                    <span class="regInput" id="userMamErr"></span>
+                </li>
+
+                <li>
+                    <label>
+                        <font>*</font> 登录密码：
+                    </label>
+                    <span class="regM defaultBorder">
+                        <input id="password" name="password" class="regInput" autocomplete="off" type="password"
+                            onfocus="showPwdtip('password','passwordErr',2);" onkeyup="ckpwd(0,1);"
+                            onblur="ckpwd(0,0);">
+                        <em></em>
+                    </span>
+                    <span class="regInput" id="passwordErr"></span>
+                </li>
+                <li class="safetyLayer regPl191" id="pwdStrong">
+                    <font style="font-size:12px;">安全程度：</font><em class="default">弱</em><em class="default">中</em><em
+                        class="default">强</em>
+                </li>
+
+                <li class="regMb30">
+                    <label>
+                        <font>*</font> 确认密码：
+                    </label>
+                    <span class="regM defaultBorder">
+                        <input id="password2" name="password2" autocomplete="off" class="regInput" type="password"
+                            onfocus="showtip('password2','password2Err',3);" onblur="ckpwd2();">
+                        <em></em>
+                    </span>
+                    <span class="regInput" id="password2Err"></span>
+                </li>
+
+                <li class="regPl88">
+                    <span class="regM" style="margin-left:29px">
+                        <input id="AgreeId" name="AgreeId" type="checkbox" onclick="ckAgree();">
+                        <a href="https://passport.sfbest.com/xy.html" target="_blank" class="checkTitle">我已阅读并同意<font
+                                style="font-size:12px;">《顺丰优选用户注册协议》</font></a>
+                    </span>
+                    <span id="AgreeIdErr"></span>
+                </li>
+                <li class="register regPl88 regMt10" id="sub_per" style="margin-left:29px">
+                    <input type="submit" class="registerNow" id="reg_per_data" value="立即注册">
+                </li>
+                <br><br>
+            </form>
+        </ul>
+        <div class="ui-reg-tip"><a href="http://help.sfbest.com/140/6788.html" target="_blank">了解更多&gt;&gt;</a></div>
+    </div>
+    <!------------------------------ 底部 -------------->
+    <footer class="clear">
+        <div class="footer_main">
+            <div class="footer_mainLeft">
+                <div class="kefu">4006-917-666</div>
+                <div class="shijian">周一至周日09:00-20:00</div>
+            </div>
+            <div class="footer_mainMiddle">
+                <ul>
+                    <li class="title">购物指南</li>
+                    <li><a href="javascript:;">积分制度</a></li>
+                    <li><a href="javascript:;">会员介绍</a></li>
+                    <li><a href="javascript:;">购物流程</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">在线客服</a></li>
+                </ul>
+                <ul>
+                    <li class="title">配送服务</li>
+                    <li><a href="javascript:;">配送政策</a></li>
+                    <li><a href="javascript:;">开箱验货</a></li>
+                    <li><a href="javascript:;">配送运费</a></li>
+                    <li><a href="javascript:;">配送范围</a></li>
+                </ul>
+                <ul>
+                    <li class="title">支付方式</li>
+                    <li><a href="javascript:;">货到付款</a></li>
+                    <li><a href="javascript:;">在线支付</a></li>
+                    <li><a href="javascript:;">优选卡</a></li>
+                    <li><a href="javascript:;">发票制度</a></li>
+                </ul>
+                <ul>
+                    <li class="title">售后服务</li>
+                    <li><a href="javascript:;">退款说明</a></li>
+                    <li><a href="javascript:;">退换货流程</a></li>
+                    <li><a href="javascript:;">退换货政策</a></li>
+                    <li><a href="javascript:;">隐私条款</a></li>
+                </ul>
+                <ul>
+                    <li class="title">商家中心</li>
+                    <li><a href="javascript:;">商家规则</a></li>
+                    <li><a href="javascript:;">食品安全规范</a></li>
+                    <li><a href="javascript:;">委托管理创业招募</a></li>
+                </ul>
+            </div>
+            <div class="footer_mainRight">
+                <div class="phone_client">
+                    <span>手机客户端</span>
+                    <span></span>
+                </div>
+                <div class="phone_client">
+                    <span>官方微信</span>
+                    <span clas="wx"></span>
+                </div>
+            </div>
+            <div class="footer_mainBot">
+                <div class="footer_mainBot1">
+                    <img src="images/credit.png" alt="">
+                </div>
+                <div class="footer_mainBot1">
+                    <img src="images/cert.png" alt="">
+                </div>
+                <div class="footer_mainBot1">
+                    <img src="images/bottom_sm.png" alt="">
+                </div>
+                <div class="footer_mainBot2">
+                    <p>
+                        <span>
+                            <a href="javascript:;">关于我们</a>
+                        </span>
+                        <span>
+                            <a href="javascript:;">联系我们</a>
+                        </span>
+                        <span>
+                            <a href="javascript:;">招聘人才</a>
+                        </span>
+                        <span>
+                            <a href="javascript:;">友情链接</a>
+                        </span>
+                        <span>Copyright© 顺丰优选 sfbest.com 版权所有</span>
+                    </p>
+                    <p>
+                        <span>京公网安备11010502026831号</span>
+                        <span>
+                            <a href="javascript:;">京ICP证150325号</a>
+                        </span>
+                        <span>
+                            <a href="javascript:;">食品经营许可证JY11113080533669号</a>
+                        </span>
+                        <span>
+                            <a href="javascript:;">企业营业执照</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
