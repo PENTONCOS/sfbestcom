@@ -329,12 +329,19 @@ class Hotspot {
 define([], function () {
     return {
         init: function () {
+            //顶部广告效果
             new AdTop().init();
+            //顶部轮播图
             new NavMain().init();
+            //优选渲染
             new BestChoose().init();
+            //水果渲染
             new Fruit().init();
+            //为你推荐渲染
             new Recom().init();
+            //楼梯动画
             new Louti().init();
+            //热门评论轮播
             new Hotspot().init();
         }
     }
