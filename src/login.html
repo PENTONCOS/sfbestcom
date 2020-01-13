@@ -14,15 +14,117 @@
 
 <body>
     <!--------------------------------- 头部 ------------------------------------->
-    <header class="clear">
+    <header>
         <a href="http://www.sfbest.com">
             <img src="./images/logo.png" border="0" class="header_mr20">
             <span>欢迎登录</span>
         </a>
     </header>
-
+    <!-------------------------------- 登录表单 ---------------------------->
+    <div class="login_main clear">
+        <div class="pic p_47">
+            <a href="http://www.sfbest.com/html/activity/1578367079.html" target="_blank"><img src="https://passport.sfbest.com/image/41c192ef/41c192efefc6d13d6a1ad5db2cf1b37c.png"></a>
+        </div>
+        <!-- login -->
+        <div class="login">
+            <div class="login_header">
+                <span>登录</span>
+                <a href="https://passport.sfbest.com/reg/?returnUrl=http://www.sfbest.com">立即注册 <i class="icon"></i></a>
+            </div>
+            <div class="login_box clear">
+                <ul class="loginnav">
+                    <li class="edLoginLi curr" mark="sfbest"><div class="d01"><em></em>优选账号</div></li>
+                </ul>
+                <div class="logincon">
+    
+    
+                    <ul class="phone_ul">
+                        <form id="fm1" method="post">
+                            <input type="hidden" name="bgcode" id="bgcode" value="sfbest" class="loginText">
+                            <li>
+                                <div class="loginErroBox">
+                                    <div class="loginErro" id="loginErro" style="display:none;">
+                                        <span class="erroIcon"></span><span class="erroTips">提示</span>
+                                    </div>
+                                </div>
+                                <div class="loginPhone">
+                                    <div class="phone-icon"><span class="icon"> </span></div>
+                                    <div class="phone-ipt">
+                                        <input type="text" name="uName" id="uName" class="" tabindex="1" data-clear-btn="true" size="25" autocomplete="off" htmlescape="true" title="请输入手机号/邮箱/用户名" placeholder="请输入手机号/邮箱/用户名">
+                                        <input id="username" name="username" type="hidden" accesskey="n" value="" size="25" autocomplete="off">
+                                        <em class="closeIcon" id="usernamelogo" style="display: none;"></em>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="m-t14">
+                                <div class="padPhone">
+                                    <div class="phone-icon"><span class="icon"> </span></div>
+                                    <div class="phone-ipt">
+                                        <input class="" type="password" name="uPassword" id="uPassword" data-clear-btn="true" tabindex="2" cssclass="required" csserrorclass="error" size="25" path="password" accesskey="" htmlescape="true" autocomplete="off" placeholder="请输入密码" value="">
+                                        <em class="closeIcon" id="passwordlogo" style="display: none;"></em>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="m-t45" id="btn_sub">
+                                <a href="javascript:void(0)" id="login_sub" class="login_p_nobtn login_p_btn">登录</a>
+                            </li>
+                            <li>
+                                <div class="phon-w1">
+                                    <a href="https://passport.sfbest.com" class="phone-words floatleft ac_phonelogin">手机验证登录 &gt; </a>
+                                    <a href="https://passport.sfbest.com/reg/findpass/?returnUrl=http://www.sfbest.com" class="phone-words floatright">忘记密码?</a>
+                                </div>
+                            </li>
+                            <div>
+                            </div></form>
+                    </ul>
+    
+                </div>
+    
+    
+                <ul class="blink newblink newloginlink">
+                    <li class="li1">
+                        <div>
+    
+                            <span class="s1"><i class="bg icon1"></i></span>
+                            <a href="http://api2.sfbest.com/unionlogin/qq/oauth/qq_login.php?returnUrl=http://www.sfbest.com" class="link1">
+                                <span class="s2">QQ</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="li2">
+                        <div>
+                            <span class="s1"><i class="bg icon2"></i></span>
+                            <a href="https://api.weibo.com/oauth2/authorize?client_id=1800908332&amp;redirect_uri=https%3A%2F%2Fpassport.sfbest.com%2Fcallback%2Fsina&amp;response_type=code&amp;state=&amp;display=?returnUrl=http://www.sfbest.com" class="link1">
+                                <span class="s2">微博</span>
+                            </a>
+                        </div>
+                    </li>
+                    <!--
+                    <li class="li3">
+                        <div>
+                            <span class="s1"><i class="bg icon4"></i></span>
+                            <a href="" class="link1">
+                                <span class="s2">支付宝</span>
+                            </a>
+                        </div>
+                    </li>-->
+                    <li class="li4">
+                        <div>
+                            <span class="s1"><i class="bg icon5"></i></span>
+                            <a id="caswx" href="" class="link1">
+                                <span class="s2">微信</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /login -->
+    </div>
+    
+    
     <!--------------------------------- 底部 ----------------------------->
-    <footer class="clear">
+    <footer>
         <div class="footer_main">
             <div class="footer_mainLeft">
                 <div class="kefu">4006-917-666</div>

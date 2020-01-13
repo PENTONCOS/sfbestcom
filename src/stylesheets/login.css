@@ -1,18 +1,7 @@
 @charset "UTF-8";
 /* line 5, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,22 +11,26 @@ time, mark, audio, video {
 }
 
 /* line 22, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 html {
   line-height: 1;
 }
 
 /* line 24, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 ol, ul {
   list-style: none;
 }
 
 /* line 26, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* line 28, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 caption, th, td {
   text-align: left;
   font-weight: normal;
@@ -45,36 +38,41 @@ caption, th, td {
 }
 
 /* line 30, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 q, blockquote {
   quotes: none;
 }
+
 /* line 103, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
 /* line 32, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 a img {
   border: none;
 }
 
 /* line 116, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* line 12, ../sass/registry.scss */
+
 html {
-  background: #f5f5f5 none repeat scroll 0 0;
+  background: #fff none repeat scroll 0 0;
   color: #515151;
   overflow-y: scroll;
 }
 
 /* line 18, ../sass/registry.scss */
-body,
-div,
-td {
+
+body, div, td {
   font-size: 12px;
   font-family: "宋体", Arial, Helvetica, sans-serif;
   line-height: 1.4em;
@@ -82,6 +80,7 @@ td {
 }
 
 /* line 27, ../sass/registry.scss */
+
 .clear:after {
   content: "";
   height: 0px;
@@ -92,16 +91,23 @@ td {
 }
 
 /* line 35, ../sass/registry.scss */
+
 a {
   text-decoration: none;
 }
+
 /*********************************** 头部 **********************************/
+
 /* line 1, ../sass/_registry_header.scss */
+
 header {
   width: 1000px;
   margin: 0 auto;
+  overflow: hidden;
 }
+
 /* line 4, ../sass/_registry_header.scss */
+
 header span {
   line-height: 70px;
   font-size: 24px;
@@ -110,165 +116,657 @@ header span {
   margin: 10px 0;
   float: left;
 }
+
 /* line 12, ../sass/_registry_header.scss */
+
 header img {
   margin: 10px 0;
   float: left;
 }
+
 /* line 16, ../sass/_registry_header.scss */
+
 header a {
   text-decoration: none;
   color: #515151;
 }
 
 /* line 21, ../sass/_registry_header.scss */
+
 img {
   border: none;
 }
 
+/************************************* 登录表单 **********************************/
+
+.login_main {
+  width: 1000px;
+  height: auto !important;
+  min-height: 500px;
+  _height: 100%;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.clear {
+  clear: both;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+}
+
+.login_main .pic.p_47 {
+  padding-top: 47px;
+}
+
+.login_main .pic {
+  width: 540px;
+  height: 390px;
+  padding-top: 14px;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: #515151;
+}
+
+.login_main .pic img {
+  margin-top: 32px;
+}
+
+img {
+  border: none;
+}
+
+.login_main .login {
+  width: 400px;
+  min-height: 100px;
+}
+
+.login_main .login {
+  float: left;
+}
+
+.login_main .login_header {
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+}
+
+.login_header span {
+  display: inline-block;
+  color: #000;
+  font-size: 20px;
+  float: left;
+  position: relative;
+  top: 14px;
+  left: 0;
+  height: 26px;
+  line-height: 26px;
+}
+
+.login_header a {
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  color: #666;
+  width: 88px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 12px;
+  border-radius: 3px;
+}
+
+.login_header a i.icon {
+  position: relative;
+  top: 4px;
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  background: url(../images/login-icon28.png) no-repeat;
+}
+
+.login_main .login_box {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0px;
+  border: 1px solid #ededed;
+  height: auto !important;
+  min-height: 150px;
+}
+
+.login_box .loginnav {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.login_box .loginnav li.edLoginLi {
+  border-right: medium none;
+  width: 100%;
+}
+
+.login_box .loginnav .curr {
+  border-bottom: 1px solid #fff;
+  border-top: 2px solid #69af05;
+  position: relative;
+  margin-top: -2px;
+}
+
+li.edLoginLi .d01 {
+  border-right: 1px solid #ededed;
+  line-height: 38px;
+}
+
+.login_box .loginnav li em {
+  float: left;
+  margin: 10px 5px 0 24px;
+  background: url(../images/loginicon.png) no-repeat;
+  width: 15px;
+  height: 15px;
+}
+
+.login_box .phone_ul {
+  width: 348px;
+  padding: 39px 0 0 25px;
+}
+
+ul li {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+.loginErroBox {
+  height: 26px;
+  line-height: 26px;
+  margin: 6px 0;
+}
+
+.loginErro {
+  background: #FDEFEC;
+  border: 1px solid #FFB6A9;
+  font-size: 12px;
+  color: #FF4422;
+}
+
+.loginErro .erroIcon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: url(../images/login-icon5.png) no-repeat;
+  padding-right: 11px;
+  position: relative;
+  left: 7px;
+  top: 4px;
+}
+
+.loginErro .erroTips {
+  display: inline-block;
+  line-height: 26px;
+}
+
+.login_box li span {
+  position: relative;
+}
+
+.loginPhone {
+  width: 346px;
+  height: 40px;
+  border: 1px solid #BDBDBD;
+}
+
+.loginPhone .phone-icon {
+  width: 41px;
+  height: 40px;
+  float: left;
+  border-right: 1px solid #BDBDBD;
+  background: #f0f0f0;
+}
+
+.loginPhone .phone-icon .icon {
+  background: url(../images/login-icon24.png) no-repeat;
+}
+
+.loginPhone .phone-icon span {
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+  position: relative;
+  top: 12px;
+}
+
+.loginPhone .phone-ipt {
+  width: 304px;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+}
+
+.loginPhone .phone-ipt input {
+  width: 288px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 8px;
+  float: left;
+  border: 0;
+}
+
+.login_box li span {
+  display: block;
+}
+
+.loginPhone .closeIcon {
+  background: url(../images/login-icon10.png) center no-repeat;
+  cursor: pointer;
+}
+
+.m-t14 {
+  margin-top: 14px;
+}
+
+.padPhone {
+  width: 346px;
+  height: 40px;
+  border: 1px solid #BDBDBD;
+}
+
+.padPhone .phone-icon {
+  width: 41px;
+  height: 40px;
+  float: left;
+  border-right: 1px solid #BDBDBD;
+  background: #f0f0f0;
+}
+
+.padPhone .phone-icon .icon {
+  background: url(../images/login-icon7.png) no-repeat;
+}
+
+.padPhone .phone-icon span {
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+  position: relative;
+  top: 12px;
+}
+
+.padPhone .phone-ipt {
+  width: 304px;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+}
+
+.padPhone .phone-ipt input {
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 8px;
+  float: left;
+  border:0;
+}
+
+.padPhone .closeIcon {
+  height: 24px;
+  width: 24px;
+  float: left;
+  position: relative;
+  top: 8px;
+  display: none;
+}
+
+.padPhone .closeIcon {
+  background: url(../images/login-icon10.png) center no-repeat;
+  cursor: pointer;
+}
+
+.floatright {
+  float: right;
+}
+
+.login_box .newblink li span i.icon1 {
+  width: 20px;
+  height: 20px;
+}
+
+.login_box .newblink li span i {
+  display: inline-block;
+  text-align: center;
+}
+
+.login_box .newblink li.li1 div {
+  text-align: left;
+}
+
+.login_box .newblink li span {
+  display: inline-block;
+}
+
+.m-t45 {
+  margin-top: 45px;
+}
+
+.login_box li .login_p_btn, .login_box li .login_p_nobtn {
+  display: block;
+  background: #8DC63F;
+  border-radius: 4px;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login_box li .login_p_btn {
+  background: #8DC63F;
+}
+
+.login_box li .phon-w1 {
+  height: 18px;
+  padding-top: 16px;
+  padding-bottom: 21px;
+}
+
+.login_box li .phon-w1 span, .login_box li .phon-w1 a {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  color: #666;
+  font-size: 12px;
+}
+
+.login_box .blink {
+  width: 356px;
+  margin: 0 auto;
+  height: 48px;
+  border-top: 1px solid #EDEDED;
+}
+
+.login_box .newloginlink li.li1, .login_box .newloginlink li.li2, .login_box .newloginlink li.li3 {
+  width: 86px;
+  height: 20px;
+  border-right: 1px solid #ededed;
+}
+
+.login_box .newblink li.li1 div {
+  text-align: left;
+}
+
+.login_box .newblink li .s1 {
+  height: 20px;
+  margin-left:20px;
+  margin-top:5px;
+}
+
+.login_box .newblink li span {
+  display: inline-block;
+}
+
+.login_box .newblink li span {
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  color: #515151;
+}
+
+.login_box .newblink li span i.icon1 {
+  width: 20px;
+  height: 20px;
+}
+
+.login_box .newblink li span i.bg {
+  background: url(../images/logo-icon.jpg) no-repeat;
+}
+
+.login_box .newblink li a.link1 {
+  color: #515151;
+  height: 26px;
+  line-height: 26px;
+  text-decoration: none;
+}
+.login_box .newblink li{
+  position: relative;
+
+}
+.login_box .newblink li .s2 {
+  position: absolute;
+  top:4px;
+  left: 49px;
+}
+
+.login_box .newblink li span i.icon5 {
+  width: 20px;
+  height: 20px;
+  background-position: -84px 0;
+}
+
+.login_box .newblink li .s2 {
+  height: 16px;
+  line-height: 16px;
+  padding-top: 4px;
+}
+
+.login_box .newblink li span i.icon2 {
+  width: 20px;
+  height: 20px;
+  background-position: -21px 0;
+}
+
+.login_box .newblink li span i.bg {
+  background: url(../images/logo-icon.jpg) no-repeat;
+}
+
+.login_box .newblink li.li4 {
+  width: 95px;
+}
+
+.login_box .newblink li {
+  display: inline-block;
+  height: 36px;
+  margin: 10px 0;
+  float: left;
+}
+
+.login_box .newblink li span i.icon5 {
+  width: 20px;
+  height: 20px;
+  background-position: -84px 0;
+}
+
+.login_box .newblink li span i.bg {
+  background: url(../images/logo-icon.jpg) no-repeat;
+}
+
 /*************************************** 底部 ***************************************/
+
 footer {
-    line-height: 18px;
-    color: #969696;
-    width: 100%;
-    overflow: hidden;
-    height: 285px;
-  }
-  
-  /* line 8, ../sass/_footer.scss */
-  .footer_main {
-    width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  /* line 12, ../sass/_footer.scss */
-  .footer_main .footer_mainLeft {
-    float: left;
-    width: 290px;
-    height: 145px;
-    margin: 20px 0px 0px 10px;
-    background: url(../images/logo.png) no-repeat left top;
-  }
-  /* line 19, ../sass/_footer.scss */
-  .footer_main .kefu {
-    margin-top: 85px;
-    font-size: 20px;
-    color: #646464;
-    font-weight: bold;
-  }
-  /* line 25, ../sass/_footer.scss */
-  .footer_main .shijian {
-    margin-top: 6px;
-  }
-  /* line 28, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle {
-    float: left;
-    margin: 35px 0 0 0;
-    width: 645px;
-  }
-  /* line 32, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle ul {
-    float: left;
-    margin: 0px 8px 0px 0px;
-    width: 120px;
-  }
-  /* line 37, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle li {
-    text-align: left;
-    font-family: Microsoft YaHei;
-    height: 24px;
-    line-height: 24px;
-    color: #646464;
-  }
-  /* line 44, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle .title {
-    color: #707070;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  /* line 49, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle a {
-    color: #646464;
-  }
-  /* line 51, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle a:hover {
-    color: #669900;
-  }
-  /* line 56, ../sass/_footer.scss */
-  .footer_main .footer_mainRight {
-    float: left;
-    margin: 35px 0 0 0;
-    width: 235px;
-    height: 145px;
-  }
-  
-  /* line 63, ../sass/_footer.scss */
-  .phone_client {
-    float: left;
-  }
-  /* line 65, ../sass/_footer.scss */
-  .phone_client span:nth-child(1) {
-    display: block;
-    text-align: center;
-    margin: 0 50px 8px 0;
-    line-height: 24px;
-    font-size: 14px;
-    color: #666666;
-    font-family: Microsoft YaHei;
-    font-weight: bold;
-  }
-  /* line 75, ../sass/_footer.scss */
-  .phone_client span:nth-child(2) {
-    display: block;
-    width: 80px;
-    height: 80px;
-    background: url(../images/foot_bottom.png) no-repeat left top;
-    color: #666666;
-    font-family: Microsoft YaHei;
-    font-weight: bold;
-  }
-  /* line 84, ../sass/_footer.scss */
-  .phone_client .wx {
-    background: url(../images/foot_bottom.png) no-repeat -83px 0px;
-  }
-  
-  /* line 88, ../sass/_footer.scss */
-  .footer_mainBot {
-    width: 1180px;
-    height: 50px;
-    margin: 0 auto;
-    border-top: 1px solid #e0e0e0;
-    padding-top: 15px;
-    position: relative;
-    float: left;
-  }
-  /* line 96, ../sass/_footer.scss */
-  .footer_mainBot .footer_mainBot1 {
-    float: left;
-    margin-left: 5px;
-  }
-  /* line 99, ../sass/_footer.scss */
-  .footer_mainBot .footer_mainBot1 img {
-    width: 94px;
-    height: 33px;
-  }
-  
-  /* line 106, ../sass/_footer.scss */
-  .footer_mainBot2 {
-    float: left;
-    position: absolute;
-    top: 13px;
-    left: 294px;
-  }
-  /* line 111, ../sass/_footer.scss */
-  .footer_mainBot2 span {
-    padding-left: 13px;
-  }
-  /* line 113, ../sass/_footer.scss */
-  .footer_mainBot2 span a {
-    color: #646464;
-  }
-  /* line 115, ../sass/_footer.scss */
-  .footer_mainBot2 span a:hover {
-    color: #669900;
-  }
+  line-height: 18px;
+  color: #969696;
+  width: 100%;
+  overflow: hidden;
+  height: 285px;
+}
+
+/* line 8, ../sass/_footer.scss */
+
+.footer_main {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 12, ../sass/_footer.scss */
+
+.footer_main .footer_mainLeft {
+  float: left;
+  width: 290px;
+  height: 145px;
+  margin: 20px 0px 0px 10px;
+  background: url(../images/logo.png) no-repeat left top;
+}
+
+/* line 19, ../sass/_footer.scss */
+
+.footer_main .kefu {
+  margin-top: 85px;
+  font-size: 20px;
+  color: #646464;
+  font-weight: bold;
+}
+
+/* line 25, ../sass/_footer.scss */
+
+.footer_main .shijian {
+  margin-top: 6px;
+}
+
+/* line 28, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle {
+  float: left;
+  margin: 35px 0 0 0;
+  width: 645px;
+}
+
+/* line 32, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle ul {
+  float: left;
+  margin: 0px 8px 0px 0px;
+  width: 120px;
+}
+
+/* line 37, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle li {
+  text-align: left;
+  font-family: Microsoft YaHei;
+  height: 24px;
+  line-height: 24px;
+  color: #646464;
+}
+
+/* line 44, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle .title {
+  color: #707070;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* line 49, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle a {
+  color: #646464;
+}
+
+/* line 51, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle a:hover {
+  color: #669900;
+}
+
+/* line 56, ../sass/_footer.scss */
+
+.footer_main .footer_mainRight {
+  float: left;
+  margin: 35px 0 0 0;
+  width: 235px;
+  height: 145px;
+}
+
+/* line 63, ../sass/_footer.scss */
+
+.phone_client {
+  float: left;
+}
+
+/* line 65, ../sass/_footer.scss */
+
+.phone_client span:nth-child(1) {
+  display: block;
+  text-align: center;
+  margin: 0 50px 8px 0;
+  line-height: 24px;
+  font-size: 14px;
+  color: #666666;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+}
+
+/* line 75, ../sass/_footer.scss */
+
+.phone_client span:nth-child(2) {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url(../images/foot_bottom.png) no-repeat left top;
+  color: #666666;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+}
+
+/* line 84, ../sass/_footer.scss */
+
+.phone_client .wx {
+  background: url(../images/foot_bottom.png) no-repeat -83px 0px;
+}
+
+/* line 88, ../sass/_footer.scss */
+
+.footer_mainBot {
+  width: 1180px;
+  height: 50px;
+  margin: 0 auto;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+  position: relative;
+  float: left;
+}
+
+/* line 96, ../sass/_footer.scss */
+
+.footer_mainBot .footer_mainBot1 {
+  float: left;
+  margin-left: 5px;
+}
+
+/* line 99, ../sass/_footer.scss */
+
+.footer_mainBot .footer_mainBot1 img {
+  width: 94px;
+  height: 33px;
+}
+
+/* line 106, ../sass/_footer.scss */
+
+.footer_mainBot2 {
+  float: left;
+  position: absolute;
+  top: 13px;
+  left: 294px;
+}
+
+/* line 111, ../sass/_footer.scss */
+
+.footer_mainBot2 span {
+  padding-left: 13px;
+}
+
+/* line 113, ../sass/_footer.scss */
+
+.footer_mainBot2 span a {
+  color: #646464;
+}
+
+/* line 115, ../sass/_footer.scss */
+
+.footer_mainBot2 span a:hover {
+  color: #669900;
+}

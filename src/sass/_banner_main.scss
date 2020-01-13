@@ -1,8 +1,9 @@
 .banner_main {
-  width: $page_container;
+  width: 100%;
   height: 480px;
   position: relative;
   z-index: 20;
+  margin: 0 auto;
   .banner_main_center {
     width: 1200px;
     margin: 0 auto;
@@ -123,41 +124,42 @@
 }
 
 .banner_main_bgcolor {
-  width: $page_container;
+  width: 100%;
   height: 480px;
   position: absolute;
   z-index: 0;
   top: 0;
+  overflow: hidden;
   .banner_bgcolor_ul {
     position: absolute;
     top: 0;
     left: 0;
     height: 480px;
     overflow: hidden;
-    li {
+    dd {
       width: 1894px;
       height: 480px;
       float: left;
     }
-    li:nth-child(1) {
+    dd:nth-child(1) {
       background: rgb(247, 156, 89);
     }
-    li:nth-child(2) {
+    dd:nth-child(2) {
       background: rgb(189, 37, 37);
     }
-    li:nth-child(3) {
+    dd:nth-child(3) {
       background: rgb(222, 115, 35);
     }
-    li:nth-child(4) {
+    dd:nth-child(4) {
       background: rgb(189, 41, 37);
     }
-    li:nth-child(5) {
+    dd:nth-child(5) {
       background: rgb(198, 66, 17);
     }
-    li:nth-child(6) {
+    dd:nth-child(6) {
       background: rgb(149, 12, 19);
     }
-    li:last-child {
+    dd:last-child {
       background: rgb(247, 156, 89);
     }
   }

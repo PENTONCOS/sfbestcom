@@ -10,6 +10,7 @@ $goods_price: #f33f00;
 @import "compass/css3";
 //body默认颜色和字体
 body {
+  min-width: 1200px;
   color: $page_fontcolor;
   font: 12px/150% Arial, Verdana, "宋体";
 }
@@ -25,7 +26,6 @@ body {
 a {
   text-decoration: none;
 }
-
 
 //鼠标入时的效果一
 @mixin nav_hover1($shadow: gray, $bg_color: #fff) {
