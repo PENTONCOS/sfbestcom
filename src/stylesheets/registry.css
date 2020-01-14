@@ -585,11 +585,29 @@ input {
 
 .reg_main li .reg_error {
   color: #666;
-  height:38px;
-  line-height:38px;
+  height: 38px;
+  line-height: 38px;
 }
 
+.regM, .defaultBorder em {
+  background: url(../images/icon4.jpg) center no-repeat;
+  width: 23px;
+  height: 36px;
+}
 
+.reg_main li .regInput {
+  width: 228px;
+  float: left;
+}
+
+.regok {
+  display: block;
+  float: left;
+}
+
+.border_green {
+  border: 1px solid #669900;
+}
 
 /* line 1, ../sass/_footer.scss */
 

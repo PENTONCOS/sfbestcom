@@ -26,3 +26,15 @@ import {
     indexShow
 } from './index_module';
 indexShow();
+
+//注册表单
+import {
+    registryShow
+} from './registry_module'
+registryShow();
+
+//详情效果
+import {
+    detailsShow
+} from './details_module';
+detailsShow();

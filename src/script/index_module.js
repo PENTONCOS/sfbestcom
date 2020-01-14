@@ -84,7 +84,6 @@ class NavMain {
         this.autoplay();
         //5.鼠标停留时停止自动播放 离开时开启自动播放
         this.goods.hover(() => {
-            console.log(1)
             clearInterval(this.timer);
         }, () => {
             this.autoplay();
@@ -351,7 +350,6 @@ class Hotspot {
 //es6
 
 function indexShow() {
-    console.log(1)
     //顶部广告效果
     new AdTop().init();
     //顶部轮播图

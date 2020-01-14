@@ -115,10 +115,19 @@ class Fdj {
 }
 
 //定义模块
-define([], function () {
-    return {
-        init: function () {
-            new Fdj().init();
-        }
-    }
-});
+// define([], function () {
+//     return {
+//         init: function () {
+//             new Fdj().init();
+//         }
+//     }
+// });
+
+// ES6
+
+function detailsShow() {
+    new Fdj().init();
+}
+export {
+    detailsShow
+}
