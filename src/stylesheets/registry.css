@@ -1,18 +1,7 @@
 @charset "UTF-8";
 /* line 5, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,22 +11,26 @@ time, mark, audio, video {
 }
 
 /* line 22, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 html {
   line-height: 1;
 }
 
 /* line 24, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 ol, ul {
   list-style: none;
 }
 
 /* line 26, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* line 28, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 caption, th, td {
   text-align: left;
   font-weight: normal;
@@ -45,26 +38,32 @@ caption, th, td {
 }
 
 /* line 30, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 q, blockquote {
   quotes: none;
 }
+
 /* line 103, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
 /* line 32, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 a img {
   border: none;
 }
 
 /* line 116, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* line 12, ../sass/registry.scss */
+
 html {
   background: #f5f5f5 none repeat scroll 0 0;
   color: #515151;
@@ -72,9 +71,8 @@ html {
 }
 
 /* line 18, ../sass/registry.scss */
-body,
-div,
-td {
+
+body, div, td {
   font-size: 12px;
   font-family: "宋体", Arial, Helvetica, sans-serif;
   line-height: 1.4em;
@@ -82,6 +80,7 @@ td {
 }
 
 /* line 27, ../sass/registry.scss */
+
 .clear:after {
   content: "";
   height: 0px;
@@ -92,16 +91,20 @@ td {
 }
 
 /* line 35, ../sass/registry.scss */
+
 a {
   text-decoration: none;
 }
 
 /* line 1, ../sass/_registry_header.scss */
+
 header {
   width: 1000px;
   margin: 0 auto;
 }
+
 /* line 4, ../sass/_registry_header.scss */
+
 header span {
   line-height: 70px;
   font-size: 24px;
@@ -110,37 +113,45 @@ header span {
   margin: 10px 0;
   float: left;
 }
+
 /* line 12, ../sass/_registry_header.scss */
+
 header img {
   margin: 10px 0;
   float: left;
 }
+
 /* line 16, ../sass/_registry_header.scss */
+
 header a {
   text-decoration: none;
   color: #515151;
 }
 
 /* line 21, ../sass/_registry_header.scss */
+
 img {
   border: none;
 }
 
 /* line 1, ../sass/_registry_geren.scss */
+
 .tabBox {
   width: 666px;
   margin: 0 auto;
   padding-left: 333px;
 }
+
 /* line 5, ../sass/_registry_geren.scss */
+
 .tabBox .reg_show {
   background: url(../images/tabbg.jpg) left top no-repeat;
   font-size: 16px;
 }
 
 /* line 15, ../sass/_registry_geren.scss */
-.tabBox .reg_show,
-.tabBox .reg_hide {
+
+.tabBox .reg_show, .tabBox .reg_hide {
   cursor: pointer;
   position: relative;
   top: 1px;
@@ -151,6 +162,7 @@ img {
 }
 
 /* line 26, ../sass/_registry_geren.scss */
+
 .tabBox span {
   display: block;
   float: left;
@@ -158,11 +170,13 @@ img {
 }
 
 /* line 31, ../sass/_registry_geren.scss */
+
 .regMr5 {
   margin-right: 5px;
 }
 
 /* line 35, ../sass/_registry_geren.scss */
+
 .tabBox .login {
   width: 130px;
   float: right;
@@ -172,16 +186,19 @@ img {
 }
 
 /* line 42, ../sass/_registry_geren.scss */
+
 .tabBox .login a {
   color: #6e9b0c;
 }
 
 /* line 1, ../sass/_registry_load.scss */
+
 .reg_border {
   border-top: 1px solid #d6d5d5;
 }
 
 /* line 4, ../sass/_registry_load.scss */
+
 .reg_main {
   padding: 45px 0 0 40px;
   width: 960px;
@@ -193,11 +210,13 @@ img {
 }
 
 /* line 14, ../sass/_registry_load.scss */
+
 .reg_main ul.individualUserBg {
   background: url(../images/pic10.jpg) 460px 0px no-repeat;
 }
 
 /* line 17, ../sass/_registry_load.scss */
+
 .reg_main ul {
   position: relative;
   left: 0;
@@ -205,18 +224,19 @@ img {
 }
 
 /* line 23, ../sass/_registry_load.scss */
-.reg_main ul.individualUserBg li,
-.reg_main ul.individualUserBg1 li,
-.reg_main ul.enterpriseUsers li {
+
+.reg_main ul.individualUserBg li, .reg_main ul.individualUserBg1 li, .reg_main ul.enterpriseUsers li {
   height: 38px;
 }
 
 /* line 28, ../sass/_registry_load.scss */
+
 .regMb30 {
   margin-bottom: 30px;
 }
 
 /* line 31, ../sass/_registry_load.scss */
+
 ul li {
   list-style-image: none;
   list-style-position: outside;
@@ -224,6 +244,7 @@ ul li {
 }
 
 /* line 37, ../sass/_registry_load.scss */
+
 .reg_main li label {
   width: 118px;
   font-size: 14px;
@@ -234,22 +255,20 @@ ul li {
 }
 
 /* line 46, ../sass/_registry_load.scss */
-.reg_main li label,
-.reg_main li .regM,
-.reg_main li .reg_error,
-.reg_main li .reg_error1,
-.reg_main li .reg_error3,
-.reg_main li .reg_error4 {
+
+.reg_main li label, .reg_main li .regM, .reg_main li .reg_error, .reg_main li .reg_error1, .reg_main li .reg_error3, .reg_main li .reg_error4 {
   display: block;
   float: left;
 }
 
 /* line 55, ../sass/_registry_load.scss */
+
 label {
   cursor: default;
 }
 
 /* line 58, ../sass/_registry_load.scss */
+
 .reg_main li .regM {
   width: 268px;
   height: 36px;
@@ -257,13 +276,13 @@ label {
 }
 
 /* line 64, ../sass/_registry_load.scss */
-.reg_main .defaultBorder,
-.loginreg_main .defaultBorder,
-.reg_findPassword .defaultBorder {
+
+.reg_main .defaultBorder, .loginreg_main .defaultBorder, .reg_findPassword .defaultBorder {
   border: 1px solid #cdcdcd;
 }
 
 /* line 70, ../sass/_registry_load.scss */
+
 .reg_main li .regInput {
   width: 228px;
   height: 36px;
@@ -275,40 +294,37 @@ label {
 }
 
 /* line 80, ../sass/_registry_load.scss */
-.reg_main .safetyLayer,
-.reg_findPassword .safetyLayer {
+
+.reg_main .safetyLayer, .reg_findPassword .safetyLayer {
   height: 28px;
   color: #666;
   padding-top: 5px;
 }
 
 /* line 87, ../sass/_registry_load.scss */
+
 .regPl191 {
   padding-left: 191px;
 }
 
 /* line 90, ../sass/_registry_load.scss */
-.reg_main .safetyLayer font,
-.reg_main .safetyLayer em,
-.reg_main .safetyLayer a,
-.reg_findPassword .safetyLayer font,
-.reg_findPassword .safetyLayer em,
-.reg_findPassword .safetyLayer a {
+
+.reg_main .safetyLayer font, .reg_main .safetyLayer em, .reg_main .safetyLayer a, .reg_findPassword .safetyLayer font, .reg_findPassword .safetyLayer em, .reg_findPassword .safetyLayer a {
   display: block;
   float: left;
 }
 
 /* line 99, ../sass/_registry_load.scss */
-.reg_main .safetyLayer,
-.reg_findPassword .safetyLayer {
+
+.reg_main .safetyLayer, .reg_findPassword .safetyLayer {
   height: 28px;
   color: #666;
   padding-top: 5px;
 }
 
 /* line 105, ../sass/_registry_load.scss */
-.reg_main .safetyLayer em,
-.reg_findPassword .safetyLayer em {
+
+.reg_main .safetyLayer em, .reg_findPassword .safetyLayer em {
   text-align: center;
   width: 34px;
   margin-right: 2px;
@@ -316,24 +332,20 @@ label {
 }
 
 /* line 112, ../sass/_registry_load.scss */
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-th,
-var {
+
+address, caption, cite, code, dfn, em, th, var {
   font-style: normal;
   font-weight: normal;
 }
 
 /* line 123, ../sass/_registry_load.scss */
+
 .regMb30 {
   margin-bottom: 30px;
 }
 
 /* line 127, ../sass/_registry_load.scss */
+
 .reg_main li .regM {
   width: 268px;
   height: 36px;
@@ -341,6 +353,7 @@ var {
 }
 
 /* line 132, ../sass/_registry_load.scss */
+
 .reg_main li .regInput {
   width: 228px;
   height: 36px;
@@ -352,10 +365,8 @@ var {
 }
 
 /* line 141, ../sass/_registry_load.scss */
-input,
-textarea,
-select,
-button {
+
+input, textarea, select, button {
   font-family: "微软雅黑";
   font-size: 12px;
   font-weight: inherit;
@@ -363,6 +374,7 @@ button {
 }
 
 /* line 151, ../sass/_registry_load.scss */
+
 .reg_main li .regInput {
   width: 228px;
   height: 36px;
@@ -374,6 +386,7 @@ button {
 }
 
 /* line 161, ../sass/_registry_load.scss */
+
 .reg_main li label {
   width: 118px;
   font-size: 14px;
@@ -384,6 +397,7 @@ button {
 }
 
 /* line 170, ../sass/_registry_load.scss */
+
 .reg_main li .regCodeInput {
   float: left;
   padding: 0 5px;
@@ -392,6 +406,7 @@ button {
 }
 
 /* line 176, ../sass/_registry_load.scss */
+
 .reg_main li .regCodeInput {
   float: left;
   padding: 0 5px;
@@ -401,51 +416,56 @@ button {
 }
 
 /* line 183, ../sass/_registry_load.scss */
+
 .floatleft {
   float: left;
 }
 
 /* line 187, ../sass/_registry_load.scss */
+
 .reg_main li label font {
   color: #ff4800;
 }
 
 /* line 191, ../sass/_registry_load.scss */
+
 .reg_main li .codeTitle {
   width: 86px;
   line-height: 36px;
 }
 
 /* line 196, ../sass/_registry_load.scss */
-.reg_main li .codeTitle,
-.reg_main li .checkTitle {
+
+.reg_main li .codeTitle, .reg_main li .checkTitle {
   color: #565656;
 }
 
 /* line 201, ../sass/_registry_load.scss */
+
 .regMl6 {
   margin-left: 6px;
 }
 
 /* line 205, ../sass/_registry_load.scss */
+
 .floatleft {
   float: left;
 }
 
 /* line 209, ../sass/_registry_load.scss */
-.reg_main li .codeTitle a,
-.reg_main li .checkTitle font,
-.loginreg_main li .checkTitle font,
-.reg_main li .reg_error a {
+
+.reg_main li .codeTitle a, .reg_main li .checkTitle font, .loginreg_main li .checkTitle font, .reg_main li .reg_error a {
   color: #6e9b0c;
 }
 
 /* line 216, ../sass/_registry_load.scss */
+
 .regPl88 {
   padding-left: 88px;
 }
 
 /* line 220, ../sass/_registry_load.scss */
+
 .reg_main li .regM {
   width: 268px;
   height: 36px;
@@ -453,41 +473,43 @@ button {
 }
 
 /* line 226, ../sass/_registry_load.scss */
-input[type="radio"],
-input[type="checkbox"] {
+
+input[type="radio"], input[type="checkbox"] {
   vertical-align: middle;
 }
 
 /* line 231, ../sass/_registry_load.scss */
+
 input {
   outline: none;
 }
 
 /* line 235, ../sass/_registry_load.scss */
-.reg_main li .codeTitle,
-.reg_main li .checkTitle {
+
+.reg_main li .codeTitle, .reg_main li .checkTitle {
   color: #565656;
 }
 
 /* line 240, ../sass/_registry_load.scss */
-.reg_main li .codeTitle a,
-.reg_main li .checkTitle font,
-.loginreg_main li .checkTitle font,
-.reg_main li .reg_error a {
+
+.reg_main li .codeTitle a, .reg_main li .checkTitle font, .loginreg_main li .checkTitle font, .reg_main li .reg_error a {
   color: #6e9b0c;
 }
 
 /* line 247, ../sass/_registry_load.scss */
+
 .regMt10 {
   margin-top: 10px;
 }
 
 /* line 251, ../sass/_registry_load.scss */
+
 .regPl88 {
   padding-left: 88px;
 }
 
 /* line 255, ../sass/_registry_load.scss */
+
 .reg_main .registerNow {
   display: block;
   float: left;
@@ -500,6 +522,7 @@ input {
 }
 
 /* line 266, ../sass/_registry_load.scss */
+
 .ui-reg-tip {
   padding: 15px 10px 10px 45px;
   border-top: 1px dotted #dcdcdc;
@@ -510,42 +533,66 @@ input {
 }
 
 /* line 274, ../sass/_registry_load.scss */
-.ui-reg-tip a:link,
-.ui-reg-tip a:visited,
-.ui-reg-tip a:hover {
+
+.ui-reg-tip a:link, .ui-reg-tip a:visited, .ui-reg-tip a:hover {
   color: #669900;
 }
 
 /* line 280, ../sass/_registry_load.scss */
+
 .reg_main li .regInput {
   width: 253px;
-  height: 34px;
-  line-height: 34px;
+  height: 33px;
+  line-height: 33px;
 }
 
 /* line 286, ../sass/_registry_load.scss */
-.reg_main .safetyLayer em.default,
-.reg_findPassword .safetyLayer em.default {
+
+.reg_main .safetyLayer em.default, .reg_findPassword .safetyLayer em.default {
   background: #c4c4c4;
 }
 
 /* line 290, ../sass/_registry_load.scss */
+
 #reg_per_data {
   border: 0;
 }
+
 /* line 292, ../sass/_registry_load.scss */
+
 #reg_per_data:hover {
   background-position: 0 -38px;
   cursor: pointer;
 }
 
 /* line 298, ../sass/_registry_load.scss */
+
 .reg_main {
   min-height: 407px;
   margin-bottom: 30px;
 }
 
+.reg_main li label, .reg_main li .regM, .reg_main li .reg_error, .reg_main li .reg_error1, .reg_main li .reg_error3, .reg_main li .reg_error4 {
+  display: block;
+  float: left;
+}
+
+.reg_main li .reg_error, .reg_main li .reg_error1, .reg_main li .reg_error2, .reg_main li .reg_error3 {
+  width: 230px;
+  /* padding-left: 15px; */
+  padding: 0 10px 0 15px;
+}
+
+.reg_main li .reg_error {
+  color: #666;
+  height:38px;
+  line-height:38px;
+}
+
+
+
 /* line 1, ../sass/_footer.scss */
+
 footer {
   line-height: 18px;
   color: #969696;
@@ -555,12 +602,15 @@ footer {
 }
 
 /* line 8, ../sass/_footer.scss */
+
 .footer_main {
   width: 1200px;
   margin: 0 auto;
   overflow: hidden;
 }
+
 /* line 12, ../sass/_footer.scss */
+
 .footer_main .footer_mainLeft {
   float: left;
   width: 290px;
@@ -568,30 +618,40 @@ footer {
   margin: 20px 0px 0px 10px;
   background: url(../images/logo.png) no-repeat left top;
 }
+
 /* line 19, ../sass/_footer.scss */
+
 .footer_main .kefu {
   margin-top: 85px;
   font-size: 20px;
   color: #646464;
   font-weight: bold;
 }
+
 /* line 25, ../sass/_footer.scss */
+
 .footer_main .shijian {
   margin-top: 6px;
 }
+
 /* line 28, ../sass/_footer.scss */
+
 .footer_main .footer_mainMiddle {
   float: left;
   margin: 35px 0 0 0;
   width: 645px;
 }
+
 /* line 32, ../sass/_footer.scss */
+
 .footer_main .footer_mainMiddle ul {
   float: left;
   margin: 0px 8px 0px 0px;
   width: 120px;
 }
+
 /* line 37, ../sass/_footer.scss */
+
 .footer_main .footer_mainMiddle li {
   text-align: left;
   font-family: Microsoft YaHei;
@@ -599,21 +659,29 @@ footer {
   line-height: 24px;
   color: #646464;
 }
+
 /* line 44, ../sass/_footer.scss */
+
 .footer_main .footer_mainMiddle .title {
   color: #707070;
   font-weight: bold;
   font-size: 14px;
 }
+
 /* line 49, ../sass/_footer.scss */
+
 .footer_main .footer_mainMiddle a {
   color: #646464;
 }
+
 /* line 51, ../sass/_footer.scss */
+
 .footer_main .footer_mainMiddle a:hover {
   color: #669900;
 }
+
 /* line 56, ../sass/_footer.scss */
+
 .footer_main .footer_mainRight {
   float: left;
   margin: 35px 0 0 0;
@@ -622,10 +690,13 @@ footer {
 }
 
 /* line 63, ../sass/_footer.scss */
+
 .phone_client {
   float: left;
 }
+
 /* line 65, ../sass/_footer.scss */
+
 .phone_client span:nth-child(1) {
   display: block;
   text-align: center;
@@ -636,7 +707,9 @@ footer {
   font-family: Microsoft YaHei;
   font-weight: bold;
 }
+
 /* line 75, ../sass/_footer.scss */
+
 .phone_client span:nth-child(2) {
   display: block;
   width: 80px;
@@ -646,12 +719,15 @@ footer {
   font-family: Microsoft YaHei;
   font-weight: bold;
 }
+
 /* line 84, ../sass/_footer.scss */
+
 .phone_client .wx {
   background: url(../images/foot_bottom.png) no-repeat -83px 0px;
 }
 
 /* line 88, ../sass/_footer.scss */
+
 .footer_mainBot {
   width: 1180px;
   height: 50px;
@@ -661,33 +737,44 @@ footer {
   position: relative;
   float: left;
 }
+
 /* line 96, ../sass/_footer.scss */
+
 .footer_mainBot .footer_mainBot1 {
   float: left;
   margin-left: 5px;
 }
+
 /* line 99, ../sass/_footer.scss */
+
 .footer_mainBot .footer_mainBot1 img {
   width: 94px;
   height: 33px;
 }
 
 /* line 106, ../sass/_footer.scss */
+
 .footer_mainBot2 {
   float: left;
   position: absolute;
   top: 13px;
   left: 294px;
 }
+
 /* line 111, ../sass/_footer.scss */
+
 .footer_mainBot2 span {
   padding-left: 13px;
 }
+
 /* line 113, ../sass/_footer.scss */
+
 .footer_mainBot2 span a {
   color: #646464;
 }
+
 /* line 115, ../sass/_footer.scss */
+
 .footer_mainBot2 span a:hover {
   color: #669900;
 }

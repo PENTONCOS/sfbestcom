@@ -1,0 +1,28 @@
+{
+  "name": "sfbestcom",
+  "version": "1.0.0",
+  "description": "这是顺丰优选的测试项目",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --progress --display-modules --colors --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PENTONCOS/sfbestcom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PENTONCOS/sfbestcom/issues"
+  },
+  "homepage": "https://github.com/PENTONCOS/sfbestcom#readme",
+  "devDependencies": {
+    "expose-loader": "^0.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

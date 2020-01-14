@@ -28,19 +28,30 @@
     <!------------------------------ 注册表单 ---------------------->
     <div class="reg_main reg_border regTab">
         <ul class="individualUserBg">
-            <form id="regForm_mod" name="regForm_mod" method="post">
+            <form id="regForm_mod" name="regForm_mod" method="post"
+                action="http://10.31.152.15/JS1912/sfbestcom/src/index1.html">
 
                 <li class="regMb30">
                     <label>
                         <font>*</font> 账户名：
                     </label>
                     <span class="regM defaultBorder">
-                        <input id="userMam" name="userMam" class="regInput" type="text" onkeyup="mail_div(event);"
-                            onfocus="showtip('userMam','userMamErr',1);" onblur="ckmem();" autocomplete="off"
+                        <input id="userMam" name="userMam" class="regInput" type="text" autocomplete="off"
                             maxlength="80">
                         <em></em>
                     </span>
-                    <span class="regInput" id="userMamErr"></span>
+                    <span class="reg_error" id="userMamErr"><font class="f_0">请输入正确的手机号码</font></span>
+                </li>
+
+                <li class="regMb30">
+                    <label>
+                        <font>*</font> 电子邮箱：
+                    </label>
+                    <span class="regM defaultBorder">
+                        <input id="email" name="email" class="regInput" type="text" autocomplete="off" maxlength="80">
+                        <em></em>
+                    </span>
+                    <span class="reg_error" id="userMamErr2"><font class="f_0"></font></span>
                 </li>
 
                 <li>
@@ -48,12 +59,10 @@
                         <font>*</font> 登录密码：
                     </label>
                     <span class="regM defaultBorder">
-                        <input id="password" name="password" class="regInput" autocomplete="off" type="password"
-                            onfocus="showPwdtip('password','passwordErr',2);" onkeyup="ckpwd(0,1);"
-                            onblur="ckpwd(0,0);">
+                        <input id="password" name="password" class="regInput" autocomplete="off" type="password">
                         <em></em>
                     </span>
-                    <span class="regInput" id="passwordErr"></span>
+                    <span class="reg_error" id="passwordErr"><font class="f_0"></font></span>
                 </li>
                 <li class="safetyLayer regPl191" id="pwdStrong">
                     <font style="font-size:12px;">安全程度：</font><em class="default">弱</em><em class="default">中</em><em
@@ -65,16 +74,15 @@
                         <font>*</font> 确认密码：
                     </label>
                     <span class="regM defaultBorder">
-                        <input id="password2" name="password2" autocomplete="off" class="regInput" type="password"
-                            onfocus="showtip('password2','password2Err',3);" onblur="ckpwd2();">
+                        <input id="password2" name="password2" autocomplete="off" class="regInput" type="password">
                         <em></em>
                     </span>
-                    <span class="regInput" id="password2Err"></span>
+                    <span class="reg_error" id="password2Err"><font class="f_0"></font></span>
                 </li>
 
                 <li class="regPl88">
                     <span class="regM" style="margin-left:29px">
-                        <input id="AgreeId" name="AgreeId" type="checkbox" onclick="ckAgree();">
+                        <input id="AgreeId" name="AgreeId" type="checkbox">
                         <a href="https://passport.sfbest.com/xy.html" target="_blank" class="checkTitle">我已阅读并同意<font
                                 style="font-size:12px;">《顺丰优选用户注册协议》</font></a>
                     </span>
@@ -184,7 +192,9 @@
             </div>
         </div>
     </footer>
-
+    <!-- <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage"
+        target-page="script/registry_module.js"></script> -->
+        <script src="../dist/bundle.js" defer async='true'></script>
 </body>
 
 

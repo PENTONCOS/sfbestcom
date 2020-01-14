@@ -355,6 +355,7 @@ ul li {
   padding: 0 8px;
   float: left;
   border: 0;
+  outline: none;
 }
 
 .login_box li span {
@@ -409,7 +410,8 @@ ul li {
   line-height: 40px;
   padding: 0 8px;
   float: left;
-  border:0;
+  border: 0;
+  outline: none;
 }
 
 .padPhone .closeIcon {
@@ -500,8 +502,8 @@ ul li {
 
 .login_box .newblink li .s1 {
   height: 20px;
-  margin-left:20px;
-  margin-top:5px;
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
 .login_box .newblink li span {
@@ -530,13 +532,14 @@ ul li {
   line-height: 26px;
   text-decoration: none;
 }
-.login_box .newblink li{
-  position: relative;
 
+.login_box .newblink li {
+  position: relative;
 }
+
 .login_box .newblink li .s2 {
   position: absolute;
-  top:4px;
+  top: 4px;
   left: 49px;
 }
 
@@ -769,4 +772,8 @@ footer {
 
 .footer_mainBot2 span a:hover {
   color: #669900;
+}
+
+.padPhone .phone-ipt input{
+  outline:none;
 }
