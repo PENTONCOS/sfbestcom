@@ -1814,6 +1814,10 @@ a {
     overflow: hidden;
 }
 
+.pItemsName h1, .pItemsName strong {
+    font-weight:bold;
+}
+
 
 /******************************************** 底部 ****************************************/
 

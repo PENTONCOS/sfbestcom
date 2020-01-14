@@ -1,6 +1,7 @@
-// 放大镜效果
+// 放大镜效果+渲染数据
 class Fdj {
     constructor() {
+        // 放大镜
         this.fdj_right = $('.fdj_right');
         this.fdj_list = $('.fdj_list');
         this.spic = $('#spic');
@@ -10,12 +11,43 @@ class Fdj {
         this.top = $('#top');
         this.bot = $('#bot');
         this.ulmove = $('.list ul');
-        this.list = $('.list ul li');
+        // this.list = $('.list ul li');
+        // 渲染数据
+        this.sid = location.search.substring(1).split('=')[1];
     }
 
     init() {
         let _this = this;
+
+        //渲染数据
+        $.ajax({
+            url: 'http://10.31.152.15/JS1912/sfbestcom/php/getsid.php',
+            data: {
+                sid: this.sid,
+            },
+            dataType: 'json'
+        }).done((data) => {
+            console.log(data);
+            this.spic.find('img').attr('src', data.url);
+            this.bpic.attr('src', data.url);
+            $('#base_name-sf').prop('title', data.title);
+            $('#base_name-sf').html(data.title);
+            $('.priceBox .price').html(data.price);
+            $('.pdetail ul li').eq(0).find('span a').prop('title', data.title);
+            $('.pdetail ul li').eq(0).find('span a').html(data.title);
+            $('.pdetail ul li').eq(3).html('重量：' + data.weight + 'kg (含包装)');
+            let piclist = data.urls.split(',');
+            let $strhtml = '';
+            $.each(piclist, function (index, value) {
+                $strhtml += `
+                <li><img src="${value}" alt=""></li>
+                `;
+            })
+            $('.list ul').html($strhtml);
+        })
+
         //鼠标移入和移出时 显示和隐藏小放和大放
+        // this.list = $('.list ul li');
         this.spic.hover(() => {
             this.sf.css({
                 visibility: 'visible',
@@ -66,8 +98,14 @@ class Fdj {
             $(this).find('img').addClass('active');
         })
         //点击上下箭头，进行图片运动
+        this.list = $('.list ul li');
         let $num = 5;//可视的li的长度
         let $liheight = this.list.eq(0).outerHeight(true);//1个li的高度
+
+        console.log($liheight);
+        console.log(this.list.length);
+        console.log(this.list);
+        
         if (this.list.length <= $num) {
             this.bot.css('color', '#fff');
         }
@@ -111,21 +149,17 @@ class Fdj {
                 });
             }
         });
+
+
     }
 }
 
-//定义模块
-// define([], function () {
-//     return {
-//         init: function () {
-//             new Fdj().init();
-//         }
-//     }
-// });
+
 
 // ES6
 
 function detailsShow() {
+    //放大镜效果
     new Fdj().init();
 }
 export {
