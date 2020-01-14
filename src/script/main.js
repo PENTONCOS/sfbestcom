@@ -33,6 +33,12 @@ import {
 } from './registry_module'
 registryShow();
 
+//登录表单
+import {
+    loginShow
+} from './login_module'
+loginShow();
+
 //详情效果
 import {
     detailsShow

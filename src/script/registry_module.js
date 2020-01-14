@@ -8,11 +8,11 @@ class Validation {
         this.spans = $('.reg_error');
         this.form = $('form');
         this.safes = $('.default');
-        this.userflag = true;
         this.user_lock = true;
         this.pass_lock = true;
         this.pass_lock2 = true;
         this.email_lock = true;
+        this.checked = true;
     }
     init() {
         let _this = this;
@@ -46,8 +46,9 @@ class Validation {
                         if (!result) { //不存在
 
                         } else {
-                            $('#userMamErr').find('font').html('改用户名已经存在').css('color', 'red');
-                            _this.userflag = false;
+                            $('#userMamErr').find('font').html('该用户名已经存在').css('color', '#f00078');
+                            _this.inputs.eq(0).parent('.regM').find('em').removeClass('regok');
+                            _this.user_lock = false;
                         }
                     });
                     //表单验证
@@ -167,9 +168,42 @@ class Validation {
         })
 
         //再次确认密码
-        
+        this.inputs.eq(3).on({
+            foucs: function () {
+                _this.spans.eq(3).find('font').html('请再次输入密码');
+                _this.spans.eq(3).find('font').css('color', '#666');
+                $(this).parent('.regM').find('em').removeClass('regok');
+            },
+            blur: function () {
+                if ($(this).val() !== '') {
+                    if (_this.inputs.eq(2).val() === $(this).val()) {
+                        _this.spans.eq(3).find('font').html('');
+                        $(this).parent('.regM').find('em').addClass('regok');
+                        _this.pass_lock2 = true;
+                    } else {
+                        _this.spans.eq(3).find('font').html('您输入的密码有误');
+                        _this.spans.eq(3).find('font').css('color', '#F00078');
+                        _this.pass_lock2 = false;
+                    }
+                } else {
+                    _this.spans.eq(3).find('font').html('密码不能为空');
+                    _this.spans.eq(3).find('font').css('color', '#F00078');
+                    _this.pass_lock2 = false;
+                }
+            }
+        })
 
+        //确认协议
 
+        $('#AgreeId').on('click', function () {
+            if ($('#AgreeId').prop('checked') !== true) {
+                _this.checked = false;
+
+            } else {
+                _this.checked = true;
+            }
+            console.log($('#AgreeId').prop('checked'));
+        })
 
         //点击提交按钮后 确认每一项是否输入正确
         this.form.on('submit', () => {
@@ -190,15 +224,20 @@ class Validation {
                 this.spans.eq(2).find('font').css('color', '#f00078');
                 this.pass_lock = false;
             }
+            if (this.inputs.eq(3).val() == '') {
+                this.spans.eq(3).find('font').html('确认密码不能为空');
+                this.spans.eq(3).find('font').css('color', '#f00078');
+                this.pass_lock2 = false;
+            }
+            if ($('#AgreeId').prop('checked') !== true) {
 
-            return false;
+                this.checked =false;
+            }
+
+            if (!this.user_lock || !this.pass_lock || !this.pass_lock2 || !this.email_lock || !this.checked) {
+                return false;
+            }
         })
-
-        if (!this.user_lock || !this.pass_lock || !this.pass_lock2 || !this.email_lock) {
-            return false;
-        }
-
-
     }
 }
 

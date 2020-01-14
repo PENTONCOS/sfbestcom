@@ -365,6 +365,15 @@ ul li {
 .loginPhone .closeIcon {
   background: url(../images/login-icon10.png) center no-repeat;
   cursor: pointer;
+  height: 24px;
+  width: 24px;
+  float: left;
+  position: relative;
+  top: -30px;
+}
+
+.ci1{
+  left:276px;
 }
 
 .m-t14 {

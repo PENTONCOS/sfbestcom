@@ -1,12 +1,14 @@
-//顶部广告效果
+//顶部广告效果+点击地区
 class AdTop {
     constructor() {
         this.banner_big = $('.banner_big');
         this.banner = $('.banner');
         this.banner_span = $('.banner span');
         this.timer = null;
+        this.city = $('.city');
     }
     init() {
+        let _this=this;
         //给头部广告定时 时间到后关闭大的显示小的
         this.timer = setTimeout(() => {
             // this.banner_big.css('display', 'none');
@@ -24,6 +26,15 @@ class AdTop {
         })
 
         // clearTimeout(this.timer);
+
+        //点击地区
+        $('.citys_middle').on('click','a',function(){
+            _this.city.html($(this).html());
+        })
+        $('.citys_bottom').on('click','li',function(){
+            _this.city.html($(this).html());
+        })
+       
     }
 }
 
@@ -322,6 +333,25 @@ class Hotspot {
     };
 }
 
+//登录成功后首页显示用户名
+class ShowName{
+    constructor(){
+
+    }
+    init(){
+        if(localStorage.getItem('username')){
+            $('.login').hide();
+            $('.loginTihuan').show();
+            $('.loginTihuan').html('嘿，'+localStorage.getItem('username')+' 欢迎来到顺丰优选！<a class="exit" href="javascript:;">退出</a>');
+        }
+        $('.exit').on('click',function(){
+            $('.login').show();
+            $('.loginTihuan').hide();
+            localStorage.removeItem('username');
+        })
+    }
+}
+
 
 
 //定义模块
@@ -350,7 +380,7 @@ class Hotspot {
 //es6
 
 function indexShow() {
-    //顶部广告效果
+    //顶部广告效果+点击地区
     new AdTop().init();
     //顶部轮播图
     new NavMain().init();
@@ -364,6 +394,8 @@ function indexShow() {
     new Louti().init();
     //热门评论轮播
     new Hotspot().init();
+    //首页显示姓名
+    new ShowName().init();
 }
 export {
     indexShow
