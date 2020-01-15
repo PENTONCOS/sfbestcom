@@ -1,4 +1,4 @@
-// 放大镜效果+渲染数据
+// 放大镜效果+渲染数据+添加到购物车
 class Fdj {
     constructor() {
         // 放大镜
@@ -14,6 +14,7 @@ class Fdj {
         // this.list = $('.list ul li');
         // 渲染数据
         this.sid = location.search.substring(1).split('=')[1];
+        this.count = $('#number_300583');
     }
 
     init() {
@@ -27,7 +28,6 @@ class Fdj {
             },
             dataType: 'json'
         }).done((data) => {
-            console.log(data);
             this.spic.find('img').attr('src', data.url);
             this.bpic.attr('src', data.url);
             $('#base_name-sf').prop('title', data.title);
@@ -98,59 +98,119 @@ class Fdj {
             $(this).find('img').addClass('active');
         })
         //点击上下箭头，进行图片运动
-        this.list = $('.list ul li');
-        let $num = 5;//可视的li的长度
-        let $liheight = this.list.eq(0).outerHeight(true);//1个li的高度
+        //刷新页面时通过点击事件来确认渲染出来的li的长度
+        $(document).ready(function () {
+            $('.fdj_list').find('#bot').click();
+        })
+        $('.fdj_list').on('click', '#bot', function () {
+            let $liheight = $(this).siblings('.list').find('li').eq(0).outerHeight(true);//1个li的高度
+            let $ul_li_length = $(this).siblings('.list').find('li').length;
+            let $num = 5;//可视的li的长度
 
-        console.log($liheight);
-        console.log(this.list.length);
-        console.log(this.list);
-        
-        if (this.list.length <= $num) {
-            this.bot.css('color', '#fff');
+            if ($ul_li_length <= $num) {
+                _this.bot.find('b').css({
+                    'background-position': '-30px -10px'
+                });
+            }
+
+            _this.bot.on('click', () => {
+                if ($ul_li_length > $num) {
+                    $num++;
+                    _this.top.find('b').css({
+                        'background-position': '-49px 0',
+                    });
+                    if ($num === $ul_li_length) {
+                        _this.bot.css({
+                            cursor: 'default'
+                        });
+                        _this.bot.find('b').css({
+                            'background-position': '-30px -10px',
+                        });
+                    }
+                    _this.ulmove.stop(true).animate({
+                        top: -($num - 5) * $liheight
+                    });
+                }
+            });
+
+            _this.top.on('click', () => {
+                if ($num > 5) {
+                    $num--;
+                    _this.bot.find('b').css({
+                        'background-position': '-49px -10px',
+                    });
+                    if ($num === 5) {
+                        _this.top.css({
+                            cursor: 'default'
+                        });
+                        _this.top.find('b').css({
+                            'background-position': '-30px 0',
+                        });
+                    }
+                    _this.ulmove.stop(true).animate({
+                        top: -($num - 5) * $liheight
+                    });
+                }
+            });
+        })
+        // 添加到购物车
+        this.addCart();
+        //文本框值的改变
+        this.valuechange();
+    }
+
+    // 添加到购物车
+    addCart() {
+        let goodsnum = []; //商品的数量
+        let goodsid = []; //商品的编号
+        //cartnum  cartsid:本地存储的key值
+        function getcookie() {
+            if (localStorage.getItem('cartnum') && localStorage.getItem('cartsid')) {
+                goodsnum = localStorage.getItem('cartnum').split(',');
+                goodsid = localStorage.getItem('cartsid').split(',');
+            }
         }
-
-        this.bot.on('click', () => {
-            if (this.list.length > $num) {
-                $num++;
-                this.top.find('b').css({
-                    'background-position': '-49px 0',
-                });
-                if ($num === this.list.length) {
-                    this.bot.css({
-                        cursor: 'default'
-                    });
-                    this.bot.find('b').css({
-                        'background-position': '-30px -10px',
-                    });
-                }
-                this.ulmove.animate({
-                    top: -($num - 5) * $liheight
-                });
+        $('#cart-add-btn-sf a').on('click', () => {
+            getcookie();
+            if ($.inArray(this.sid, goodsid) === -1) { //第一次点击,将sid传入，取到数量直接传入
+                goodsid.push(this.sid);
+                localStorage.setItem('cartsid', goodsid); //存入sid
+                goodsnum.push(this.count.val());
+                localStorage.setItem('cartnum', goodsnum); //存入数量
+            } else {
+                let index = $.inArray(this.sid, goodsid); //当前sid在数组中对应的位置
+                let newnum = parseInt(goodsnum[index]) + parseInt(this.count.val()); //原来存储的值+当前的值
+                goodsnum[index] = newnum; //新的数量
+                localStorage.setItem('cartnum', goodsnum); //存入数量
             }
         });
-
-        this.top.on('click', () => {
-            if ($num > 5) {
-                $num--;
-                this.bot.find('b').css({
-                    'background-position': '-49px -10px',
-                });
-                if ($num === 5) {
-                    this.top.css({
-                        cursor: 'default'
-                    });
-                    this.top.find('b').css({
-                        'background-position': '-30px 0',
-                    });
-                }
-                this.ulmove.animate({
-                    top: -($num - 5) * $liheight
-                });
+    }
+    //文本框值的改变
+    valuechange() {
+        if ($('#number_300583').val() > 1) {
+            $('#reduce-sell-num').removeClass('disable');
+        }
+        //++
+        $('#add-sell-num').on('click', function () {
+            let $num = $('#number_300583').val();
+            $num++;
+            $('#number_300583').val($num);
+            //等于value大于1的时候 减号可用
+            if ($num >= 1) {
+                $('#reduce-sell-num').removeClass('disable');
             }
         });
-
-
+        //--
+        $('#reduce-sell-num').on('click', function () {
+            let $num = $('#number_300583').val();
+            $num--;
+            //等于value小于1的时候 减号不可用
+            if ($num <= 1) {
+                $num = 1;
+                $('#reduce-sell-num').addClass('disable');
+            }
+            $('#number_300583').val($num);
+        });
     }
 }
 
