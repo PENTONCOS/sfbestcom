@@ -163,6 +163,7 @@ class Fdj {
     addCart() {
         let goodsnum = []; //商品的数量
         let goodsid = []; //商品的编号
+        let zongshuliang = 0;//所有商品总数量
         //cartnum  cartsid:本地存储的key值
         function getcookie() {
             if (localStorage.getItem('cartnum') && localStorage.getItem('cartsid')) {
@@ -170,6 +171,11 @@ class Fdj {
                 goodsid = localStorage.getItem('cartsid').split(',');
             }
         }
+        getcookie();
+        $.each(goodsnum, function (index, value) {
+            zongshuliang += parseInt(value);
+        })
+        // $('.cart_num').html(zongshuliang);
         $('#cart-add-btn-sf a').on('click', () => {
             getcookie();
             if ($.inArray(this.sid, goodsid) === -1) { //第一次点击,将sid传入，取到数量直接传入
@@ -177,13 +183,18 @@ class Fdj {
                 localStorage.setItem('cartsid', goodsid); //存入sid
                 goodsnum.push(this.count.val());
                 localStorage.setItem('cartnum', goodsnum); //存入数量
+                zongshuliang += this.count.val();
             } else {
                 let index = $.inArray(this.sid, goodsid); //当前sid在数组中对应的位置
                 let newnum = parseInt(goodsnum[index]) + parseInt(this.count.val()); //原来存储的值+当前的值
                 goodsnum[index] = newnum; //新的数量
                 localStorage.setItem('cartnum', goodsnum); //存入数量
+                zongshuliang += newnum;
             }
+
         });
+        $('.cart_num').html(zongshuliang);
+
     }
     //文本框值的改变
     valuechange() {

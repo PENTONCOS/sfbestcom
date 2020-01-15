@@ -17,5 +17,5 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
 
     $conn->query("insert usertable values(null,'$username','$password','$email',NOW()) ");
-    header('location:http://10.31.152.15/JS1912/sfbestcom/src/index1.html'); //php页面的跳转。
+    header('location:http://10.31.152.15/JS1912/sfbestcom/src/login.html'); //php页面的跳转。
 }

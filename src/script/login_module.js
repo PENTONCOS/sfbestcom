@@ -15,7 +15,7 @@ class Login {
                     }
                 }).done(function (result) {
                     if (result) { //匹配成功
-                        location.href = 'http://10.31.152.15/JS1912/sfbestcom/src/index1.html';
+                        location.href = 'http://10.31.152.15/JS1912/sfbestcom/src/index.html';
                         localStorage.setItem('username', $('#uName').val());
                     } else { //匹配失败
                         $('#uPassword').val('');

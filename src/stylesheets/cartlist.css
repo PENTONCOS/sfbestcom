@@ -1024,6 +1024,10 @@ header {
 
 /******************************* 购物车列表 *********************/
 
+.qxsc {
+    display: block;
+}
+
 .cartMain {
     width: 1000px;
     margin: 0 auto;
@@ -1434,82 +1438,106 @@ footer {
     width: 100%;
     overflow: hidden;
     height: 285px;
-    margin-top:50px;
-  }
-  
-  /* line 8, ../sass/_footer.scss */
-  .footer_main {
+    margin-top: 50px;
+}
+
+/* line 8, ../sass/_footer.scss */
+
+.footer_main {
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
-  }
-  /* line 12, ../sass/_footer.scss */
-  .footer_main .footer_mainLeft {
+}
+
+/* line 12, ../sass/_footer.scss */
+
+.footer_main .footer_mainLeft {
     float: left;
     width: 290px;
     height: 145px;
     margin: 20px 0px 0px 10px;
     background: url(../images/logo.png) no-repeat left top;
-  }
-  /* line 19, ../sass/_footer.scss */
-  .footer_main .kefu {
+}
+
+/* line 19, ../sass/_footer.scss */
+
+.footer_main .kefu {
     margin-top: 85px;
     font-size: 20px;
     color: #646464;
     font-weight: bold;
-  }
-  /* line 25, ../sass/_footer.scss */
-  .footer_main .shijian {
+}
+
+/* line 25, ../sass/_footer.scss */
+
+.footer_main .shijian {
     margin-top: 6px;
-  }
-  /* line 28, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle {
+}
+
+/* line 28, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle {
     float: left;
     margin: 35px 0 0 0;
     width: 645px;
-  }
-  /* line 32, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle ul {
+}
+
+/* line 32, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle ul {
     float: left;
     margin: 0px 8px 0px 0px;
     width: 120px;
-  }
-  /* line 37, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle li {
+}
+
+/* line 37, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle li {
     text-align: left;
     font-family: Microsoft YaHei;
     height: 24px;
     line-height: 24px;
     color: #646464;
-  }
-  /* line 44, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle .title {
+}
+
+/* line 44, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle .title {
     color: #707070;
     font-weight: bold;
     font-size: 14px;
-  }
-  /* line 49, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle a {
+}
+
+/* line 49, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle a {
     color: #646464;
-  }
-  /* line 51, ../sass/_footer.scss */
-  .footer_main .footer_mainMiddle a:hover {
+}
+
+/* line 51, ../sass/_footer.scss */
+
+.footer_main .footer_mainMiddle a:hover {
     color: #669900;
-  }
-  /* line 56, ../sass/_footer.scss */
-  .footer_main .footer_mainRight {
+}
+
+/* line 56, ../sass/_footer.scss */
+
+.footer_main .footer_mainRight {
     float: left;
     margin: 35px 0 0 0;
     width: 235px;
     height: 145px;
-  }
-  
-  /* line 63, ../sass/_footer.scss */
-  .phone_client {
+}
+
+/* line 63, ../sass/_footer.scss */
+
+.phone_client {
     float: left;
-  }
-  /* line 65, ../sass/_footer.scss */
-  .phone_client span:nth-child(1) {
+}
+
+/* line 65, ../sass/_footer.scss */
+
+.phone_client span:nth-child(1) {
     display: block;
     text-align: center;
     margin: 0 50px 8px 0;
@@ -1518,9 +1546,11 @@ footer {
     color: #666666;
     font-family: Microsoft YaHei;
     font-weight: bold;
-  }
-  /* line 75, ../sass/_footer.scss */
-  .phone_client span:nth-child(2) {
+}
+
+/* line 75, ../sass/_footer.scss */
+
+.phone_client span:nth-child(2) {
     display: block;
     width: 80px;
     height: 80px;
@@ -1528,14 +1558,17 @@ footer {
     color: #666666;
     font-family: Microsoft YaHei;
     font-weight: bold;
-  }
-  /* line 84, ../sass/_footer.scss */
-  .phone_client .wx {
+}
+
+/* line 84, ../sass/_footer.scss */
+
+.phone_client .wx {
     background: url(../images/foot_bottom.png) no-repeat -83px 0px;
-  }
-  
-  /* line 88, ../sass/_footer.scss */
-  .footer_mainBot {
+}
+
+/* line 88, ../sass/_footer.scss */
+
+.footer_mainBot {
     width: 1180px;
     height: 50px;
     margin: 0 auto;
@@ -1543,34 +1576,45 @@ footer {
     padding-top: 15px;
     position: relative;
     float: left;
-  }
-  /* line 96, ../sass/_footer.scss */
-  .footer_mainBot .footer_mainBot1 {
+}
+
+/* line 96, ../sass/_footer.scss */
+
+.footer_mainBot .footer_mainBot1 {
     float: left;
     margin-left: 5px;
-  }
-  /* line 99, ../sass/_footer.scss */
-  .footer_mainBot .footer_mainBot1 img {
+}
+
+/* line 99, ../sass/_footer.scss */
+
+.footer_mainBot .footer_mainBot1 img {
     width: 94px;
     height: 33px;
-  }
-  
-  /* line 106, ../sass/_footer.scss */
-  .footer_mainBot2 {
+}
+
+/* line 106, ../sass/_footer.scss */
+
+.footer_mainBot2 {
     float: left;
     position: absolute;
     top: 13px;
     left: 294px;
-  }
-  /* line 111, ../sass/_footer.scss */
-  .footer_mainBot2 span {
+}
+
+/* line 111, ../sass/_footer.scss */
+
+.footer_mainBot2 span {
     padding-left: 13px;
-  }
-  /* line 113, ../sass/_footer.scss */
-  .footer_mainBot2 span a {
+}
+
+/* line 113, ../sass/_footer.scss */
+
+.footer_mainBot2 span a {
     color: #646464;
-  }
-  /* line 115, ../sass/_footer.scss */
-  .footer_mainBot2 span a:hover {
+}
+
+/* line 115, ../sass/_footer.scss */
+
+.footer_mainBot2 span a:hover {
     color: #669900;
-  }
+}

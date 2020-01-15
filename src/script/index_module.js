@@ -83,10 +83,10 @@ class NavMain {
             this.picli.eq(i).hover(() => {
                 this.index = i;
                 this.picli.eq(i).addClass('active').siblings('li').removeClass('active');//给当前点击的按钮添加背景
-                this.piclist.stop(true, true).animate({
+                this.piclist.stop(true).animate({
                     left: -this.liwidth * i
                 }, 'faster')
-                this.bgcolor_ul.stop(true, true).animate({
+                this.bgcolor_ul.stop(true).animate({
                     left: -this.bgwidth * i
                 }, 'faster')
             })

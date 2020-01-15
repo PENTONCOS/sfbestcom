@@ -17,15 +17,27 @@ class RenderList {
         //全选
         this.allselect();
         //文本框值的改变
-        this.valuechange()
+        this.valuechange();
+        //收藏
+        this.collection();
+        //删除
+        this.delGoods();
     }
     //渲染数据
     render(sid, num) {
         $.ajax({
             url: 'http://10.31.152.15/JS1912/sfbestcom/php/data_sfbest.php',
             dataType: 'json'
-        }).done((data) => {
-            // console.log(data);
+        }).done((objdata) => {
+            // console.log(objdata);
+            //先根据sid来判断用哪张表
+            let data = null
+            if (sid >= 21) {
+                data = objdata.fruitpic;
+            } else {
+                data = objdata.bestchoosepic;
+            }
+            // console.log(data)
             $.each(data, (index, value) => {
                 if (sid === value.sid) {
                     let $clonebox = $('.cartItem:hidden').clone(true, true);
@@ -38,8 +50,8 @@ class RenderList {
                     $clonebox.find('.cart_pname a').attr('href', (this.href + value.sid));
                     $clonebox.find('.spree_p10 strong').html(value.price);
                     $clonebox.find('.pAmount').val(num);
-                    $clonebox.find('.pWeight').html(value.weight * num + 'kg');
-                    $clonebox.find('#total_price').html((value.price * num).toFixed(2));
+                    $clonebox.find('.pWeight').html((value.weight * num).toFixed(2) + 'kg');
+                    $clonebox.find('#total_price').html(Math.round((value.price * num ).toFixed(2)));
                     $clonebox.show();
                     $('.cartList ').append($clonebox);
                     this.allprice();
@@ -54,9 +66,7 @@ class RenderList {
         let $all_weight_sum = 0; //全部商品的总价
         $('.cartItem:visible').each(function (index, element) {
             if ($(element).find('input:checkbox').is(':checked')) {
-
                 $all_goods_sum += parseFloat($(element).find('#total_price').html());
-                // $all_weight_sum += parseFloat($(element).find('.pWeight').html()*$(element).find('.cartAmount .pAmount').val());
                 $all_weight_sum += parseFloat($(element).find('.pWeight').html());
                 $all_weight_sum += parseFloat($(element).find('.cartAmount .pAmount').val());
                 // console.log($all_weight_sum);
@@ -148,6 +158,92 @@ class RenderList {
                 localStorage.setItem('cartnum', arrnum.toString());
             }
         }
+    }
+
+    //收藏
+    collection() {
+        let flag = true;
+        $('.follow').on('click', function () {
+            flag = !flag;
+            if (!flag) {
+                $(this).siblings('.getfavok').css('display', 'block');
+                $(this).html('取消收藏');
+            } else {
+                $(this).siblings('.getfavok').css('display', 'none');
+                $(this).html('收藏');
+            }
+
+        })
+    }
+
+    //删除
+    delGoods() {
+        let arrsid = [];
+        let arrnum = [];
+        let _this = this;
+
+        function getstorage() {
+            if (localStorage.getItem('cartsid') && localStorage.getItem('cartnum')) {
+                arrsid = localStorage.getItem('cartsid').split(',');
+                arrnum = localStorage.getItem('cartnum').split(',');
+            }
+        }
+
+        //删除本地存储数组项的值。确定删除的索引。
+        function delstorage(sid, arrsid) { //sid:删除的索引，sidarr:数组  
+            let $index = -1;
+            $.each(arrsid, function (index, value) {
+                if (sid === value) {
+                    $index = index; //接收索引值。  
+                }
+            });
+
+            arrsid.splice($index, 1);
+            arrnum.splice($index, 1);
+            localStorage.setItem('cartsid', arrsid.toString());
+            localStorage.setItem('cartnum', arrnum.toString());
+        }
+
+        //单条删除
+        $('.cartItem').on('click', '.remove', function () {
+            getstorage(); //取出本地存储，转换成数组。
+            if (window.confirm('你确定要删除吗?')) {
+                $(this).parents('.cartItem').remove();
+            }
+            delstorage($(this).parents('.cartItem').find('.cart_pimg img').attr('sid'), arrsid);
+            _this.allprice();
+        });
+
+        //删除选中
+        $('.cartButtons .removeSelect').on('click', function () {
+            getstorage(); //取出本地存储，转换成数组。
+            if (window.confirm('你确定要删除选中的吗?')) {
+                $('.cartItem:visible').each(function (index, element) {
+                    if ($(this).find('input:checkbox').is(':checked')) {
+                        $(this).remove();
+                        delstorage($(this).find('.cart_pimg img').attr('sid'), arrsid);
+                    }
+                });
+                _this.allprice();
+            }
+        });
+
+        //全部删除
+        $('.cartButtons .resetCart').on('click', function () {
+            getstorage(); //取出本地存储，转换成数组。
+            if (window.confirm('你确定要删除全部吗?')) {
+                $('.cartItem:visible').each(function (index, element) {
+                    $(this).remove();
+                    delstorage($(this).parents('.cartItem').find('.cart_pimg img').attr('sid'), arrsid);
+                })
+                // $(this).parents('.cartMain').find('.cartItem:visible').remove();
+                // delstorage($(this).parents('.cartItem').find('.cart_pimg img').attr('sid'), arrsid);
+                _this.allprice();
+            }
+        })
+
+
+
     }
 
 }
