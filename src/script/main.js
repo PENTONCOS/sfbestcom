@@ -16,7 +16,7 @@
 //         });
 //     }
 // })
-
+import "../stylesheets/index.css";
 
 
 //ES6
