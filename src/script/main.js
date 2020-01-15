@@ -44,3 +44,9 @@ import {
     detailsShow
 } from './details_module';
 detailsShow();
+
+//购物车列表
+import{
+    cartlistShow
+} from './cartlist_module';
+cartlistShow();

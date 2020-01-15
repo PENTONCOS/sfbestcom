@@ -211,6 +211,21 @@ class Fdj {
             }
             $('#number_300583').val($num);
         });
+
+        //直接输入
+        $('.pAmount input').on('input', function () {
+            let $reg = /^\d+$/;
+            let $inputvlaue = $(this).val();
+            if ($reg.test($inputvlaue)) {
+                if ($inputvlaue < 1) {
+                    $(this).val(1)
+                } else {
+                    $(this).val($inputvlaue)
+                }
+            } else {
+                $(this).val(1);
+            }
+        });
     }
 }
 
