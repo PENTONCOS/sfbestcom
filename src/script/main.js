@@ -16,7 +16,12 @@
 //         });
 //     }
 // })
+//导入css文件
 import "../stylesheets/index.css";
+import "../stylesheets/details.css";
+import "../stylesheets/login.css";
+import "../stylesheets/registry.css";
+import "../stylesheets/cartlist.css";
 
 
 //ES6

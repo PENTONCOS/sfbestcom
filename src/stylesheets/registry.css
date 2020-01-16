@@ -212,7 +212,7 @@ img {
 /* line 14, ../sass/_registry_load.scss */
 
 .reg_main ul.individualUserBg {
-  background: url(../images/pic10.jpg) 460px 0px no-repeat;
+  background: url(https://passport.sfbest.com/images/pic10.jpg) 460px 0px no-repeat;
 }
 
 /* line 17, ../sass/_registry_load.scss */
@@ -634,7 +634,7 @@ footer {
   width: 290px;
   height: 145px;
   margin: 20px 0px 0px 10px;
-  background: url(../images/logo.png) no-repeat left top;
+  background: url(https://passport.sfbest.com/images/logo.png) no-repeat left top;
 }
 
 /* line 19, ../sass/_footer.scss */
