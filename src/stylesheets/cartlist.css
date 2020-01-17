@@ -27,6 +27,16 @@ ol, ul {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    border-color: grey;
+}
+
+table tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
 }
 
 /* line 28, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
@@ -1246,6 +1256,10 @@ element.style {
     overflow: hidden;
 }
 
+.cart_pname a {
+    color: #565656;
+}
+
 .spree_p10 {
     padding-top: 10px;
 }
@@ -1278,6 +1292,11 @@ strong, b {
     height: 18px;
     overflow: hidden;
     zoom: 1;
+}
+
+.cartMainNone {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 a.cartCountBtn, a.cartCountBtn:hover, input.amount {

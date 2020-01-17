@@ -3,15 +3,24 @@
 class RenderList {
     constructor() {
         this.list = $('.cartList ');
-        this.href = 'http://10.31.152.15/JS1912/sfbestcom/src/details.html?sid=';
+        this.href = '../dist/details.html?sid=';
     }
     init() {
         //获取本地存储
         if (localStorage.getItem('cartsid') && localStorage.getItem('cartnum')) {
+
             let csid = localStorage.getItem('cartsid').split(','); //sid
             let cnum = localStorage.getItem('cartnum').split(','); //数量
-            for (let i = 0; i < csid.length; i++) {
-                this.render(csid[i], cnum[i]);
+            console.log(cnum.length)
+            if (cnum.length) {
+                console.log(1)
+                $('.cartMainNone').css('display', 'none');
+                for (let i = 0; i < csid.length; i++) {
+                    this.render(csid[i], cnum[i]);
+                }
+            } else {
+                $('.cartMain').css('display', 'none');
+                $('.cartMainNone').css('display', 'block');
             }
         }
         //全选
@@ -51,7 +60,7 @@ class RenderList {
                     $clonebox.find('.spree_p10 strong').html(value.price);
                     $clonebox.find('#intl-0-419277-300583-amount').val(num);
                     $clonebox.find('.pWeight').html((value.weight * num).toFixed(2) + 'kg');
-                    $clonebox.find('#total_price').html(Math.round((value.price * num ).toFixed(2)));
+                    $clonebox.find('#total_price').html(Math.round((value.price * num).toFixed(2)));
                     $clonebox.show();
                     $('.cartList ').append($clonebox);
                     this.allprice();
@@ -81,7 +90,6 @@ class RenderList {
     //全选
     allselect() {
         $('.selectAll').on('change', () => {
-
             $('.cartItem:visible').find('input:checkbox').prop('checked', $('.selectAll').prop('checked'));
             this.allprice(); //求和
         });
@@ -241,9 +249,6 @@ class RenderList {
                 _this.allprice();
             }
         })
-
-
-
     }
 
 }

@@ -235,10 +235,11 @@
             </div>
         </div>
     </header>
-    <!--------------------------- 这是购物车列表 --------------------->
+    <!----------------------------------------------------- 这是购物车列表 --------------------------------->
     <div class="cartMain">
         <div class="top-tip" id="topTip">
         </div>
+        <!-- 有购物 -->
         <div class="cartMain" id="cartMain">
             <div class="cartThead">
                 <div class="tCol tCheckbox"><input name="acart_list_check" id="Zall" type="checkbox" class="selectAll"
@@ -302,9 +303,8 @@
                                         <div class="cartAmount">
                                             <a href="javascript:void(0);" class="cartCountBtn numberCtrl down"
                                                 belong="intl" cid="intl-0-419277-300583" canselect="1">-</a>
-                                            <input type="text" value="1" class="amount"
-                                                id="intl-0-419277-300583-amount" name="amount"
-                                                cid="intl-0-419277-300583" canselect="1" stock="-34">
+                                            <input type="text" value="1" class="amount" id="intl-0-419277-300583-amount"
+                                                name="amount" cid="intl-0-419277-300583" canselect="1" stock="-34">
                                             <a href="javascript:void(0);" class="cartCountBtn numberCtrl up"
                                                 belong="intl" cid="intl-0-419277-300583" canselect="1" stock="-34">+</a>
                                         </div>
@@ -323,7 +323,7 @@
                                     <div class="pItem pSubtotal">¥<span id="total_price">399</span></div>
                                     <div class="pItem pInventory">现货</div>
                                     <div class="pItem pOperator">
-                                        <div  class="getfavok" style="display: none;" id="follow-300583-419277">商品收藏成功
+                                        <div class="getfavok" style="display: none;" id="follow-300583-419277">商品收藏成功
                                         </div>
                                         <a id="cartDel" class="follow" pid="300583" cid="419277"
                                             href="javascript:void(0)">收藏</a>&nbsp;&nbsp;
@@ -353,13 +353,33 @@
             </div>
 
             <div class="cartJsuan">
-                <input
-                    onclick="javascript:document.location.href='./index.html'"
-                    class="goshop" value="继续购物" type="button">
+                <input onclick="javascript:document.location.href='./index.html'" class="goshop" value="继续购物"
+                    type="button">
                 <input class="jiesuan youxuan" value="去结算" type="button" num="0">
             </div>
         </div>
+        <!-- 无购物提示 -->
+        <div class="cartMainNone" style="display: none;">
+            <div class="productsbox">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" id="cartTable" class="tbl_cart">
+                    <tbody>
+                        <tr>
+                            <td style="background-color:#f5f5f5;font-size:14px;height:80px; border:1px solid #dadada;text-align:center;line-height:24px;"
+                                colspan="9">
+                                <strong>购物车暂无商品数据</strong>　
+                                <a onclick="javascript:location.href='http://www.sfbest.com'"
+                                    href="javascript:void(0);">现在就去购物 &gt;&gt;</a>
+                                <br>您的购物车是空的，可能是您尚未登录，<a href="javascript:void(0);" onclick="SF.Widget.login();"
+                                    style="color:#6F9A09">马上登录</a>再看看。
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
     </div>
+
 
     <!------------------------------------------------------------------ 底部链接 -------------------------------------------------------->
     <footer>
@@ -458,7 +478,7 @@
         </div>
     </footer>
 
-    <script src="../dist/script/bundle.js" defer async="true"></script>
+    <script src="script/bundle.js" defer async="true"></script>
 
 </body>
 
