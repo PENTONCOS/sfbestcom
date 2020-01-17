@@ -1229,12 +1229,12 @@ element.style {
     width: 60px;
 }
 
-a {
+.cart_pimg a {
     color: #565656;
     text-decoration: none;
 }
 
-img {
+.cart_pimg img {
     width: 62px;
     height: 62px;
     padding: 0;

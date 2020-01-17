@@ -1996,6 +1996,8 @@ header {
 /* line 160, ../sass/_hotspot.scss */
 .r_a a {
   color: #fa9600;
+  width:182px;
+  height:14px;
 }
 /* line 162, ../sass/_hotspot.scss */
 .r_a a:hover {

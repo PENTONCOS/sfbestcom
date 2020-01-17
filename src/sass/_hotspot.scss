@@ -99,11 +99,11 @@
     overflow: hidden;
     padding-left: 10px;
     line-height: 20px;
-    a {
-      color: #646464;
-      &:hover {
-        color: $a_fontcolor;
-      }
+  }
+  a {
+    color: #646464;
+    &:hover {
+      color: $a_fontcolor;
     }
   }
 }

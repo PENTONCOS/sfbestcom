@@ -49,7 +49,7 @@ class RenderList {
                     $clonebox.find('.cart_pname a').attr('title', value.title);
                     $clonebox.find('.cart_pname a').attr('href', (this.href + value.sid));
                     $clonebox.find('.spree_p10 strong').html(value.price);
-                    $clonebox.find('.pAmount').val(num);
+                    $clonebox.find('#intl-0-419277-300583-amount').val(num);
                     $clonebox.find('.pWeight').html((value.weight * num).toFixed(2) + 'kg');
                     $clonebox.find('#total_price').html(Math.round((value.price * num ).toFixed(2)));
                     $clonebox.show();
@@ -68,7 +68,7 @@ class RenderList {
             if ($(element).find('input:checkbox').is(':checked')) {
                 $all_goods_sum += parseFloat($(element).find('#total_price').html());
                 $all_weight_sum += parseFloat($(element).find('.pWeight').html());
-                $all_weight_sum += parseFloat($(element).find('.cartAmount .pAmount').val());
+                $all_weight_sum += parseFloat($(element).find('#intl-0-419277-300583-amount').val());
                 // console.log($all_weight_sum);
             }
         });
